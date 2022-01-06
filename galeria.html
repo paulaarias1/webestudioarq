@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda diseños</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,900;1,800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./Imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div id="gridtienda">
+
+
+    
+    <header class="header--imgtienda">
+
+            <div class="header__logo" id="logo">
+               <a href="index.html"><img src="./Imagenes/logo_white.png" width="200" alt="Logo ir a home">  </a>
+            </div>
+    
+            <nav class="header__nav">
+                <ul class="header__nav--principal">
+                    <li> <a href="index.html"> Home</a> </li>
+                    <li> <a href="nosotros.html"> Nosotros</a> </li>
+                    <li> <a href="galeria.html"> Galeria</a> </li>
+                    <li> <a href="presupuestos.html"> Presupuestos</a> </li>
+                    <li> <a href="contacto.html"> Contacto </a> </li>
+                </ul>
+            </nav>
+    
+            <span class="header__titulo"> 
+                <h2>Elegi el espacio interior a tu medida</h2>
+                <h1>tienda de diseños</h1>            
+             </span>
+    
+             <p class="header__presentacion">Te presentamos una colección de diseños tipo "casa-minima" pensada como modulo adaptable a los gustos de cada usuario. Los espacios interiores que necesites los elegis vos! Nosotros te proporcionamos todos los documentos técnicos para que lo construyas</p>
+    
+    </header>
+
+    <main>
+        
+        <div class="main__filtros">
+        <form action="">
+            <h3><label for="filtro"> Aplicar Filtros </label></h3>
+            <input type="checkbox" name="2personas">1/2 Personas
+            <input type="checkbox" name="6personas"> 4/6 Personas
+            <input type="checkbox" name="jacuzzi"> Jacuzzi
+            <input type="checkbox" name="bañodoble"> Baño Doble
+            <input type="checkbox" name="terraza"> Terraza
+            <input type="checkbox" name="monoambiente"> Ambiente Unico
+
+        </form>
+        </div>
+
+        <div>
+            <img src="./Imagenes/ima1.jpg" alt="imagen">
+        </div>
+        <div>
+            <img src="./Imagenes/ima2.jpg" alt="imagen">
+        </div>
+
+        <div>
+            <img src="./Imagenes/ima3.jpg" alt="imagen">
+        </div> 
+        <div>
+            <img src="./Imagenes/ima4.jpg" alt="imagen">
+        </div>
+            
+        <div class="main__contenido">
+            <h3>Recomendaciones</h3>
+       
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ex similique natus autem id adipisci? Id aperiam reprehenderit accusantium, aliquid incidunt repellat modi? Ex, adipisci. Neque sed suscipit repellat iure. </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ex similique natus autem id adipisci? Id aperiam reprehenderit accusantium, aliquid incidunt repellat modi? Ex, adipisci. Neque sed suscipit repellat iure. </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ex similique natus autem id adipisci? Id aperiam reprehenderit accusantium, aliquid incidunt repellat modi? Ex, adipisci. Neque sed suscipit repellat iure. </p>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo">
+            <a href="index.html"><img src="./Imagenes/logo_white.png" width="100" alt="Logo ir a home">  </a>
+        </div>
+        
+        <div class="footer__adress">
+            <p>Ciudad de Rio Cuarto</p>
+            <p>Córdoba, Argentina.</p>
+        </div>   
+        
+        <nav class="footer__nav">
+            <ul>
+                <li>  <a href="index.html"> Home</a> </li>
+                <li> <a href="nosotros.html"> Nosotros</a> </li>
+                <li> <a href="tienda.html"> Tienda</a> </li>
+                <li> <a href="novedades.html"> Novedades</a> </li>
+                <li> <a href="contacto.html"> Contacto </a> </li>
+            </ul>
+        </nav>
+               
+        <form action="" class="footer__formulario">
+            <label for="email">Enterate de nuevos diseños y tendencias!</label>
+            <input type="email" name="email" id="email" placeholder="ingresa tu correo" required>
+            <input type="submit" value="suscribirme" class="boton">
+        </form>
+    </footer>
+
+</div>
+</body>
+</html>
