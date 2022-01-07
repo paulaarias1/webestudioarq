@@ -35,7 +35,7 @@
           rgba(0, 0, 0, 0.7),
           rgba(0, 0, 0, 0.3),
           rgba(0, 0, 0, 0.7)
-        ), url("./Imagenes/01.jpg");
+        ), url("./img/renderhome.jpg");
         background-size: cover;
         background-color: black;
         background-position: bottom;
@@ -43,8 +43,7 @@
         /*GRID EN HEADER*/
         display: grid;
         grid-template-areas:
-        "logo logo"
-        "nav nav"
+        "logo nav"
         "titulo titulo"
         "texto texto"
         "enlace enlace";
@@ -59,22 +58,26 @@
     .header__logo{
         grid-area: logo;
         display: flex;
-        justify-content: center; 
+        justify-content: right; 
         padding-top: 1.563rem;  
     }
-
+    
     .header__nav{
-        grid-area: nav;               
+        grid-area: nav; 
+        padding-top: 1.563rem;               
     }
 
     .header__nav ul{
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
+               
     }
 
     .header__nav li{
         list-style-type: none;
         display: inline-block;
+        padding: 0.1rem;
     }
 
     .header__nav a{
@@ -83,7 +86,7 @@
         text-transform: uppercase;
         font-size: 0.6rem;
         color: rgb(255, 255, 255);
-        padding: 0.5rem;
+        padding: 0.1rem;
         font-family: 'Nunito Sans', sans-serif;
     }
 
@@ -100,12 +103,12 @@
         /*--propiedades texto--*/
         color: white;
         font-family: 'Nunito Sans', sans-serif;
-        text-align: right;
+        text-align: justify;
     }
 
     .header__titulo h1{
         font-weight: 300; 
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-transform: uppercase;
         padding-top: 0.063rem;
         padding-bottom: 0.063rem;
@@ -128,7 +131,7 @@
         font-size: 0.8rem;
         padding-top: 0.05rem;
         padding-bottom: 0.05rem;
-        padding-left: 3rem;
+        padding-left: 1rem;
         padding-right: 3rem;
         /*orden elementos*/
         grid-area: texto;
