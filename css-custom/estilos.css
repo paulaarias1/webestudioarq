@@ -63,7 +63,8 @@
         padding-top: 1.563rem;  
     }
     .header__logo img{
-        width: 20%;
+        width: 30%;
+        padding: 2rem;
     }
     
     .header__nav{

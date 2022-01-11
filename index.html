@@ -14,38 +14,59 @@
   </head>
 
 <body>
-<div id="gridhome">
+<div>
         
     <header class="header">
-        <div class="header__logo" id="logo">
-           <a href="index.html"><img src="./img/logobicromowhite.png" alt="Logo ir a home">  </a>
-        </div>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/pexels-rok-romih-3312662.jpg" class="d-block w-100" alt="imagen diurna de cabaña">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/pexels-rok-romih-3312671.jpg" class="d-block w-100" alt="imagen nocturna de cabaña">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
 
-        <nav class="header__nav">
-            <ul class="header__nav--principal">
-                <li> <a href="index.html"> Home</a> </li>
-                <li> <a href="nosotros.html"> Nosotros</a> </li>
-                <li> <a href="galeria.html"> Galeria</a> </li>
-                <li> <a href="presupuestos.html"> Presupuestos</a> </li>
-                <li> <a href="contacto.html"> Contacto </a> </li>
-            </ul>
-        </nav>
+            <div class="header__logo" id="logo">
+                <a href="index.html"><img src="./img/logobicromowhite.png" alt="Logo ir a home">  </a>
+            </div>
 
-        <span class="header__titulo"> 
-            <h2>Entre lo que imaginaste y su habitar</h2> 
-            <h1>architecture
-            collection</h1>
+            <nav class="header__nav">
+                <ul class="header__nav--principal">
+                    <li> <a href="index.html"> Home</a> </li>
+                    <li> <a href="nosotros.html"> Nosotros</a> </li>
+                    <li> <a href="galeria.html"> Galeria</a> </li>
+                    <li> <a href="presupuestos.html"> Presupuestos</a> </li>
+                    <li> <a href="contacto.html"> Contacto </a> </li>
+                </ul>
+            </nav>
+
+            <span class="header__titulo"> 
+                <h2>Entre lo que imaginaste y su habitar</h2> 
+                <h1>architecture
+                collection</h1>
+                
+            </span>
+    
+            <p class="header__presentacion" >Un recorrido por nuestra colección de trabajos en arquitectura residencial e institucional. En este espacio vas a encontrar todos nuestros diseños entregados, nuestra forma de trabajo, obras y proyectos de inversion en los que podes ser parte.</p>
             
-        </span>
+            <div class="header__enlaceInterno">
+                <ul>
+                    <li> <h4>01</h4> <a href="#01">Coleccion de diseños</a> </li>
+                    <li> <h4>02</h4> <a href="#02">Proyectos de inversión</a> </li>
+                    <li> <h4>03</h4><a href="#03"> Servicios</a> </li>
+                </ul>  
+            </div>
 
-        <p class="header__presentacion" >Un recorrido por nuestra colección de trabajos en arquitectura residencial e institucional. En este espacio vas a encontrar todos nuestros diseños entregados, nuestra forma de trabajo, obras y proyectos de inversion en los que podes ser parte.</p>
-        
-        <div class="header__enlaceInterno">
-            <ul>
-                <li> <h4>01</h4> <a href="#01">Coleccion de diseños</a> </li>
-                <li> <h4>02</h4> <a href="#02">Proyectos de inversión</a> </li>
-                <li> <h4>03</h4><a href="#03"> Servicios</a> </li>
-            </ul>  
+
         </div>
 
     </header>
