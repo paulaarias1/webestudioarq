@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 /*-------------ESTRUCTURA GENERAL DE PAGINAS-----------------*/
  
@@ -60,6 +61,9 @@
         display: flex;
         justify-content: right; 
         padding-top: 1.563rem;  
+    }
+    .header__logo img{
+        width: 20%;
     }
     
     .header__nav{
