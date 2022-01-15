@@ -9,15 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,900;1,800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./Imagenes/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css-custom/estilos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
-<body>
+<body>    
 <div id="gridnosotros">
 
-    <header class="header--imgnosotros">
+    <header class="header--background">
         <div class="header__logo" id="logo">
-            <a href="index.html"><img src="./Imagenes/logo_white.png" width="200" alt="Logo ir a home">  </a>
+            <a href="index.html"><img src="./img-about-us/" width="100" alt="Logo ir a home">  </a>
         </div>
          
         <nav class="header__nav">
@@ -37,44 +39,87 @@
 
         <p class="header__presentacion" id="manifiesto-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam doloremque neque, veniam officia incidunt aperiam velit nobis corporis? Aliquid soluta nam vitae ratione velit eaque voluptatem delectus deleniti, tempora dolores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis asperiores cupiditate sequi sint impedit optio. Deserunt natus perspiciatis aspernatur earum, assumenda reprehenderit odio unde, doloribus asperiores repellat laborum placeat eveniet!</p>  
         
- 
     </header>
 
-    
-    <section class="contenido" id="creadores">       
+    <section class="contenido" id="creadores">
+        <div data-aos="fade-up"data-aos-duration="3000">       
+            <div class="card" id="horizontal">
+                <img src="./img/pexels-mujer.png" alt="imagen co-fundadora" >              
+                <div class="card__text">
+                    <h4 id=aling-nombre01>Paula</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ex similique natus autem id adipisci? Id aperiam reprehenderit accusantium, aliquid incidunt repellat modi? Ex, adipisci. Neque sed suscipit repellat iure. </p>
+                </div>
+            </div>
+        </div>
         
-        <img src="./Imagenes/woman.png" alt="imagen co-fundadora">              
-        <div class="contenido__texto">
-
-            <h3>Paula</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ex similique natus autem id adipisci? Id aperiam reprehenderit accusantium, aliquid incidunt repellat modi? Ex, adipisci. Neque sed suscipit repellat iure. </p>
-
+        <div data-aos="fade-up"data-aos-duration="3000">
+            <div class="card" id="horizontal">
+                <div class="card__text">
+                    <h4 id=aling-nombre02>Mariano</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ex similique natus autem id adipisci? Id aperiam reprehenderit accusantium, aliquid incidunt repellat modi? Ex, adipisci. Neque sed suscipit repellat iure. </p>
+                </div>
+                <img src="./img/pexels-hombre.png" alt="imagen co-fundador">
+            </div>
         </div>
-            
-        <div class="contenido__texto">
-
-            <h3>Mariano</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ex similique natus autem id adipisci? Id aperiam reprehenderit accusantium, aliquid incidunt repellat modi? Ex, adipisci. Neque sed suscipit repellat iure. </p>
-
-        </div>
-        <img src="./Imagenes/boy.png" alt="imagen co-fundador">
-
     </section>  
 
     <section class="contenido" id="valores"> 
-        
-        <h3 id="titulo-centrado">Valores que nos impulsan</h3>
+
+        <h3 id="titulo-centrado" data-aos="fade-up"data-aos-duration="3000">Valores que nos impulsan</h3>
 
         <div class="cuadricula">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ex similique natus autem id adipisci? Id aperiam reprehenderit accusantium, aliquid incidunt repellat modi? Ex, adipisci. Neque sed suscipit repellat iure. </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ex similique natus autem id adipisci? Id aperiam reprehenderit accusantium, aliquid incidunt repellat modi? Ex, adipisci. Neque sed suscipit repellat iure. </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ex similique natus autem id adipisci? Id aperiam reprehenderit accusantium, aliquid incidunt repellat modi? Ex, adipisci. Neque sed suscipit repellat iure. </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ex similique natus autem id adipisci? Id aperiam reprehenderit accusantium, aliquid incidunt repellat modi? Ex, adipisci. Neque sed suscipit repellat iure. </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ex similique natus autem id adipisci? Id aperiam reprehenderit accusantium, aliquid incidunt repellat modi? Ex, adipisci. Neque sed suscipit repellat iure. </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ex similique natus autem id adipisci? Id aperiam reprehenderit accusantium, aliquid incidunt repellat modi? Ex, adipisci. Neque sed suscipit repellat iure. </p>
-        </div> 
-                       
-    </section>       
+            
+                <div class="card" data-aos="fade-up"data-aos-duration="3000">
+                    <img src="./img/conexion.png" alt="icono sobre multidisciplinas en red">
+                    <div class="card__text">
+                        <h4>Multidisciplinas en red</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ex similique natus autem id adipisci? Id aperiam reprehenderit accusantium, aliquid incidunt repellat modi? Ex, adipisci. Neque sed suscipit repellat iure. </p>
+                    </div>
+                </div>
+        
+                <div class="card" data-aos="fade-up"data-aos-duration="3000">
+                    <img src="./img/materiales.png" alt="icono sobre Responsabilidad" id=icon>
+                    <div class="card__text">
+                        <h4>Responsabilidad</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ex similique natus autem id adipisci? Id aperiam reprehenderit accusantium, aliquid incidunt repellat modi? Ex, adipisci. Neque sed suscipit repellat iure. </p>
+                    </div>
+                </div>
+            
+                <div class="card" data-aos="fade-up"data-aos-duration="3000">
+                    <img src="./img/grupo-de-chat.png" alt="icono sobre dialogo" id=icon>
+                    <div class="card__text">
+                        <h4>Dialogo abierto</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ex similique natus autem id adipisci? Id aperiam reprehenderit accusantium, aliquid incidunt repellat modi? Ex, adipisci. Neque sed suscipit repellat iure. </p>
+                    </div>
+                </div>
+           
+                <div class="card" data-aos="fade-up"data-aos-duration="3000">
+                    <img src="./img/sustainable.png" alt="icono sobre criterio bioclimatico" id=icon>
+                    <div class="card__text">
+                        <h4>Criterio bioclimatico</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ex similique natus autem id adipisci? Id aperiam reprehenderit accusantium, aliquid incidunt repellat modi? Ex, adipisci. Neque sed suscipit repellat iure. </p>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-up"data-aos-duration="3000">
+                    <img src="./img/carbon-footprint.png" alt="icono sobre respeto por huella natural" id=icon>
+                    <div class="card__text">
+                        <h4>Respeto por huella natural</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ex similique natus autem id adipisci? Id aperiam reprehenderit accusantium, aliquid incidunt repellat modi? Ex, adipisci. Neque sed suscipit repellat iure. </p>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-up"data-aos-duration="3000">
+                    <img src="./img/team-work.png" alt="icono sobre trabajo en equipo" id=icon>
+                    <div class="card__text">
+                        <h4>Producto en equipo</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ex similique natus autem id adipisci? Id aperiam reprehenderit accusantium, aliquid incidunt repellat modi? Ex, adipisci. Neque sed suscipit repellat iure. </p>
+                    </div>
+                </div> 
+                      
+        </div>            
+    </section>  
+         
         
     <footer class="footer">
         <div class="footer__logo">
@@ -109,7 +154,7 @@
         </form>
     
     </footer>
-    
+    <script>AOS.init();</script>
 </div>
 </body>
 </html>
