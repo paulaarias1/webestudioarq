@@ -1,14 +1,12 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
-/*-------------ESTRUCTURA GENERAL DE PAGINAS-----------------*/
- 
-/*---------------------------------HOME HOME HOME HOME HOME--------------------------*/
-/*--------VISTA MOBILE -------*/
 
+/*--------------------VISTA MOBILE -------------------------*/
+ 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+    /*---ESTRUCTURA DE HOME---*/
     #gridhome{
     display: grid;
     grid-template-areas: 
@@ -18,25 +16,21 @@
     "video video"
     "tips tips"
     "footer footer";
-
     grid-template-columns: auto, auto;
-    grid-template-rows: 100px, 2fr, 2fr, 2fr, 1fr;
-    grid-column-gap: 1rem;
+    grid-template-rows: auto, 2fr, 2fr, 2fr, 1fr, auto;
+    grid-column-gap: 0.5rem;
     grid-row-gap: 0.05rem;
     height: 100vh;
-    
     }
-
-    /*------------HEADER MOBILE -HEADER MOBILE----------*/
+    /*---HEADER---*/
     .header{
-        grid-area: header;
-        /*-----degrade imagen de fondo---*/ 
+        grid-area: header; 
         background-image: 
         linear-gradient(
           rgba(0, 0, 0, 0.7),
           rgba(0, 0, 0, 0.3),
           rgba(0, 0, 0, 0.7)
-        ), url("./img/renderhome.jpg");
+        ), url("./img/pexels-rok-romih-3312662.jpg");
         background-size: cover;
         background-color: black;
         background-position: bottom;
@@ -49,52 +43,37 @@
         "texto texto"
         "enlace enlace";
         grid-template-columns: 1fr, 1fr;
-        grid-template-rows: 1fr, 1fr, 50%, 15%, 2%;
+        grid-template-rows: 1fr, 1fr, 50%, 15%;
         align-content: stretch;
         grid-row-gap: 0.1rem;
-        height: 100vh;
-        
+        height: 100vh;    
     }
-
     .header__logo{
         grid-area: logo;
         display: flex;
-        justify-content: right; 
+        justify-content: center; 
         padding-top: 1.563rem;  
     }
-    .header__logo img{
-        width: 30%;
-        padding: 2rem;
-    }
-    
     .header__nav{
-        grid-area: nav; 
-        padding-top: 1.563rem;               
+        grid-area: nav;               
     }
-
     .header__nav ul{
         display: flex;
-        flex-direction: column;
         justify-content: space-around;
-               
     }
-
     .header__nav li{
         list-style-type: none;
         display: inline-block;
-        padding: 0.1rem;
     }
-
     .header__nav a{
         text-decoration: none;
         text-align: center;
         text-transform: uppercase;
         font-size: 0.6rem;
         color: rgb(255, 255, 255);
-        padding: 0.1rem;
+        padding: 0.5rem;
         font-family: 'Nunito Sans', sans-serif;
     }
-
     .header__titulo{
         grid-area: titulo;
         display: flex;
@@ -108,18 +87,16 @@
         /*--propiedades texto--*/
         color: white;
         font-family: 'Nunito Sans', sans-serif;
-        text-align: justify;
+        text-align: right;
     }
-
     .header__titulo h1{
         font-weight: 300; 
-        font-size: 2.5rem;
+        font-size: 3rem;
         text-transform: uppercase;
         padding-top: 0.063rem;
         padding-bottom: 0.063rem;
         padding-right: 0.63rem;
     }
-
     .header__titulo h2{
         text-transform: uppercase;
         font-weight: 700;
@@ -128,7 +105,6 @@
         padding-top: 0.063rem;
         padding-right: 0.63rem;
     }
-
     .header__presentacion{
         color: white;
         font-family: 'Nunito Sans', sans-serif;
@@ -136,7 +112,7 @@
         font-size: 0.8rem;
         padding-top: 0.05rem;
         padding-bottom: 0.05rem;
-        padding-left: 1rem;
+        padding-left: 3rem;
         padding-right: 3rem;
         /*orden elementos*/
         grid-area: texto;
@@ -145,8 +121,7 @@
         justify-content: center;
         
     }
-    
-    /*---ENLACES INTERNOS---*/
+    /*---Enlaces internos en header home---*/
     .header__enlaceInterno{
         grid-area: enlace;
         align-self: start;
@@ -156,7 +131,6 @@
         padding-bottom: 0.1rem;
         padding-top: 0.1rem;
     }
-
     .header__enlaceInterno ul{
         list-style-type: none;
         padding-bottom: 0.05rem;
@@ -166,13 +140,11 @@
         flex-direction: column;
         justify-content: center;
     }
-
     .header__enlaceInterno li{
         display: inline-block; 
         display: flex;
         justify-self: center;
     }
-
     .header__enlaceInterno h4{
         color: rgb(255, 99, 8);
         font-family: 'Nunito Sans', sans-serif;
@@ -182,7 +154,6 @@
         padding-bottom: 0.05rem;
         font-weight: 800;
     }
-
     .header__enlaceInterno a{
         text-decoration: none;
         text-align: center;
@@ -194,30 +165,85 @@
         font-family: 'Nunito Sans', sans-serif;
         font-weight: 500;
     }
-
-   /*----------------AREA DE CONTENIDO MOBILE- AREA DE CONTENIDO MOBILE----------------*/
-    .contenido#presentacion{
-        grid-area: presentacion;
-       
-       
+    /*---ESTRUCTURA GRID DE NOSOTROS ---*/
+    #gridnosotros{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "creadores creadores"
+        "valores valores"
+        "footer footer";
+        grid-template-columns: 50%, 50%;
+        grid-template-rows: 3fr, 1fr, 1fr, auto;
+        grid-column-gap: 0.5rem;
+        grid-row-gap: 0.05rem;
+        height: 100vh;
+        
     }
 
+    /*header personalizado nosotros*/
+    .header--background{
+        grid-area: header;
+        background-color: black;
+        background-image: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.7)
+        ), url("../assets/img-about-us/pexels-rok-romih-3312671.jpg");
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        /*GRID EN HEADER NOSOTROS*/
+        display: grid;
+        grid-template-areas:
+        "logo nav"
+        "manifiesto manifiesto"
+        "texto texto";
+        grid-template-columns: 50%, 50%;
+        grid-template-rows: 1fr, 3fr, auto;
+        align-content: stretch;
+        grid-row-gap: 0.1rem;
+        height: 100vh;
+    }
+    .header__titulo#manifiesto{
+        grid-area: manifiesto;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .header__presentacion#manifiesto-text{
+        grid-area: texto;
+        justify-self: end;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        padding-bottom: 5rem;
+        display: flex;
+        
+    }
+      
+   /*---AREA DE CONTENIDO---*/
+    .contenido#presentacion{
+        grid-area: presentacion;          
+    }
     .cuadricula{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-column-gap: 1rem;
-        grid-row-gap: 1rem;
-        
+        grid-row-gap: 1rem;        
     }
-
     .contenido{
         display: flex;
         flex-direction: column;
         background-color: rgb(255, 255, 255);
         padding-bottom: 30px;
         padding: 1.5rem;
-    
+        color: rgb(0, 0, 0);
+        font-family: 'Nunito Sans', sans-serif;
+        text-align: justify;
+        font-size: 0.85rem;
+        line-height: 1rem; 
     }
     .contenido h3{
         color: rgb(0, 0, 0);
@@ -227,20 +253,13 @@
         text-transform: uppercase;
         font-size: 2rem;
         padding: 3rem;
-        padding-bottom: 10px; 
-    }
-    
+        padding-bottom: 0.625rem; 
+    }   
     .contenido p{
-        color: rgb(0, 0, 0);
-        font-family: 'Nunito Sans', sans-serif;
-        text-align: justify;
-        font-size: 0.85rem;
-        line-height: 20px;
         padding: 1rem;
-        padding-top: 10px;
-        padding-bottom: 10px;
+       /* padding-top: 0.625rem;
+        padding-bottom: 0.625rem; */
     }
-
     .contenido#instructivo{
         grid-area: instructivo;
         display: flex;
@@ -267,8 +286,7 @@
     }
     .contenido--video iframe{
         padding: 1rem;  
-    }
-    
+    }   
     .contenido--background{
         background-image: linear-gradient(rgba(0, 0, 0, 0.4) rgba(0, 0, 0, 0.8)) url("./Imagenes/03.jpg");
         background-size: cover;
@@ -317,7 +335,6 @@
     .contenido--background a{
         text-decoration: none;
     }
-    
     .contenido--background p{
         color: rgb(255, 255, 255);
         font-family: 'Nunito Sans', sans-serif;
@@ -328,9 +345,67 @@
         padding-top: 10px;
         padding-bottom: 10px;
     }
-  
-    
-    /*----------------FOOTER MOBILE-FOOTER MOBILE----------------*/
+    /*contenido personalizado nosotros*/
+    .contenido#creadores{
+        grid-area: creadores;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(29, 28, 28);
+        background-image: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.5)), url("../assets/img-about-us/fondo-owner.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: rgb(255, 255, 255);
+        text-shadow: black;
+    }
+    .card#horizontal{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    .card#horizontal img{
+        width: 40%;
+    }
+    .contenido#valores{
+        grid-area: valores;
+    }
+    .contenido#valores h3{
+        text-align: center;
+        padding: 1.5rem;
+        line-height: 2rem; /*interlineado*/
+        
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card__text{
+        display: flex;
+        flex-direction: column;
+    }
+    #aling-nombre01{
+      text-align: left; 
+      padding: 1rem;
+    }
+    #aling-{
+        text-align: right; 
+        padding: 1rem;
+    }
+    .card img{
+        width: 30%;
+        padding: 1rem;
+    }
+    .contenido#valores h4{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    /*---FOOTER---*/
     .footer{
         background-color: rgb(111, 113, 114);
         grid-area: footer;
@@ -349,7 +424,6 @@
         justify-content: center;
        
     }
-
     .footer__nav ul {
         display: flex;
         flex-direction: column;
@@ -407,7 +481,6 @@
         padding: 0.05rem;  
         padding-bottom: 2rem; 
     }
-
     .footer__formulario label{
         font-size: 0.85rem;
         font-weight: 400;
@@ -444,13 +517,14 @@
         padding-right: 20px;
         padding-left: 20px; 
     }
-     
+  
 
 }
 
+/*--------------------VISTA DESKTOP -------------------------*/
 @media only screen and (min-width: 768px){
+    /*---ESTRUCTURA DE HOME---*/
     #gridhome{
-
         display: grid;
         grid-template-areas: 
         "header header header header"
@@ -467,10 +541,10 @@
         width: 100vw; 
     
     }
-    /*--------------------------HEADER DESKTOP---------------------------*/
+
+    /*---HEADER---*/
     .header{
-        grid-area: header;
-        /*-----degrade imagen de fondo---*/ 
+        grid-area: header; 
         background-image: 
         linear-gradient(
           rgba(0, 0, 0, 0.7),
@@ -505,8 +579,6 @@
     .header__logo a{
         padding-left: 1.875rem;
     }
-    
-    /*---------NAV---------*/
     .header__nav{
         grid-area: nav; 
         justify-self: end;
@@ -528,7 +600,6 @@
         padding: 0.5rem;
         font-family: 'Nunito Sans', sans-serif;
     }
-    /*---TITULO Y PRESENTACION---*/
     .header__titulo{
         grid-area: titulo;
         justify-self: end;
@@ -574,7 +645,7 @@
         align-self: start;
         }
     
-     /*---ENLACES INTERNOS---*/
+     /*---Enlaces internos en header home---*/
      .header__enlaceInterno{
         grid-area: enlace;
         align-self: start;
@@ -619,6 +690,63 @@
         font-family: 'Nunito Sans', sans-serif;
         font-weight: 500;
      }
+
+      /*---ESTRUCTURA GRID DE NOSOTROS ---*/
+     #gridnosotros{
+        display: grid;
+        grid-template-areas: 
+        "header header header header"
+        "creadores creadores creadores creadores"
+        "valores valores valores valores"
+        "footer footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto, 2fr 2fr 1fr; 
+    }
+
+    /*header personalizado nosotros*/
+    .header--background{
+        background-image: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.7)
+        ), url("../assets/img-about-us/pexels-rok-romih-3312671.jpg");
+        background-size: cover;
+        background-color: black;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        grid-area: header;
+        display: grid;
+        grid-template-areas: 
+        "logo logo nav nav"
+        "manifiesto manifiesto manifiesto manifiesto"
+        "texto texto texto texto"
+        ;
+        grid-template-columns: 25%, 25%, 25%, 25%;
+        grid-template-rows: 1rem, 1fr, 1fr;
+        align-content: stretch;
+        grid-row-gap: 1rem;
+        
+    }
+
+    .header__titulo#manifiesto{
+        grid-area: manifiesto;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .header__presentacion#manifiesto-text{
+        grid-area: texto;
+        justify-self: end;
+        padding-right: 36rem;
+        padding-left: 3rem;
+        padding-bottom: 15rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+
     
     /*-----------------------------AREA DE CONTENIDO ---------------------------------------------*/
     .contenido#presentacion{
@@ -627,8 +755,8 @@
     .cuadricula{
         display: grid;
         ;
-        /*grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr; */
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr; 
         grid-column-gap: 1rem;
         grid-row-gap: 1rem;
         
@@ -639,28 +767,26 @@
         flex-direction: column;
         background-color: rgb(255, 255, 255);
         padding-bottom: 30px;
+        padding: 1.5rem;
+        color: rgb(0, 0, 0);
+        font-family: 'Nunito Sans', sans-serif;
+        text-align: justify;
+        font-size: 0.85rem;
+        line-height: 1rem; 
     }
     .contenido h3{
         color: rgb(0, 0, 0);
-        font-family: 'Nunito Sans', sans-serif;
         font-weight: lighter;
         text-align: left;
         text-transform: uppercase;
         font-size: 2rem;
         padding: 3rem;
-        padding-bottom: 10px; 
-    }
-    
+        padding-bottom: 0.625rem; 
+    }   
     .contenido p{
-        color: rgb(0, 0, 0);
-        font-family: 'Nunito Sans', sans-serif;
-        text-align: justify;
-        font-size: 0.85rem;
-        line-height: 20px;
-        padding: 3rem;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding: 1rem;
     }
+
     .contenido#instructivo{
         grid-area: instructivo;
         display: flex;
@@ -750,8 +876,73 @@
         flex-wrap: nowrap;
     
     }
+    /*contenido personalizado nosotros*/
+    .contenido#creadores{
+        grid-area: creadores;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: rgb(29, 28, 28);
+        background-image: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.5)), url("../assets/img-about-us/fondo-owner.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: rgb(255, 255, 255);
+        text-shadow: black;
+        height: 100vh;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .card#horizontal{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+    }
+    .card#horizontal img{
+        width: 45%;
+    }
+    .contenido#valores{
+        grid-area: valores;
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+    }
+    .contenido#valores h3{
+        text-align: center;
+        padding: 2rem;
+        line-height: 2rem; /*interlineado*/   
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card__text{
+        display: flex;
+        flex-direction: column;
+    }
+    #aling-nombre01{
+      text-align: right; 
+      padding: 1rem;
+    }
+    #aling-nombre02{
+        text-align: left; 
+        padding: 1rem;
+    }
+    .card img{
+        width: 20%;
+        padding: 1rem;
+    }
+    .contenido#valores h4{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1rem;
+        padding: 1rem;
+    }
     
-    /*----------------FOOTER-----------------*/
+    /*---FOOTER---*/
     .footer{
         background-color: rgb(111, 113, 114);
         grid-area: footer;
@@ -851,247 +1042,84 @@
         padding-right: 20px;
         padding-left: 20px; 
     }
-}
-
-
-/*------------------------------NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS-----------------------------*/
-#gridnosotros{
-    display: grid;
-    grid-template-areas: 
-    "header header header header"
-    "creadores creadores creadores creadores"
-    "valores valores valores valores"
-    "footer footer footer footer";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto, 2fr 2fr 1fr; 
-
-}
-.header--imgnosotros{
-    /*-----degrade imagen de fondo---*/ 
-     background-image: 
-      linear-gradient(
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.7)
-      ), url("./Imagenes/02.jpg");
-    background-size: cover;
-    background-color: black;
-    background-position: center;
-    background-repeat: no-repeat;
-    grid-area: header;
-    display: grid;
-    grid-template-areas: 
-    "logo logo nav nav"
-    "manifiesto manifiesto manifiesto manifiesto"
-    "texto texto texto texto"
-    ;
-    grid-template-columns: 25%, 25%, 25%, 25%;
-    grid-template-rows: 1rem, 1fr, 1fr;
-    align-content: stretch;
-    grid-row-gap: 1rem;
-    height: 100vh;
-    width: 100vw;
-}
-.header__titulo#manifiesto{
-    grid-area: manifiesto;
-    display: flex;
-    flex-direction: column;
-
-}
-.header__presentacion#manifiesto-text{
-    grid-area: texto;
-    justify-self: end;
-    padding-right: 36rem;
-    padding-left: 3rem;
-    padding-bottom: 15rem;
-    display: flex;
-    flex-direction: column;
-}
-.contenido img{
-    width: 30%;
-}
-.contenido#creadores{
-    grid-area: creadores;
-    display: flex;
-    flex-direction: row;
-    align-items: center;  
-}
-.contenido#valores{
-    grid-area: valores;
-}
-.contenido h3#titulo-centrado{
-    text-align: center;
-}
-/*--------------------------TIENDA TIENDA TIENDA TIENDA TIENDA TIENDA-----------------------------*/
-.header--imgtienda{
-    /*-----degrade imagen de fondo---*/ 
-    background-image: 
+        /*------------------------------NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS-----------------------------*/
+    /*#gridnosotros{
+        display: grid;
+        grid-template-areas: 
+        "header header header header"
+        "creadores creadores creadores creadores"
+        "valores valores valores valores"
+        "footer footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto, 2fr 2fr 1fr; 
+    }
+    .header--background{
+        /*-----degrade imagen de fondo---*/ 
+       /* background-image: 
         linear-gradient(
             rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.3),
-            rgba(0, 0, 0, 0.15)
-          ), url("./Imagenes/04.jpg");
-    background-size: cover;
-    background-color: black;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.main__filtros{
-    color: rgb(0, 0, 0);
-    font-family: 'Nunito Sans', sans-serif;
-    text-align: left;
-    text-transform: uppercase;
-    font-size: 1rem;
-    padding: 3rem;
-    padding-bottom: 10px;
-}
+            rgba(0, 0, 0, 0.7)
+        ), url("./Imagenes/02.jpg");
+        background-size: cover;
+        background-color: black;
+        background-position: center;
+        background-repeat: no-repeat;
+        grid-area: header;
+        display: grid;
+        grid-template-areas: 
+        "logo logo nav nav"
+        "manifiesto manifiesto manifiesto manifiesto"
+        "texto texto texto texto"
+        ;
+        grid-template-columns: 25%, 25%, 25%, 25%;
+        grid-template-rows: 1rem, 1fr, 1fr;
+        align-content: stretch;
+        grid-row-gap: 1rem;
+        height: 100vh;
+    }
 
-.formulario{
-    padding-bottom: 48px;
-    padding-left: 48px;
-}
-.formulario__casilla{
-    margin-bottom: 7px;
-}
+    .header__titulo#manifiesto{
+        grid-area: manifiesto;
+        display: flex;
+        flex-direction: column;
 
-
-
-
-
-/*--------------------------NOVEDADES BLOG NOVEDADES BLOG NOVEDADES BLOG-----------------------------*/
-.header--backgroundcolor{
-    /*-----degrade imagen de fondo---*/ 
-    background-size: cover;
-    background-color: black;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.fondonegro{
-    background-color: black; 
-}
-
-.recentpost{
-    background-image: 
-    linear-gradient(
-        rgba(48, 23, 1, 0.7),
-        rgba(48, 23, 1, 0.7),
-        rgba(48, 23, 1, 0.7)
-      ), url("./Imagenes/fondoblog.jpg");
-
-    background-position: center;
-    background-size: 50rem;
-    background-repeat: repeat;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 30px;
-    border-radius: 2rem;
-    padding: 50px;
-}
-
-.recentpost__titulo a{
-    text-decoration: none;
- }
-.recentpost__titulo h1{
-    color: white;
-    font-family: 'Nunito Sans', sans-serif; 
-    text-align: left;
-    text-transform: uppercase;
-    font-size: 3rem;
-    padding: 3rem;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.imgpost{
-    border-radius: 5rem;
-    padding: 50px;
-}
-.readmore a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-family: 'Nunito Sans', sans-serif; 
-    font-weight: bold;
-    text-align: left;
-    text-transform: uppercase;
-    font-size: 1rem;
-    padding: 3rem;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.readmore--white a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-family: 'Nunito Sans', sans-serif; 
-    font-weight: bold;
-    text-align: left;
-    text-transform: uppercase;
-    font-size: 1rem;
-    padding: 3rem;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.recentpost__text p{
-    color: rgb(255, 255, 255);
-    font-family: 'Nunito Sans', sans-serif;
-    text-align: left;
-    font-size: 0.85rem;
-    line-height: 20px;
-    padding: 3rem;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.olderpost{
-    background-size: cover;
-    background-color: rgb(255, 255, 255);
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 30px;
-    padding: 50px;
-}
-.olderpost a{
-    text-decoration: none;
-}
-.olderpost h3{
-    color: rgb(0, 0, 0);
-    font-family: 'Nunito Sans', sans-serif; 
-    text-align: left;
-    text-transform: uppercase;
-    font-size: 1rem;
-    padding: 3rem;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.olderpost__text p{
-    color: rgb(0, 0, 0);
-    font-family: 'Nunito Sans', sans-serif;
-    text-align: left;
-    font-size: 0.85rem;
-    line-height: 20px;
-    padding: 3rem;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+    }
+    .header__presentacion#manifiesto-text{
+        grid-area: texto;
+        justify-self: end;
+        padding-right: 36rem;
+        padding-left: 3rem;
+        padding-bottom: 15rem;
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .contenido#creadores{
+        grid-area: creadores;
+        display: flex;
+        flex-direction: row;
+        align-items: center;  
+    }
+    .contenido#valores{
+        grid-area: valores;
+    }
+    .contenido h3#titulo-centrado{
+        text-align: center;
+    }
 
 /*-------------------CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO--------------*/
-.header--imgcontacto{
-    /*-----degrade imagen de fondo---*/ 
-    background-image: 
-        linear-gradient(
+    .header--imgcontacto{
+        /*-----degrade imagen de fondo---*/ 
+        background-image: 
+            linear-gradient(
             rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.3),
             rgba(0, 0, 0, 0.15)
           ), url("./Imagenes/05.jpg");
-    background-size: cover;
-    background-color: black;
-    background-position: center;
-    background-repeat: no-repeat;
+        background-size: cover;
+        background-color: black;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
-
-
-
-
-
-
-
-
