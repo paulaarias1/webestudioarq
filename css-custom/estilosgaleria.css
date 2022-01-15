@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+/*---Gallery Model---*/
+.w-100x100{
+    width: 100%;
+}
+.w-30x100{
+    width: 30%;
+}
+.w-20x100{
+    width: 20%;
+}
+.w-10x100{
+    width: 10%;
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content: flex-end;
+}
+/*piso estas clases para cambiar el inherit por el nowrap  */
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-sm,
+.navbar > .container-md,
+.navbar > .container-lg,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.bg-imagen01{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0.164), url("./assets/bg-gallery.jpg")) ;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
