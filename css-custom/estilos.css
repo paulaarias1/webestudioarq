@@ -54,6 +54,9 @@
         justify-content: center; 
         padding-top: 1.563rem;  
     }
+    .header__logo img{
+        width: 20%;
+    }
     .header__nav{
         grid-area: nav;               
     }
@@ -578,6 +581,9 @@
     }
     .header__logo a{
         padding-left: 1.875rem;
+    }
+    .header__logo img{
+        width: 20%;
     }
     .header__nav{
         grid-area: nav; 
