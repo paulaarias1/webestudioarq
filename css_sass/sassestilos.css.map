@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sassestilos.scss"
+    ],
+    "names": [],
+    "file": "sassestilos.css"
+}
