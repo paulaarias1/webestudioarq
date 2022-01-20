@@ -21,12 +21,17 @@
 <div>     
     <header class="header">
         
-        <div class="header__logo" id="logo">
-                <a href="index.html"><img src="./assets/logo-bicromo.png" alt="Logo ir a home">  </a>
+        <div class="header__logo" id="logo-desk">
+            <a href="index.html"><img src="./assets/logo-bicromo.png" alt="Logo ir a home"></a>
+        </div>
+
+        <div id="logo-mobile">
+            <!--agregar enlace de logo-->
+            <a href="index.html"><img src="" alt="Logo ir a home"></a>
         </div>
 
         <nav class="header__nav">
-            <ul class="header__nav--principal">
+            <ul>
                 <li> <a href="index.html"> Home</a> </li>
                 <li> <a href="nosotros.html"> Nosotros</a> </li>
                 <li> <a href="galeria.html"> Galeria</a> </li>
@@ -35,77 +40,139 @@
             </ul>
         </nav>
 
-         <span class="header__titulo"> 
-            <h2>Entre lo que imaginaste y su habitar</h2> 
-            <h1>architecture
-            collection</h1>
-                
+        <span class="header__titulo"> 
+            <h2>Entre lo que </h2><h2 id="mobile-size">imaginaste y su habitar</h2>
+            <h1 id="subtittle-mobile"> Bienvenido a nuestra coleccion de arquitectura</h1>  
         </span>   
     
-        <p class="header__presentacion" >Un recorrido por nuestra colección de trabajos en arquitectura residencial e institucional. En este espacio vas a encontrar todos nuestros diseños entregados, nuestra forma de trabajo, obras y proyectos de inversion en los que podes ser parte.</p>
+        <p class="header__presentacion" > En este espacio vas a encontrar todos nuestros diseños entregados, nuestra forma de trabajo, obras y proyectos de inversion en los que podes ser parte.</p>
             
         <div class="header__enlaceInterno">
             <ul>
                 <li> <h4>01</h4> <a href="#01">Coleccion de diseños</a> </li>
-                <li> <h4>02</h4> <a href="#02">Proyectos de inversión</a> </li>
-                <li> <h4>03</h4><a href="#03"> Servicios</a> </li>
+                <li> <h4>02</h4> <a href="#02"></a>Servicios</li>
+                <li> <h4>03</h4><a href="#03"> Proyectos de inversión</a> </li>
             </ul>  
+        </div>
+        <div>
+            <!--boton de enlace interno para mobile-->
         </div>
     </header>
 
     <section class="contenido" id="presentacion" >
         
         <h3 id="01">coleccion de diseños</h3>
-        <div class="cuadricula">      
-           
-        </div>  
-            
+        <div class="cuadricula"> 
+            <img src="./assets/bn-1.png" alt="render residencial">
+            <img src="./assets/bn-2.png" alt="render residencial">
+            <img src="./assets/bn-3.png" alt="render residencial">  
+            <img src="./assets/bn-4.png" alt="render residencial">
+            <img src="./assets/bn-5.png" alt="render residencial">
+            <a href="./galeria.html"><img src="./assets/color6.png" alt="imagen enlace con galeria"></a>
+            <img src="./assets/bn-7.png" alt="render residencial">
+            <img src="./assets/bn-8.png" alt="render residencial">         
+        </div>        
     </section>
     
+    <section class="contenido" id="servicios" >
+            
+        <h3 id="02">Conocé todos</h3><h3>nuestros servicios</h3></p>
+        <div>
+            <div class="card" data-aos="fade-up"data-aos-duration="3000">
+                <img src="./assets/serv-idea.png" alt="icono anteproyecto">
+                <div class="card__text">
+                    <h4>diseño</h4>
+                    <h4><strong> ante-proyecto </strong></h4>
+                    <ul>
+                        <li>renders fachadas</li>
+                        <li>plantas de arquitectura espacial</li>
+                        <li>diseño para ubicacion de instalaciones</li>
+                        <li>computo materiales</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-up"data-aos-duration="3000">
+                <img src="./assets/serv-planos.png" alt="icono proyecto">
+                <div class="card__text">
+                    <h4>planos tecnicos</h4>
+                    <h4><strong> de proyecto </strong></h4>
+                    <h5>obra neva-remodelacion-relevamiento</h5>
+                    <ul>
+                        <li>renders fachadas</li>
+                        <li>plano técnico de arquitectura</li>
+                        <li>calculo de estructuras sismoresistentes</li>
+                        <li>plano tecnico de instalaciones</li>
+                        <li>gestion de aprobacion de planos</li>
+                        <li>computo materiales</li>
+                    </ul>
+                </div>
+            </div>
 
-    <section class="contenido" id="instructivo" >
-            
-        <h3 id="02">02 Cómo es la compra de mi  diseño?</h3>
-            
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, nobis dignissimos quo aspernatur perferendis maxime labore delectus hic natus sunt veniam quasi molestias aut placeat aliquam, excepturi facere minima vero.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consequatur illo sit labore, voluptatem, enim rem odit voluptatum sed dolore exercitationem, veritatis ratione hic cupiditate fugit modi explicabo velit corporis.</p>  
-             
-        <a href="tienda.html">ver tienda </a>       
+            <div class="card" data-aos="fade-up"data-aos-duration="3000">
+                <img src="./assets/serv-obra.png" alt="icono conduccion de obra">
+                <div class="card__text">
+                    <h4>conducción</h4>
+                    <h4><strong> técnica </strong></h4>
+                    <ul>
+                        <li>planos por etapa de obra</li>
+                        <li>Seguimiento de cada tarea</li>
+                        <li>certificacion de avance de obra</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-up"data-aos-duration="3000">
+                <img src="./assets/serv-deco.png" alt="icono decoracion">
+                <div class="card__text">
+                    <h4>diseño</h4>
+                    <h4><strong> de interiores </strong></h4>
+                    <ul>
+                        <li>render interior de ambientes a elegir</li>
+                        <li>planos técnicos zonales</li>
+                        <li>planos tecnicos de mobiliario</li>
+                    </ul>
+                </div>
+            </div>
+        </div>              
     </section>   
+  
+    <section class="contenido" id=proyecto-inversion>
 
-    <div class="contenido--video">
+        <h3 id="03">proyectos de inversion</h3>
+
         <iframe width="560" height="315" src="https://www.youtube.com/embed/c2pdPkrWJFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    
-    <section class="contenido--background">
-
-        <h3 id="03">Nuestros Servicios</h3>
-        <a href="novedades.html"><h5> planos y conduccion de obra</h5></a>
-        <div class="columnas">     
-            <div>
-                <a href="novedades.html"><h4>Uso de la madera en baños</h4></a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aspernatur dolorum sequi sit quasi non neque enim saepe soluta, officiis magni consequatur dolor beatae magnam, adipisci laborum maxime. Eaque, corrupti!</p>
+       
+        <div>
+            <div class="gif">
+                <img src="./assets/blindaje.gif" alt="producto de calidad">
+                <h3>producto de calidad</h3>
             </div>
-            <div>
-                <a href="novedades.html"><h4>Lámpara de luz natural</h4></a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aspernatur dolorum sequi sit quasi non neque enim saepe soluta, officiis magni consequatur dolor beatae magnam, adipisci laborum maxime. Eaque, corrupti!</p>
+            <div class="gif">
+                <img src="./assets/apreton-de-manos.gif" alt="seriedad, buenas voluntades y negocios">
+                <h3>seriedad, buenas voluntades y negocios</h3>
             </div>
-            <div>
-                <a href="novedades.html"><h4>Escritorios ocultos</h4></a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aspernatur dolorum sequi sit quasi non neque enim saepe soluta, officiis magni consequatur dolor beatae magnam, adipisci laborum maxime. Eaque, corrupti!</p>
+            <div class="gif">
+                <img src="./assets/bolsa-de-dinero.gif" alt="rentabilidad">
+                <h3>rentabilidad anual y en USD</h3>
+            </div>
+            <div class="gif">
+                <img src="./assets/calendario.gif" alt="producto de calidad">
+                <h3>plazos acordes al tipo de obra</h3>
             </div>
         </div>
-                 
+        
+        <div class="img-estilos"> 
+        <!--imagen para la version desktop y otra diferente para version mobile añadidas desde estilos-->
+            <p>
+               imagen longitudinal para desktop y diagonal para mobile
+            </p>   
+        </div>                
     </section> 
       
-    
     <footer class="footer">
         <div class="footer__logo">
-            <a href="index.html"><img src="./Imagenes/logo_white.png" width="100" alt="Logo ir a home">  </a>
+            <a href="index.html"><img src="./assets/logo-bicromo.png" width="100" alt="Logo ir a home">  </a>
         </div>
 
-        
         <div class="footer__adress">
             <p>Ciudad de Rio Cuarto</p>
             <p>Córdoba, Argentina.</p>
@@ -121,7 +188,6 @@
             </ul>
         </nav>
        
-        
         <form action="" class="footer__formulario">
 
             <label for="email">Enterate de nuevos diseños y tendencias!</label>
@@ -129,7 +195,6 @@
             <input type="submit" value="suscribirme" class="boton">
 
         </form>
-    
     </footer>
     
 </div> 

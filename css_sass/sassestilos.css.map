@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,gBAAgB;AAChB,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,GAAG,OAAO,SAAS,EAAE,KAAK;EACzD,sCAAsC;EACtC,AAAA,SAAS,CAAA;IACL,OAAO,EAAE,IAAI;IACb,mBAAmB,EACnB,oHAKe;IACf,qBAAqB,EAAE,UAAU;IACjC,kBAAkB,EAAE,8BAA8B;IAClD,eAAe,EAAE,MAAM;IACvB,YAAY,EAAE,OAAO;IACrB,MAAM,EAAE,KAAK;GACZ;;;AAUT,iBAAiB",
     "sources": [
         "../sassestilos.scss"
     ],
