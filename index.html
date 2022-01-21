@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,900;1,800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./Imagenes/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css_sass/sassestilos.css">
+    
     <link rel="stylesheet" href="./css-bt/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="./js-bt/bootstrap.min.js">
     <link rel="stylesheet" href="./js-bt/bootstrap.bundle.min.js">
@@ -18,10 +18,10 @@
 </head>
 
 <body>
-<div>     
-    <header>
+<div  id=grilla-home>     
+    <header class="header">
         <!--navbar con bootstrap-->
-        <nav class=" navbar navbar-dark navbar-expand-lg navbar-light bg-transparent">
+        <nav class="header__menu navbar navbar-dark navbar-expand-lg navbar-light bg-transparent">
             <div class="container-fluid">
               <a class="navbar-brand" href="./index.html">
                   <img class="w-25" src="./assets/letraslogo-bicromo.png" alt="logo directo a home"></a>
@@ -50,19 +50,22 @@
             </div>
         </nav>
 
-        
         <span class="header__titulo"> 
-            <h2>Entre lo que </h2><h2 id="mobile-size">imaginaste y su habitar</h2>
-            <h1 id="subtittle-mobile"> Bienvenido a nuestra coleccion de arquitectura</h1>  
-        </span>   
-    
-        <p class="header__presentacion" > En este espacio vas a encontrar todos nuestros diseños entregados, nuestra forma de trabajo, obras y proyectos de inversion en los que podes ser parte.</p>
+            <h2>Nuestra mision permanece </h2>
+            <h1>entre lo que imaginaste y su habitar</h1> 
+        </span>  
+        
+        <span class="header__presentacion">
+            <h2> Bienvenido a nuestra coleccion de arquitectura</h2>  
+            <p> En este espacio vas a encontrar todos nuestros diseños entregados, nuestra forma de trabajo, obras y proyectos de inversion en los que podes ser parte.</p>
+        </span>
             
-        <div class="header__enlaceInterno">
-            <ul>
-                <li><a href="#01"> continuar</a> </li>
-            </ul>  
+        <div class="header__enlace d-flex justify-content-center">
+            <a href="#01"> 
+                <button class="btn btn-outline-light rounded-pill" type="button">continuar</button>
+            </a> 
         </div>
+        
         
     </header>
 
@@ -70,23 +73,24 @@
         
         <h3 id="01">coleccion de diseños</h3>
         <div class="cuadricula"> 
-            <img src="./assets/bn-1.png" alt="render residencial">
-            <img src="./assets/bn-2.png" alt="render residencial">
-            <img src="./assets/bn-3.png" alt="render residencial">  
-            <img src="./assets/bn-4.png" alt="render residencial">
-            <img src="./assets/bn-5.png" alt="render residencial">
-            <a href="./galeria.html"><img src="./assets/color6.png" alt="imagen enlace con galeria"></a>
-            <img src="./assets/bn-7.png" alt="render residencial">
-            <img src="./assets/bn-8.png" alt="render residencial">         
+            <img class="feedimg" src="./assets/bn-1.png" alt="render residencial">
+            <img class="feedimg" src="./assets/bn-2.png" alt="render residencial">
+            <img class="feedimg" src="./assets/bn-3.png" alt="render residencial">  
+            <img class="feedimg" src="./assets/bn-4.png" alt="render residencial">
+            <img class="feedimg" src="./assets/bn-5.png" alt="render residencial">
+            <a href="./galeria.html"><img class="feedimg" src="./assets/color6.png" alt="imagen enlace con galeria"></a>
+            <img class="feedimg" src="./assets/bn-7.png" alt="render residencial">
+            <img class="feedimg" src="./assets/bn-8.png" alt="render residencial">         
         </div>        
     </section>
     
     <section class="contenido" id="servicios" >
             
-        <h3 id="02">Conocé todos</h3><h3>nuestros servicios</h3></p>
-        <div>
+        <h3>Conocé todos</h3>
+        <h2>nuestros servicios</h2>
+        <div class="grillacard">
             <div class="card" data-aos="fade-up"data-aos-duration="3000">
-                <img src="./assets/serv-idea.png" alt="icono anteproyecto">
+                <img class="icon" src="./assets/serv-idea.png" alt="icono anteproyecto">
                 <div class="card__text">
                     <h4>diseño</h4>
                     <h4><strong> ante-proyecto </strong></h4>
@@ -99,7 +103,7 @@
                 </div>
             </div>
             <div class="card" data-aos="fade-up"data-aos-duration="3000">
-                <img src="./assets/serv-planos.png" alt="icono proyecto">
+                <img class="icon" src="./assets/serv-planos.png" alt="icono proyecto">
                 <div class="card__text">
                     <h4>planos tecnicos</h4>
                     <h4><strong> de proyecto </strong></h4>
@@ -116,7 +120,7 @@
             </div>
 
             <div class="card" data-aos="fade-up"data-aos-duration="3000">
-                <img src="./assets/serv-obra.png" alt="icono conduccion de obra">
+                <img class="icon" src="./assets/serv-obra.png" alt="icono conduccion de obra">
                 <div class="card__text">
                     <h4>conducción</h4>
                     <h4><strong> técnica </strong></h4>
@@ -128,7 +132,7 @@
                 </div>
             </div>
             <div class="card" data-aos="fade-up"data-aos-duration="3000">
-                <img src="./assets/serv-deco.png" alt="icono decoracion">
+                <img class="icon" src="./assets/serv-deco.png" alt="icono decoracion">
                 <div class="card__text">
                     <h4>diseño</h4>
                     <h4><strong> de interiores </strong></h4>
@@ -139,29 +143,30 @@
                     </ul>
                 </div>
             </div>
-        </div>              
+        </div>  
+
     </section>   
   
-    <section class="contenido" id=inversion>
+    <section class="contenido" id="inversion">
 
         <h3 id="03">proyectos de inversion</h3>
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/c2pdPkrWJFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
        
-        <div>
+        <div class="grillagif">
             <div class="gif">
-                <img src="./assets/blindaje.gif" alt="producto de calidad">
+                <img class="icongif" src="./assets/blindaje.gif" alt="producto de calidad">
                 <h3>producto de calidad</h3>
             </div>
             <div class="gif">
-                <img src="./assets/apreton-de-manos.gif" alt="seriedad, buenas voluntades y negocios">
+                <img class="icongif" src="./assets/apreton-de-manos.gif" alt="seriedad, buenas voluntades y negocios">
                 <h3>seriedad, buenas voluntades y negocios</h3>
             </div>
-            <div class="gif">
+            <div class="icongif" class="gif">
                 <img src="./assets/bolsa-de-dinero.gif" alt="rentabilidad">
                 <h3>rentabilidad anual y en USD</h3>
             </div>
-            <div class="gif">
+            <div class="icongif" class="gif">
                 <img src="./assets/calendario.gif" alt="producto de calidad">
                 <h3>plazos acordes al tipo de obra</h3>
             </div>
@@ -177,7 +182,7 @@
       
     <footer class="footer">
         <div class="footer__logo">
-            <a href="index.html"><img src="./assets/logo-bicromo.png" width="100" alt="Logo ir a home">  </a>
+            <a href="index.html"><img src="./assets/letraslogo-bicromo.png" alt="Logo ir a home">  </a>
         </div>
 
         <div class="footer__adress">
@@ -195,13 +200,6 @@
             </ul>
         </nav>
        
-        <form action="" class="footer__formulario">
-
-            <label for="email">Enterate de nuevos diseños y tendencias!</label>
-            <input type="email" name="email" id="email" placeholder="ingresa tu correo" required>
-            <input type="submit" value="suscribirme" class="boton">
-
-        </form>
     </footer>
     
 </div> 

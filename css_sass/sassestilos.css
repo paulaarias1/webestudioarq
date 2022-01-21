@@ -5,17 +5,309 @@
 }
 
 /*VISTA MOBILE*/
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   /*ESTRUCTURA PAGINA COMPLETA DE HOME*/
-  header {
+  #grilla-home {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "header header"
+ "presentacion presentacion"
+ "servicios servicios"
+ "inversion inversion"
+ "footer footer";
+    -ms-grid-rows: 2fr auto 2fr 2fr auto;
+        grid-template-rows: 2fr auto 2fr 2fr auto;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    grid-column-gap: 0.01rem;
+    grid-row-gap: 0.01rem;
+    height: 100vh;
+  }
+  #grilla-home .header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: header;
     background-color: black;
+    background-image: url("./assets/bg-headerdark.jpg");
+    /*la imagen de fondo no aparece y no encuentro el error*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /*estructura grid en header*/
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "menu menu"
+      "titulo titulo"
+      "texto texto"
+      "enlace enlace";
+    -ms-grid-columns: 1fr, 1fr;
+        grid-template-columns: 1fr, 1fr;
+    -ms-grid-rows: 1fr, 1fr, 50%, 15%;
+        grid-template-rows: 1fr, 1fr, 50%, 15%;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+    grid-row-gap: 0.01rem;
+  }
+  #grilla-home .header .header__menu {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: menu;
+  }
+  #grilla-home .header .header__titulo {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: titulo;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: end;
+        align-self: end;
+    /*--propiedades texto--*/
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: left;
+    padding: 6rem;
+  }
+  #grilla-home .header .header__titulo h1 {
+    font-weight: 300;
+    font-size: 3rem;
+    text-transform: lowercase;
+    line-height: 2.5rem;
+  }
+  #grilla-home .header .header__titulo h2 {
+    text-transform: lowercase;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  #grilla-home .header .header_presentacion {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: texto;
+  }
+  #grilla-home .header .header_presentacion p {
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    font-size: 0.7rem;
+    line-height: 20px;
+    padding-right: 0.5rem;
+  }
+  #grilla-home .header .header__enlace {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: enlace;
+  }
+  #grilla-home .contenido#presentacion {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: presentacion;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 0.1rem;
+    height: 100vh;
+  }
+  #grilla-home .contenido#presentacion .cuadricula {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+  }
+  #grilla-home .contenido#presentacion .cuadricula .feedimg {
+    width: 100%;
+  }
+  #grilla-home .contenido#servicios {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: servicios;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #grilla-home .contenido#servicios .grillacard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #grilla-home .contenido#servicios .grillacard .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem;
+  }
+  #grilla-home .contenido#servicios .grillacard .card .icon {
+    width: 20%;
+  }
+  #grilla-home .contenido#inversion {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: inversion;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #grilla-home .contenido#inversion .grillagif {
+    display: -ms-grid;
+    display: grid;
+    grid-row: auto auto;
+    grid-column: auto auto;
+  }
+  #grilla-home .contenido#inversion .grillagif .icongif {
+    width: 2%;
+  }
+  #grilla-home .footer {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: footer;
+    background-color: black;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "logo logo"
+ "lugar lugar"
+ "nav nav"
+ "form form";
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto, auto, auto auto;
+        grid-template-rows: auto, auto, auto auto;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
+  }
+  #grilla-home .footer .footer__logo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: logo;
+  }
+  #grilla-home .footer .footer__logo a {
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #grilla-home .footer .footer__logo a img {
+    width: 30%;
+  }
+  #grilla-home .footer .footer__adress {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: lugar;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #grilla-home .footer .footer__adress p {
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    font-size: 0.7rem;
+    line-height: 20px;
+    padding-right: 0.5rem;
+  }
+  #grilla-home .footer .footer__nav {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: nav;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #grilla-home .footer .footer__nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style-type: none;
+  }
+  #grilla-home .footer .footer__nav ul li {
+    line-height: 1rem;
+    text-align: center;
+  }
+  #grilla-home .footer .footer__nav ul li a {
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    color: white;
+    padding: 3rem;
+    font-family: 'Nunito Sans', sans-serif;
   }
 }
 
 /*VISTA DESKTOP*/
-@media only screen and (min-width: 768px) {
-  header {
-    background-color: black;
-  }
-}
 /*# sourceMappingURL=sassestilos.css.map */
