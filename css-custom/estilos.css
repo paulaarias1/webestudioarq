@@ -34,8 +34,8 @@
         background-size: cover;
         background-color: black;
         background-position: bottom;
-        background-repeat: no-repeat;
-        /*GRID EN HEADER*/
+        background-repeat: no-repeat; 
+        /*GRID EN HEADER*/ 
         display: grid;
         grid-template-areas:
         "logo nav"
@@ -53,10 +53,10 @@
         display: flex;
         justify-content: center; 
         padding-top: 1.563rem;  
-    }
+    } 
     .header__logo img{
-        width: 50%;
-    }
+        width: 50%; 
+    } */
     .header__nav{
         grid-area: nav;               
     }
