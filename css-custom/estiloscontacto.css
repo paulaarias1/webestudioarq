@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.contacto{
+    background: url("../assets/bg-headerdark.jpg")no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+.card{
+    background-color: rgba(0, 0, 0, 0.459);
+}
+.effect-1{
+    border: 0;
+    outline: none;
+    width:100%;
+    padding: 0.5rem 0;
+    border-bottom: 0.05rem solid gray;
+    background: transparent;
+}
+.effect-1 ~ .focus-border{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0.01rem;
+    background-color: tomato;
+    transition: 0.4s;
+}
+.effect-1:focus ~ .focus-border{
+    width: 100%;
+    transition: 0.4s;
+    left: 0;
+}
+.btn1{
+    background-color: tomato;
+    color: white;
+}
+
