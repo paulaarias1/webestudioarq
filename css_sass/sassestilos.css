@@ -10,11 +10,7 @@
   #grilla-home {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "header header"
- "presentacion presentacion"
- "servicios servicios"
- "inversion inversion"
- "footer footer";
+        grid-template-areas: "header header" "presentacion presentacion" "servicios servicios" "inversion inversion" "footer footer";
     -ms-grid-rows: 2fr auto 2fr 2fr auto;
         grid-template-rows: 2fr auto 2fr 2fr auto;
     -ms-grid-columns: auto auto;
@@ -28,20 +24,14 @@
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: header;
-    background-color: black;
-    background-image: url("./assets/bg-headerdark.jpg");
-    /*la imagen de fondo no aparece y no encuentro el error*/
+    background: url("./assets/bg-headerdark.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     height: 100vh;
     /*estructura grid en header*/
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "menu menu"
-      "titulo titulo"
-      "texto texto"
-      "enlace enlace";
+        grid-template-areas: "menu menu" "titulo titulo" "texto texto" "enlace enlace";
     -ms-grid-columns: 1fr, 1fr;
         grid-template-columns: 1fr, 1fr;
     -ms-grid-rows: 1fr, 1fr, 50%, 15%;
@@ -215,10 +205,7 @@
     background-color: black;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "logo logo"
- "lugar lugar"
- "nav nav"
- "form form";
+        grid-template-areas: "logo logo" "lugar lugar" "nav nav" "form form";
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: auto, auto, auto auto;
