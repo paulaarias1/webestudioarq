@@ -8,20 +8,8 @@
 /*AJUSTES PERSONALIZADOS SOBRE BOOTSTRAP*/
 
 
-
-/*--NAVBAR--*/
-.navbar {
-    flex-wrap: nowrap;
-}
-.navbar-expand-lg .navbar-collapse {
-    justify-content: flex-end;
-}
-.navbar-nav {
-    align-items: flex-end;
-}
-
-
-/*--CONTENIDO HEADER INDEX--*/
+/*--HOME--*//*--HOME--*//*--HOME--*/
+/*-- HEADER HOME--*/
 .encabezado{
     background-image: 
     linear-gradient(
@@ -34,7 +22,18 @@
     background-size: cover;
     height: 100vh;
 }
+/*--NAVBAR--*/
+.navbar {
+    flex-wrap: nowrap;
+}
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+.navbar-nav {
+    align-items: flex-end;
+}
 
+/*--CONTENIDO HEADER HOME--*/
 .encabezado__titulo{
     color: white;
     font-family: 'Nunito Sans', sans-serif;
@@ -78,8 +77,10 @@
     }   
 }
 
-/*--CONTENIDO SECTION-FEED INDEX--*/
 
+/*--SECTION HOME--*/
+
+/*--CONTENIDO-FEED HOME--*/
 .contenido-feed{
     background-image: 
     linear-gradient(
@@ -91,9 +92,6 @@
     background-position: top;
     background-size: cover;
     height: 100vh;
-
-    
-
     .feedimg{
         width: 95%;
     }
@@ -119,10 +117,7 @@
     }
 }
 
-
-
-
-/*--CONTENIDO SECTION-SERVICIOS INDEX--*/
+/*--CONTENIDO-SERVICIOS HOME --*/
 .titulo{
     font-family: 'Nunito Sans', sans-serif;
     text-align: center;
@@ -138,12 +133,9 @@
         font-size: 1.5rem;
         font-weight: 600;
         color: tomato;
-        text-transform: uppercase;
-        
+        text-transform: uppercase;   
     }
-
 }
-
 .card-1{
     text-align: center;
     .icon{
@@ -182,25 +174,18 @@
         li{
             line-height: 1.5rem;
             font-size: 0.8rem;
-            font-weight: 300;
-            
-            text-transform: uppercase;
-            
+            font-weight: 300;  
+            text-transform: uppercase;   
         }
-    }
-         
+    }       
 }
-/*--CONTENIDO SECTION-INVERSION INDEX--*/
+/*--CONTENIDO-INVERSION HOME--*/
 .contenido-inv{
-    
-
     .img-inv{
         max-width: 100%;
-        max-height: auto;
-        
+        max-height: auto;   
     }
 }
-
 .card-2{
     border-radius: 0.5rem;
     background-color: rgb(255, 255, 255);
@@ -210,10 +195,8 @@
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    
     .icongif{
         width: 30%;
-    
     }
     h3{
         text-transform: uppercase;
@@ -223,9 +206,9 @@
         padding-top: 1rem;
         padding-left: 1rem;
         padding-right: 1rem;
-
     }
 }
+
 /*--FOOTER--*/
 .titulo-pie{
     font-size: 1.2rem;
@@ -235,8 +218,28 @@
 .img-logo{
     width: 60%;
 }
+/*-------------------------------------------------------------------------*/
 
-/*--CONTENIDO HEADER GALERIA--*/
+/*--NOSOTROS--*//*--NOSOTROS--*//*--NOSOTROS--*/
+
+/*-------------------------------------------------------------------------*/
+/*--GALERIA--*//*--GALERIA--*//*--GALERIA--*/
+.bg-imagen01{
+    background-image: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.9)
+        ), url(../assets/bg-gallery.jpg);
+    background-size: cover;
+    background-color: black;
+    background-position: initial;
+    background-repeat: no-repeat;
+    height: 100vh; 
+}
+
+
+/*-- HEADER GALERIA--*/
 .w-100x100{
     width: 100%;
 }
@@ -266,26 +269,54 @@
   justify-content: space-between;
 }
 
-.bg-imagen01{
+/*-------------------------------------------------------------------------*/
+
+/*--PRESUPUESTOS--*//*--PRESUPUESTOS--*//*--PRESUPUESTOS--*/
+.bg-imagen02{
     background-image: 
         linear-gradient(
           rgba(0, 0, 0, 0.8),
           rgba(0, 0, 0, 0.6),
           rgba(0, 0, 0, 0.9)
-        ), url(../assets/bg-gallery.jpg);
+        ), url(../assets/bg-headerligth.jpg);
     background-size: cover;
     background-color: black;
-    background-position: initial;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; 
+    height: 100vh;
+
 }
-/*---estilos personalizados de contacto---*/
+.titulo-pres{
+    h2{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.7rem; 
+        font-weight: 300;  
+    }
+    h3{
+        text-align: center;
+        font-size: 1rem; 
+        color: tomato; 
+
+    }  
+}
+h4{ text-align: left;
+    text-transform: capitalize;
+    font-size: 1.2rem; 
+    font-weight: 300;
+        
+}
+
+/*-------------------------------------------------------------------------*/
+
+/*--CONTACTO--*//*--CONTACTO--*//*--CONTACTO--*/
 .contacto{
     background: url("../assets/bg-headerdark.jpg")no-repeat;
     background-size: cover;
     height: 100vh;
     background-position: center;
 }
+/*--CONTENIDO SECTION CONTACTO--*/
 .card{
     background-color: rgba(0, 0, 0, 0.459);
 }
@@ -315,3 +346,4 @@
     background-color: tomato;
     color: white;
 }
+
