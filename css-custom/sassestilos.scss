@@ -22,16 +22,8 @@
     background-size: cover;
     height: 100vh;
 }
+
 /*--NAVBAR--*/
-.navbar {
-    flex-wrap: nowrap;
-}
-.navbar-expand-lg .navbar-collapse {
-    justify-content: flex-end;
-}
-.navbar-nav {
-    align-items: flex-end;
-}
 
 /*--CONTENIDO HEADER HOME--*/
 .encabezado__titulo{
@@ -89,11 +81,11 @@
       rgba(0, 0, 0, 0.7)
     ), url(../assets/img-about-us/fondo-owner.png);
     background-color: rgb(0, 0, 0);
-    background-position: top;
+    background-position: center;
     background-size: cover;
     height: 100vh;
     .feedimg{
-        width: 95%;
+        width: 100%;
     }
     .btn-img{
         position: relative;
@@ -118,6 +110,14 @@
 }
 
 /*--CONTENIDO-SERVICIOS HOME --*/
+.contenido-serv{
+    background-color: rgb(255, 255, 255);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+
+}
 .titulo{
     font-family: 'Nunito Sans', sans-serif;
     text-align: center;
@@ -181,6 +181,11 @@
 }
 /*--CONTENIDO-INVERSION HOME--*/
 .contenido-inv{
+    background-color: rgb(255, 255, 255);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
     .img-inv{
         max-width: 100%;
         max-height: auto;   
@@ -251,22 +256,6 @@
 }
 .w-10x100{
     width: 10%;
-}
-.navbar-expand-lg .navbar-collapse{
-    justify-content: flex-end;
-}
-/*piso estas clases de BT para cambiar el inherit por el nowrap*/
-.navbar > .container,
-.navbar > .container-fluid,
-.navbar > .container-sm,
-.navbar > .container-md,
-.navbar > .container-lg,
-.navbar > .container-xl,
-.navbar > .container-xxl {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
 }
 
 /*-------------------------------------------------------------------------*/
