@@ -80,25 +80,29 @@
 }
 
 /*--CONTENIDO SECTION-FEED INDEX--*/
-.feed {
+.contenido-feed {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url(../assets/img-about-us/fondo-owner.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(../assets/img-about-us/fondo-owner.png);
   background-color: black;
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
 }
 
-.feedimg {
-  width: 100%;
+.contenido-feed .feedimg {
+  width: 95%;
 }
 
-.btn-img {
+.contenido-feed .btn-img {
   position: relative;
   display: inline-block;
-  text-align: center;
 }
 
-.btn-img a {
+.contenido-feed .btn-img a {
   text-decoration: none;
 }
 
-.btn-img a h4 {
+.contenido-feed .btn-img a h4 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -109,6 +113,7 @@
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 /*--CONTENIDO SECTION-SERVICIOS INDEX--*/
@@ -179,15 +184,6 @@
 }
 
 /*--CONTENIDO SECTION-INVERSION INDEX--*/
-.contenido-inv {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url(../assets/bg-sky.jpeg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(../assets/bg-sky.jpeg);
-  background-color: black;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-}
-
 .contenido-inv .img-inv {
   max-width: 100%;
   max-height: auto;

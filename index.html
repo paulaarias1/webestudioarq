@@ -19,164 +19,184 @@
     <link rel="stylesheet" href="./js-bt/bootstrap.bundle.min.js">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css_sass/sassestilos.css">
+    <!-- Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <div>
-        <header class="row encabezado">
+    
+    <header class="encabezado">
+        <div class="container">
             <!--navbar con bootstrap-->
-            <nav class="header__menu navbar navbar-dark navbar-expand-lg navbar-light bg-transparent">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="./index.html">
-                        <img class="w-25" src="./assets/logo-bicromo.png" alt="logo directo a home"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav" >
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./galeria.html">Galeria</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./presupuestos.html">Presupuestos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contacto.html">Contacto</a>
-                            </li>
-                        </ul>
+                <nav class="row header__menu navbar navbar-dark navbar-expand-lg navbar-light bg-transparent">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="./index.html">
+                            <img class="w-25" src="./assets/logo-bicromo.png" alt="logo directo a home"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav" >
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./galeria.html">Galeria</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./presupuestos.html">Presupuestos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
             <!--grilla encabezado con bootstrap-->
+                
+            <div class="row">
+                        <span class="encabezado__titulo col-lg-6 col-sm-12"> 
+                            <h2>Nuestra mision</h2>
+                            <h1>es conducir aquello que imaginaste, hasta su habitar</h1> 
+                        </span>
+            </div>
+            <div class="row">
+                        <span class="encabezado__presentacion col-sm-12  col-lg-6 offset-lg-6  ">
+                            <h3> Bienvenido a nuestra coleccion de arquitectura</h3>  
+                            <p> En este espacio vas a encontrar todos nuestros diseños entregados, nuestra forma de trabajo, obras y proyectos de inversion en los que podes ser parte.</p>
+                        </span>
+            </div>
+            <div class="row">
+                        <a href="#01"> 
+                            <button class="btn btn-outline-light rounded-pill col-lg-2 col-sm-4 offset-lg-6 offset-sm-4" type="button">continuar</button>
+                        </a> 
+            </div>
+                
+
+            
+            
+    </header>
+
+    <section class="contenido-feed" id="01">
+            <div class="container-fluid py-5">
+                <div class="row py-5">
+                    <div class="col-sm-6 col-lg-3">
+                        <img class="feedimg" src="./assets/bn-1.png" alt="render residencial">
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <img class="feedimg" src="./assets/bn-2.png" alt="render residencial">   
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <img class="feedimg" src="./assets/bn-3.png" alt="render residencial">
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <img class="feedimg" src="./assets/bn-4.png" alt="render residencial">
+                    </div>
+                </div>
+                
+    
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3">
+                        <img class="feedimg" src="./assets/bn-5.png" alt="render residencial">
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <img class="feedimg" src="./assets/bn-7.png" alt="render residencial">   
+                    </div>
+                    <div class="col-sm-6 col-lg-3 btn-img">
+                        <a class="text-reset" href="./galeria.html"><h4>galeria</h4><img class="feedimg" src="./assets/color6.png" alt="imagen enlace con galeria"></a>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <img class="feedimg" src="./assets/bn-8.png" alt="render residencial">
+                    </div>
+                </div>        
+            </div>  
+    </section>
+
+    <section class="contenido-serv">
+            <div class="container-fluid">
+                <div class="titulo row">
+                    <h2>nuestros servicios</h2>
+                </div>   
+                
+                <div class="row justify-content-lg-around justify-content-sm-around">
+                    <div class="card-1 col-lg-3 col-sm-auto" data-aos="fade-up"data-aos-duration="3000">
+                        <img class="icon" src="./assets/serv-idea.png" alt="icono anteproyecto">
+                        <div class="card__text">
+                            <h4>diseño</h4>
+                            <h5> ante-proyecto </h5>
+                            <ul>
+                                <li>renders fachadas</li>
+                                <li>plantas de arquitectura espacial</li>
+                                <li>diseño para ubicacion de instalaciones</li>
+                                <li>computo materiales</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-1 col-lg-3 col-sm-auto" data-aos="fade-up"data-aos-duration="3000">
+                        <img class="icon" src="./assets/serv-planos.png" alt="icono proyecto">
+                        <div class="card__text">
+                            <h4>planos tecnicos</h4>
+                            <h5>de proyecto</h5>
+                            <h6>obra nueva-remodelacion-relevamiento</h6>
+                            <ul>
+                                <li>renders fachadas</li>
+                                <li>plano técnico de arquitectura</li>
+                                <li>calculo de estructuras sismoresistentes</li>
+                                <li>plano tecnico de instalaciones</li>
+                                <li>gestion de aprobacion de planos</li>
+                                <li>computo materiales</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="card-1 col-lg-3 col-sm-auto" data-aos="fade-up"data-aos-duration="3000">
+                        <img class="icon" src="./assets/serv-obra.png" alt="icono conduccion de obra">
+                        <div class="card__text">
+                            <h4>conducción</h4>
+                            <h5> técnica </h5>
+                            <ul>
+                                <li>planos por etapa de obra</li>
+                                <li>Seguimiento de cada tarea</li>
+                                <li>certificacion de avance de obra</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-1 col-lg-3 col-sm-auto" data-aos="fade-up"data-aos-duration="3000">
+                        <img class="icon" src="./assets/serv-deco.png" alt="icono decoracion">
+                        <div class="card__text">
+                            <h4>diseño</h4>
+                            <h5> de interiores </h5>
+                            <ul>
+                                <li>render interior de ambientes a elegir</li>
+                                <li>planos técnicos zonales</li>
+                                <li>planos tecnicos de mobiliario</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+            
+    </section>
+
+    <section class="contenido-inv">
             <div class="container">
-                <div class="row">
-                    <span class="encabezado__titulo col-lg-6 col-sm-12"> 
-                        <h2>Nuestra mision</h2>
-                        <h1>es conducir aquello que imaginaste, hasta su habitar</h1> 
-                    </span>
+                <div class="titulo row d-flex justify-content-center">
+                    <h3>proyectos de inversion</h3>
                 </div>
-                <div class="row">
-                    <span class="encabezado__presentacion col-sm-12  col-lg-6 offset-lg-6  ">
-                        <h3> Bienvenido a nuestra coleccion de arquitectura</h3>  
-                        <p> En este espacio vas a encontrar todos nuestros diseños entregados, nuestra forma de trabajo, obras y proyectos de inversion en los que podes ser parte.</p>
-                    </span>
+    
+                <div class="row py-3 d-flex justify-content-center">
+                    <iframe class="col-10" width="560" height="315" src="https://www.youtube.com/embed/c2pdPkrWJFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
                 </div>
-                <div class="row">
-                    <a href="#01"> 
-                        <button class="btn btn-outline-light rounded-pill col-lg-2 col-sm-4 offset-lg-6 offset-sm-4" type="button">continuar</button>
-                    </a> 
-                </div>
-            </div>
-        </header>
 
-        <section class="feed" id="01">
-            <div class="row">
-                <div class="col-sm-6 col-lg-3">
-                    <img class="feedimg" src="./assets/bn-1.png" alt="render residencial">
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <img class="feedimg" src="./assets/bn-2.png" alt="render residencial">   
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <img class="feedimg" src="./assets/bn-3.png" alt="render residencial">
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <img class="feedimg" src="./assets/bn-4.png" alt="render residencial">
-                </div>
             </div>
             
-
-            <div class="row">
-                <div class="col-sm-6 col-lg-3">
-                    <img class="feedimg" src="./assets/bn-5.png" alt="render residencial">
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <img class="feedimg" src="./assets/bn-7.png" alt="render residencial">   
-                </div>
-                <div class="col-sm-6 col-lg-3 btn-img">
-                    <a href="./galeria.html"><h4>galeria</h4><img class="feedimg" src="./assets/color6.png" alt="imagen enlace con galeria"></a>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <img class="feedimg" src="./assets/bn-8.png" alt="render residencial">
-                </div>
-            </div>        
-        </section>
-
-        <section class="row">
-            <div class="titulo d-flex ">
-                <h3>Estos son</h3><h2>nuestros servicios</h2>
-            </div>   
             
-            <div class="row justify-content-lg-around justify-content-sm-around">
-                <div class="card-1 col-lg-3 col-sm-auto" data-aos="fade-up"data-aos-duration="3000">
-                    <img class="icon" src="./assets/serv-idea.png" alt="icono anteproyecto">
-                    <div class="card__text">
-                        <h4>diseño</h4>
-                        <h5> ante-proyecto </h5>
-                        <ul>
-                            <li>renders fachadas</li>
-                            <li>plantas de arquitectura espacial</li>
-                            <li>diseño para ubicacion de instalaciones</li>
-                            <li>computo materiales</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card-1 col-lg-3 col-sm-auto" data-aos="fade-up"data-aos-duration="3000">
-                    <img class="icon" src="./assets/serv-planos.png" alt="icono proyecto">
-                    <div class="card__text">
-                        <h4>planos tecnicos</h4>
-                        <h5>de proyecto</h5>
-                        <h6>obra nueva-remodelacion-relevamiento</h6>
-                        <ul>
-                            <li>renders fachadas</li>
-                            <li>plano técnico de arquitectura</li>
-                            <li>calculo de estructuras sismoresistentes</li>
-                            <li>plano tecnico de instalaciones</li>
-                            <li>gestion de aprobacion de planos</li>
-                            <li>computo materiales</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card-1 col-lg-3 col-sm-auto" data-aos="fade-up"data-aos-duration="3000">
-                    <img class="icon" src="./assets/serv-obra.png" alt="icono conduccion de obra">
-                    <div class="card__text">
-                        <h4>conducción</h4>
-                        <h5> técnica </h5>
-                        <ul>
-                            <li>planos por etapa de obra</li>
-                            <li>Seguimiento de cada tarea</li>
-                            <li>certificacion de avance de obra</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card-1 col-lg-3 col-sm-auto" data-aos="fade-up"data-aos-duration="3000">
-                    <img class="icon" src="./assets/serv-deco.png" alt="icono decoracion">
-                    <div class="card__text">
-                        <h4>diseño</h4>
-                        <h5> de interiores </h5>
-                        <ul>
-                            <li>render interior de ambientes a elegir</li>
-                            <li>planos técnicos zonales</li>
-                            <li>planos tecnicos de mobiliario</li>
-                        </ul>
-                    </div>
-                </div>
-            </div> 
-        </section>
-
-        <section class="contenido-inv row">
-            <div class="titulo">
-                <h3>proyectos de inversion</h3>
-            </div>
-
-            <iframe class="col-12" width="560" height="315" src="https://www.youtube.com/embed/c2pdPkrWJFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             
             <div >
@@ -202,16 +222,16 @@
             </div>
             
              
-        </section>
+    </section>
 
-        <footer class="bg-dark text-white py-4">
+    <footer class="bg-dark text-white py-4">
             <div class="container">
                 <nav class="row">
                     <!-- logo -->
-                    <a href="./index.html" class="col-3 align-self-center"><img src="./assets/logo-bicromo.png" alt="logo estudio bicromo" class="img-logo py-2 ">
+                    <a href="./index.html" class="col-12 col-md-3 align-self-center"><img src="./assets/logo-bicromo.png" alt="logo estudio bicromo" class="img-logo py-2 ">
                     </a>
                     <!-- menu -->
-                    <ul class="col-3 list-unstyled">
+                    <ul class="col-12 col-md-3 list-unstyled">
                         <li class="titulo-pie text-uppercase py-2">menu</li>
                         <li class="text-uppercase"><a href="./index.html" class="text-reset"></a> inicio</li>
                         <li class="text-uppercase"><a href="./nosotros.html" class="text-reset"></a> nosotros</li>
@@ -220,7 +240,7 @@
                         <li class="text-uppercase"><a href="./contacto.html" class="text-reset"></a> contacto</li>
                     </ul>
                     <!-- contacto -->
-                    <ul class="col-3 list-unstyled">
+                    <ul class=" col-12 col-md-3 list-unstyled">
                         <li class="titulo-pie text-uppercase py-2">contacto</li>
                         <li> +54 (358) 5149815</li>
                         <li> +54 (358) 4197363</li>
@@ -228,7 +248,7 @@
                         <li> Argentina</li>  
                     </ul>
                     <!-- redes -->
-                    <ul class="col-3 list-unstyled">
+                    <ul class="col-12 col-md-3 list-unstyled">
                         <li class="titulo-pie text-uppercase py-2">comunidad</li>
                         <li> 
 
@@ -242,11 +262,15 @@
                     </ul>
                 </nav>
             </div>   
-        </footer>   
-    </div>
+    </footer>   
+   
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> 
+    <!-- Js animaciones -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    
 </body>
 </html>
