@@ -21,64 +21,154 @@
     
 </head>
 <body>
-
-    <section class="contacto">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-6 mx-auto">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="encabezado text-center text-white">
-                                        <h2>Escribinos! te leemos...</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form p-3">
-                                <div class="form-row my-5">
-                                    <div class="col-lg-12">
-                                        <input type="text" class="effect-1 text-white" placeholder="Nombre"><span class="focus-border"></span> 
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <input type="text" class="effect-1 text-white" placeholder="Apellido">
-                                        <span class="focus-border"></span>
-                                    </div>
-                                </div>
-                                <div class="form-row pb-5">
-                                    <div class="col-lg-12">
-                                        <input type="text" class="effect-1 text-white" placeholder="Email">
-                                        <span class="focus-border"></span>
-                                    </div>
-                                </div>
-                                <div class="form-row pt-5">
-                                    <div class="col-lg-12">
-                                        <input type="text" class="effect-1 text-white" placeholder="sugerencias, comentarios aqui">
-                                        <span class="focus-border"></span>
-                                    </div>
-                                </div>
-                                <div class="form-row ">
-                                    <div class="col-lg-6 pt-3" >
-                                        <p class="text-white"><input type="checkbox"> No soy un robot</p>  
-                                    </div>
-                                    <div class="offset-5 col-lg-4">
-                                        <button class="btn rounded-pill btn1 "> Enviar</button>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
+    <header class="encabezado">
+        <div class="container">
+        <!--navbar con bootstrap-->
+            <nav class="row header__menu navbar navbar-dark navbar-expand-lg navbar-light bg-transparent">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">
+                        <img class="w-25" src="./assets/logo-bicromo.png" alt="logo directo a home">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav" >
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./galeria.html">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./presupuestos.html">Presupuestos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
                     </div>
-
                 </div>
-
+            </nav>
+            
+            <div class="container py-5">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2>Escribinos! te leemos...</h2>   
+                        </div>
+                        <div class="col-lg-6 ">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="titulo-contacto text-center text-white">
+                                                <h2>Escribinos! te leemos...</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form p-3">
+                                        <div class="form-row my-5">
+                                            <div class="col-lg-12">
+                                                <input type="text" class="effect-1 text-white" placeholder="Nombre"><span class="focus-border"></span> 
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <input type="text" class="effect-1 text-white" placeholder="Apellido">
+                                                <span class="focus-border"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-row pb-5">
+                                            <div class="col-lg-12">
+                                                <input type="text" class="effect-1 text-white" placeholder="Email">
+                                                <span class="focus-border"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-row pt-5">
+                                            <div class="col-lg-12">
+                                                <input type="text" class="effect-1 text-white" placeholder="sugerencias, comentarios aqui">
+                                                <span class="focus-border"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-row ">
+                                            <div class="col-lg-6 pt-3" >
+                                                <p class="text-white"><input type="checkbox"> No soy un robot</p>  
+                                            </div>
+                                            <div class="offset-5 col-lg-4">
+                                                <button class="btn rounded-pill btn1 "> Enviar</button>
+        
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                        </div>
+        
+                    </div>
+        
             </div>
+        
+          
 
-        </div>
 
-    </section>
+
+
+
+
+
+
+
+
+
+
+
+        </div>         
+    </header>
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <nav class="row">
+                <!-- logo -->
+                <a href="./index.html" class="col-12 col-md-3 align-self-center"><img src="./assets/logo-bicromo.png" alt="logo estudio bicromo" class="img-logo py-2 ">
+                </a>
+                <!-- menu -->
+                <ul class="col-12 col-md-3 list-unstyled">
+                    <li class="titulo-pie text-uppercase py-2">menu</li>
+                    <li class="text-uppercase"><a href="./index.html" class="text-reset"></a> inicio</li>
+                    <li class="text-uppercase"><a href="./nosotros.html" class="text-reset"></a> nosotros</li>
+                    <li class="text-uppercase"><a href="./galeria.html" class="text-reset "></a> galeria</li>
+                    <li class="text-uppercase"><a href="./presupuestos.html" class="text-reset "></a> presupuestos</li>
+                    <li class="text-uppercase"><a href="./contacto.html" class="text-reset"></a> contacto</li>
+                </ul>
+                <!-- contacto -->
+                <ul class=" col-12 col-md-3 list-unstyled">
+                    <li class="titulo-pie text-uppercase py-2">contacto</li>
+                    <li> +54 (358) 5149815</li>
+                    <li> +54 (358) 4197363</li>
+                    <li> Ciudad de Rio Cuarto, Pcia. de Córdoba</li>
+                    <li> Argentina</li>  
+                </ul>
+                <!-- redes -->
+                <ul class="col-12 col-md-3 list-unstyled">
+                    <li class="titulo-pie text-uppercase py-2">comunidad</li>
+                    <li> 
+
+                        <a href="" class="text-reset"> <img class="icon-social px-2" src="./assets/bxl-facebook-circle.png" alt="icono facebook"></a>
+
+                        <a href="" class="text-reset"> <img class="icon-social px-2" src="./assets/bxl-instagram-alt.png" alt="icono facebook"></a>
+
+                        <a href="" class="text-reset"> <img class="icon-social px-2" src="./assets/bx-play-circle.png" alt="icono facebook"></a>  
+
+                    </li>   
+                </ul>
+            </nav>
+        </div>   
+    </footer>   
+
+   
       
 
 
