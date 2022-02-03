@@ -104,80 +104,6 @@
   text-align: center;
 }
 
-/*--CONTENIDO-SERVICIOS HOME --*/
-.contenido-serv {
-  background-color: white;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-}
-
-.titulo {
-  font-family: 'Nunito Sans', sans-serif;
-  text-align: center;
-  padding-top: 4rem;
-}
-
-.titulo h3 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: tomato;
-  text-transform: uppercase;
-}
-
-.titulo h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: tomato;
-  text-transform: uppercase;
-}
-
-.card-1 {
-  text-align: center;
-}
-
-.card-1 .icon {
-  width: 20%;
-  padding-top: 3rem;
-}
-
-.card-1 .card__text {
-  color: #3a3939;
-  font-family: 'Nunito Sans', sans-serif;
-  padding-top: 2rem;
-  text-align: center;
-}
-
-.card-1 h4 {
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.card-1 h5 {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1rem;
-  color: tomato;
-}
-
-.card-1 h6 {
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 0.7rem;
-  color: tomato;
-}
-
-.card-1 ul {
-  list-style-type: none;
-}
-
-.card-1 ul li {
-  line-height: 1.5rem;
-  font-size: 0.8rem;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
 /*--CONTENIDO-INVERSION HOME--*/
 .contenido-inv {
   background-color: white;
@@ -263,39 +189,6 @@
 }
 
 /*-------------------------------------------------------------------------*/
-/*--PRESUPUESTOS--*/
-/*--PRESUPUESTOS--*/
-/*--PRESUPUESTOS--*/
-.bg-imagen02 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url(../assets/bg-headerligth.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(../assets/bg-headerligth.jpg);
-  background-size: cover;
-  background-color: black;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-}
-
-.titulo-pres h2 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1.7rem;
-  font-weight: 300;
-}
-
-.titulo-pres h3 {
-  text-align: center;
-  font-size: 1rem;
-  color: tomato;
-}
-
-h4 {
-  text-align: left;
-  text-transform: capitalize;
-  font-size: 1.2rem;
-  font-weight: 300;
-}
-
 /*-------------------------------------------------------------------------*/
 /*--CONTACTO--*/
 /*--CONTACTO--*/
