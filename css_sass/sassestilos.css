@@ -1,4 +1,114 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,900;1,800&display=swap");
+.bg-imagen02 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url(../assets/bg-headerligth.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(../assets/bg-headerligth.jpg);
+  background-size: cover;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/*CONTENIDO-SERVICIOS*/
+.contenido-serv .titulo {
+  font-family: 'Nunito Sans', sans-serif;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.contenido-serv .titulo h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: tomato;
+  text-transform: uppercase;
+}
+
+.contenido-serv .titulo h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: tomato;
+  text-transform: uppercase;
+}
+
+.contenido-serv .card-1 {
+  text-align: center;
+}
+
+.contenido-serv .card-1 .icon {
+  width: 20%;
+  padding-top: 3rem;
+}
+
+.contenido-serv .card-1 .card__text {
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.contenido-serv .card-1 h4 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.contenido-serv .card-1 h5 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+  color: tomato;
+}
+
+.contenido-serv .card-1 h6 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: tomato;
+}
+
+.contenido-serv .card-1 ul {
+  list-style-type: none;
+}
+
+.contenido-serv .card-1 ul li {
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/*CONTENIDO-PRESUPUESTOS*/
+.titulo-pres h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.titulo-pres h3 {
+  text-align: center;
+  font-size: 1rem;
+  color: tomato;
+}
+
+h4 {
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/*--FOOTER--*/
+.titulo-pie {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: tomato;
+}
+
+.img-logo {
+  width: 60%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +130,6 @@
   height: 100vh;
 }
 
-/*--NAVBAR--*/
 /*--CONTENIDO HEADER HOME--*/
 .encabezado__titulo {
   color: white;
@@ -142,21 +251,6 @@
   padding-right: 1rem;
 }
 
-/*--FOOTER--*/
-.titulo-pie {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: tomato;
-}
-
-.img-logo {
-  width: 60%;
-}
-
-/*-------------------------------------------------------------------------*/
-/*--NOSOTROS--*/
-/*--NOSOTROS--*/
-/*--NOSOTROS--*/
 /*-------------------------------------------------------------------------*/
 /*--GALERIA--*/
 /*--GALERIA--*/
