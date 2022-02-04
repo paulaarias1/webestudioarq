@@ -22,37 +22,44 @@
 /*MIXIN*/
 /*tipo de texto para header*/
 .text01 {
-  font-size: 2rem;
-  font-weight: 800;
-  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: lowercase;
   font-family: 'Nunito Sans', sans-serif;
 }
 
 .text02 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 200;
-  text-transform: lowercase;
+  text-transform: none;
   font-family: 'Nunito Sans', sans-serif;
 }
 
 /*tipo de texto para titulos de contenido*/
 .text03 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-family: 'Nunito Sans', sans-serif;
 }
 
 /*tipo de texto para parrafos*/
 .text04 {
-  font-size: 0.7rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: none;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.text05 {
+  font-size: 1rem;
   font-weight: 200;
   text-transform: none;
   font-family: 'Nunito Sans', sans-serif;
 }
 
 /*tipo de texto para titulos de secciones*/
-.text05 {
+.text06 {
   font-size: 2rem;
   font-weight: 200;
   text-transform: uppercase;
@@ -60,7 +67,7 @@
 }
 
 /*tipo de texto para menu o botones*/
-.text06 {
+.text07 {
   font-size: 0.7rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -227,9 +234,7 @@ h4 {
     /*GRID EN HEADER NOSOTROS*/
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "logo nav"
- "manifiesto manifiesto"
- "texto texto";
+        grid-template-areas: "logo nav" "manifiesto manifiesto" "texto texto";
     -ms-grid-columns: 50%, 50%;
         grid-template-columns: 50%, 50%;
     -ms-grid-rows: 1fr, 3fr, auto;
@@ -645,10 +650,7 @@ h4 {
   #gridnosotros {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "header header header header"
- "creadores creadores creadores creadores"
- "valores valores valores valores"
- "footer footer footer footer";
+        grid-template-areas: "header header header header" "creadores creadores creadores creadores" "valores valores valores valores" "footer footer footer footer";
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: auto, 2fr 2fr 1fr;
@@ -669,9 +671,7 @@ h4 {
     grid-area: header;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "logo logo nav nav"
- "manifiesto manifiesto manifiesto manifiesto"
- "texto texto texto texto";
+        grid-template-areas: "logo logo nav nav" "manifiesto manifiesto manifiesto manifiesto" "texto texto texto texto";
     -ms-grid-columns: 25%, 25%, 25%, 25%;
         grid-template-columns: 25%, 25%, 25%, 25%;
     -ms-grid-rows: 1rem, 1fr, 1fr;
@@ -958,46 +958,18 @@ h4 {
 }
 
 /*--CONTENIDO HEADER HOME--*/
-.encabezado__titulo {
-  font-family: 'Nunito Sans', sans-serif;
+.titulo-header {
   padding-left: 3rem;
   padding-right: 3rem;
-  padding-top: 3rem;
+  padding-top: 5rem;
+  text-align: center;
 }
 
-.encabezado__titulo h1 {
-  font-weight: 300;
-  font-size: 3rem;
-  text-transform: lowercase;
-  line-height: 3rem;
-  text-align: right;
-}
-
-.encabezado__titulo h2 {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 2rem;
-  text-align: right;
-}
-
-.encabezado__presentacion {
-  font-family: 'Nunito Sans', sans-serif;
+.presentacion-header {
   padding-right: 3rem;
   padding-left: 3rem;
   padding-top: 3rem;
-}
-
-.encabezado__presentacion h3 {
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-
-.encabezado__presentacion p {
-  text-align: justify;
-  font-size: 1rem;
-  line-height: 1rem;
-  padding-right: 0.5rem;
-  font-weight: 200;
+  text-align: center;
 }
 
 /*--CONTENIDO-FEED HOME--*/
@@ -1040,39 +1012,21 @@ h4 {
 /*--CONTENIDO-INVERSION HOME--*/
 .contenido-inv {
   background-color: white;
-  background-position: center;
   background-size: cover;
   height: 100vh;
 }
 
-.contenido-inv .img-inv {
-  max-width: 100%;
-  max-height: auto;
-}
-
-.card-2 {
-  border-radius: 0.5rem;
-  background-color: white;
-  font-size: 1rem;
-  font-weight: 200;
-  text-transform: uppercase;
+.contenido-inv .titulo-seccion {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
-.card-2 .icongif {
-  width: 30%;
-}
-
-.card-2 h3 {
-  text-transform: uppercase;
-  font-weight: 800;
-  font-size: 0.7rem;
-  color: black;
+.contenido-inv .card-inversion {
+  text-align: center;
+  border: 0.01rem solid #b1b1b1;
+  border-radius: 1rem;
   padding-top: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 /*-------------------------------------------------------------------------*/

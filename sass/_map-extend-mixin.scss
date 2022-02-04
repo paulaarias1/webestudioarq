@@ -21,25 +21,28 @@ $colordesing:(
 }
 /*tipo de texto para header*/
 .text01{
-    @include estiloletras(600, 1rem, uppercase )
+    @include estiloletras(400, 3rem, lowercase )
 }
 .text02{
-    @include estiloletras(200, 3rem, lowercase )
+    @include estiloletras(200, 3rem, none )
 }
 /*tipo de texto para titulos de contenido*/
 .text03{
-    @include estiloletras(400, 1rem, capitalize )
+    @include estiloletras(400, 1.2rem, uppercase )
 }
 /*tipo de texto para parrafos*/
 .text04{
-    @include estiloletras(200, 0.7rem, none)
+    @include estiloletras(400, 1rem, none)
+}
+.text05{
+    @include estiloletras(200, 1rem, none)
 }
 /*tipo de texto para titulos de secciones*/
-.text05{
+.text06{
     @include estiloletras(200, 2rem, uppercase)
 }
 /*tipo de texto para menu o botones*/
-.text06{
+.text07{
     @include estiloletras(400, 0.7rem, uppercase)
 }
 

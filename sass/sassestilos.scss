@@ -33,34 +33,21 @@
 }
 
 /*--CONTENIDO HEADER HOME--*/
-.encabezado__titulo{
+.titulo-header{
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-top: 3rem;
+    padding-top: 5rem;
+    text-align: center;
     
-    
-    h1{
-        line-height: 3rem;
-        text-align: right;
-    }
-    h2{
-        text-align: right;   
-    }
 }
 
-.encabezado__presentacion{
-    
+.presentacion-header{
     padding-right: 3rem;
     padding-left: 3rem;
     padding-top: 3rem;
-    
-    p{
-        text-align: justify;
-        line-height: 1rem;
-        padding-right: 0.5rem;
-        
-    }   
+    text-align: center;   
 }
+
 /*--CONTENIDO-FEED HOME--*/
 .contenido-feed{
     background-image: 
@@ -100,37 +87,25 @@
 /*--CONTENIDO-INVERSION HOME--*/
 .contenido-inv{
     background-color: rgb(255, 255, 255);
-    background-position: center;
     background-size: cover;
     height: 100vh;
-
-    .img-inv{
-        max-width: 100%;
-        max-height: auto;   
+    .titulo-seccion{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        text-align: center;
     }
-}
-.card-2{
-    border-radius: 0.5rem;
-    background-color: rgb(255, 255, 255);
-    font-size: 1rem;
-    font-weight: 200;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    .icongif{
-        width: 30%;
-    }
-    h3{
-        text-transform: uppercase;
-        font-weight: 800;
-        font-size: 0.7rem;
-        color: rgb(0, 0, 0);
+    .card-inversion{
+        text-align: center;
+        border: 0.01rem solid rgb(177, 177, 177);
+        border-radius: 1rem;
         padding-top: 1rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
     }
+
+
+    
+
 }
+
 
 /*-------------------------------------------------------------------------*/
 /*--GALERIA--*//*--GALERIA--*//*--GALERIA--*/
