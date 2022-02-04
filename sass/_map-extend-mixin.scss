@@ -1,0 +1,18 @@
+/*MAP*/
+$colordesing:(
+    colorprimary: white,
+    colorsecondary: black,
+    colordetail: tomato
+);
+@each $tipo, $color in $colordesing{
+    .font--#{$tipo} { 
+        color: $color;
+    }
+}
+
+/*EXTEND*/
+
+  
+
+    
+

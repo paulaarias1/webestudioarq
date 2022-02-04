@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,900;1,800&display=swap');
-@import "servicios";
-@import "footer";
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: 0;
 }
+
+@import "map-extend-mixin";
+
+@import "servicios";
+@import "footer";
+
 
 /*AJUSTES PERSONALIZADOS SOBRE BOOTSTRAP*/
 /*-- HEADER HOME--*/
