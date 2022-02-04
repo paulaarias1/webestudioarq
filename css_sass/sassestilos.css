@@ -227,7 +227,9 @@ h4 {
     /*GRID EN HEADER NOSOTROS*/
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "logo nav" "manifiesto manifiesto" "texto texto";
+        grid-template-areas: "logo nav"
+ "manifiesto manifiesto"
+ "texto texto";
     -ms-grid-columns: 50%, 50%;
         grid-template-columns: 50%, 50%;
     -ms-grid-rows: 1fr, 3fr, auto;
@@ -643,7 +645,10 @@ h4 {
   #gridnosotros {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "header header header header" "creadores creadores creadores creadores" "valores valores valores valores" "footer footer footer footer";
+        grid-template-areas: "header header header header"
+ "creadores creadores creadores creadores"
+ "valores valores valores valores"
+ "footer footer footer footer";
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: auto, 2fr 2fr 1fr;
@@ -664,7 +669,9 @@ h4 {
     grid-area: header;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "logo logo nav nav" "manifiesto manifiesto manifiesto manifiesto" "texto texto texto texto";
+        grid-template-areas: "logo logo nav nav"
+ "manifiesto manifiesto manifiesto manifiesto"
+ "texto texto texto texto";
     -ms-grid-columns: 25%, 25%, 25%, 25%;
         grid-template-columns: 25%, 25%, 25%, 25%;
     -ms-grid-rows: 1rem, 1fr, 1fr;
@@ -952,7 +959,6 @@ h4 {
 
 /*--CONTENIDO HEADER HOME--*/
 .encabezado__titulo {
-  color: white;
   font-family: 'Nunito Sans', sans-serif;
   padding-left: 3rem;
   padding-right: 3rem;
@@ -975,7 +981,6 @@ h4 {
 }
 
 .encabezado__presentacion {
-  color: white;
   font-family: 'Nunito Sans', sans-serif;
   padding-right: 3rem;
   padding-left: 3rem;

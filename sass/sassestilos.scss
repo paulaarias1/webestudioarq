@@ -5,11 +5,9 @@
     padding: 0;
     box-sizing: 0;
 }
-
 @import "map-extend-mixin";
 @import "servicios";
 @import "footer";
-
 
 @media only screen and (min-width: 0px) and (max-width: 767px){
     @import "nosotros-mobile";
@@ -36,45 +34,31 @@
 
 /*--CONTENIDO HEADER HOME--*/
 .encabezado__titulo{
-    color: white;
-    font-family: 'Nunito Sans', sans-serif;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 3rem;
     
     
     h1{
-        font-weight: 300; 
-        font-size: 3rem;
-        text-transform: lowercase;
         line-height: 3rem;
         text-align: right;
     }
     h2{
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 2rem;
         text-align: right;   
     }
 }
 
 .encabezado__presentacion{
-    color: rgb(255, 255, 255);
-    font-family: 'Nunito Sans', sans-serif;
+    
     padding-right: 3rem;
     padding-left: 3rem;
     padding-top: 3rem;
-    h3{
-        font-size: 1.5rem;
-        font-weight: 400;
-
-    }
+    
     p{
         text-align: justify;
-        font-size: 1rem;
         line-height: 1rem;
         padding-right: 0.5rem;
-        font-weight: 200;
+        
     }   
 }
 /*--CONTENIDO-FEED HOME--*/

@@ -21,10 +21,10 @@ $colordesing:(
 }
 /*tipo de texto para header*/
 .text01{
-    @include estiloletras(800, 2rem, uppercase )
+    @include estiloletras(600, 1rem, uppercase )
 }
 .text02{
-    @include estiloletras(200, 4rem, lowercase )
+    @include estiloletras(200, 3rem, lowercase )
 }
 /*tipo de texto para titulos de contenido*/
 .text03{
