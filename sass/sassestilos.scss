@@ -11,6 +11,14 @@
 @import "footer";
 
 
+@media only screen and (min-width: 0px) and (max-width: 767px){
+    @import "nosotros-mobile";
+    
+}
+@media only screen and (min-width: 768px){
+    @import "nosotros-desktop";
+}
+
 /*AJUSTES PERSONALIZADOS SOBRE BOOTSTRAP*/
 /*-- HEADER HOME--*/
 .encabezado{
