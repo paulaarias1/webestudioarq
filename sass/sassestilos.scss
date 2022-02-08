@@ -18,14 +18,15 @@
 }
 
 /*AJUSTES PERSONALIZADOS SOBRE BOOTSTRAP*/
-/*-- HEADER HOME--*/
+/*-- HOME--*/
+
 .encabezado{
     background-image: 
     linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.7)
-    ), url(../assets/bg-headerdark.jpg);
+    ), url("../assets/fednoe-03.jpg");
     background-color: rgb(0, 0, 0);
     background-position: center;
     background-size: cover;
