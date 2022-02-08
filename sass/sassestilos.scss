@@ -9,16 +9,9 @@
 @import "servicios";
 @import "footer";
 
-@media only screen and (min-width: 0px) and (max-width: 767px){
-    @import "nosotros-mobile";
-    
-}
-@media only screen and (min-width: 768px){
-    @import "nosotros-desktop";
-}
 
 /*AJUSTES PERSONALIZADOS SOBRE BOOTSTRAP*/
-/*-- HOME--*/
+/*-- HOME HEADER--*/
 
 .encabezado{
     background-image: 
@@ -35,10 +28,10 @@
 
 /*--CONTENIDO HEADER HOME--*/
 .titulo-header{
-    padding-left: 3rem;
+    height: 100vh;
+    /*padding-left: 3rem;
     padding-right: 3rem;
-    padding-top: 5rem;
-    text-align: center;
+    padding-top: 5rem; */
     
 }
 
@@ -51,15 +44,7 @@
 
 /*--CONTENIDO-FEED HOME--*/
 .contenido-feed{
-    background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.7)
-    ), url(../assets/img-about-us/fondo-owner.png);
-    background-color: rgb(0, 0, 0);
-    background-position: center;
-    background-size: cover;
+    background-color: rgb(255, 255, 255);
     height: 100vh;
     .feedimg{
         width: 100%;
