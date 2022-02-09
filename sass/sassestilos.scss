@@ -35,62 +35,57 @@
     
 }
 
-.presentacion-header{
-    padding-right: 3rem;
-    padding-left: 3rem;
-    padding-top: 3rem;
-    text-align: center;   
-}
 
-/*--CONTENIDO-FEED HOME--*/
-.contenido-feed{
-    background-color: rgb(255, 255, 255);
+
+/*--CONTENIDO HOME--*/
+.contenido{
     height: 100vh;
-    .feedimg{
-        width: 100%;
+    .contenido__feed{
+        .presentacion{
+            padding-right: 3rem;
+            padding-left: 3rem;
+            padding-top: 3rem;
+            text-align: center;   
+        } 
     }
-    .btn-img{
-        position: relative;
-        display: inline-block;
+
+    
+}
+    
+/* 
+.btn-img{
+    position: relative;
+    display: inline-block;
         
-        a{
-            text-decoration: none;
-            h4{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: white;
-                text-transform: uppercase;
-                font-family: 'Nunito Sans', sans-serif;
-                font-weight: 500; 
-                font-size: 1.5rem; 
-                text-align: center;  
+    a{
+        text-decoration: none;
+        h4{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-transform: uppercase;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 500; 
+            font-size: 1.5rem; 
+            text-align: center;  
             }
         }  
     }
 }
-/*--CONTENIDO-INVERSION HOME--*/
+*/
+
+/*--CONTENIDO-INVERSION HOME--
 .contenido-inv{
     background-color: rgb(255, 255, 255);
-    background-size: cover;
-    height: 100vh;
     .titulo-seccion{
         padding-top: 3rem;
         padding-bottom: 3rem;
         text-align: center;
     }
-    .card-inversion{
-        text-align: center;
-        border: 0.01rem solid rgb(177, 177, 177);
-        border-radius: 1rem;
-        padding-top: 1rem;
-    }
-
-
-    
-
 }
+*/
 
 
 /*-------------------------------------------------------------------------*/

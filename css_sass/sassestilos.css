@@ -240,66 +240,51 @@ h4 {
     padding-top: 5rem; */
 }
 
-.presentacion-header {
+/*--CONTENIDO HOME--*/
+.contenido {
+  height: 100vh;
+}
+
+.contenido .contenido__feed .presentacion {
   padding-right: 3rem;
   padding-left: 3rem;
   padding-top: 3rem;
   text-align: center;
 }
 
-/*--CONTENIDO-FEED HOME--*/
-.contenido-feed {
-  background-color: white;
-  height: 100vh;
+/* 
+.btn-img{
+    position: relative;
+    display: inline-block;
+        
+    a{
+        text-decoration: none;
+        h4{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-transform: uppercase;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 500; 
+            font-size: 1.5rem; 
+            text-align: center;  
+            }
+        }  
+    }
 }
-
-.contenido-feed .feedimg {
-  width: 100%;
+*/
+/*--CONTENIDO-INVERSION HOME--
+.contenido-inv{
+    background-color: rgb(255, 255, 255);
+    .titulo-seccion{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        text-align: center;
+    }
 }
-
-.contenido-feed .btn-img {
-  position: relative;
-  display: inline-block;
-}
-
-.contenido-feed .btn-img a {
-  text-decoration: none;
-}
-
-.contenido-feed .btn-img a h4 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: white;
-  text-transform: uppercase;
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 500;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-/*--CONTENIDO-INVERSION HOME--*/
-.contenido-inv {
-  background-color: white;
-  background-size: cover;
-  height: 100vh;
-}
-
-.contenido-inv .titulo-seccion {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  text-align: center;
-}
-
-.contenido-inv .card-inversion {
-  text-align: center;
-  border: 0.01rem solid #b1b1b1;
-  border-radius: 1rem;
-  padding-top: 1rem;
-}
-
+*/
 /*-------------------------------------------------------------------------*/
 /*--GALERIA--*/
 /*--GALERIA--*/
