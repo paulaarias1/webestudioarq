@@ -211,13 +211,11 @@ h4 {
 }
 
 /*--FOOTER--*/
-.titulo-pie {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: tomato;
+.footer {
+  background-color: #323041;
 }
 
-.img-logo {
+.footer .img-logo {
   width: 60%;
 }
 
@@ -235,16 +233,9 @@ h4 {
 /*--CONTENIDO HEADER HOME--*/
 .titulo-header {
   height: 100vh;
-  /*padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 5rem; */
 }
 
 /*--CONTENIDO HOME--*/
-.contenido {
-  height: 100vh;
-}
-
 .contenido .contenido__feed .presentacion {
   padding-right: 3rem;
   padding-left: 3rem;
@@ -285,7 +276,6 @@ h4 {
     }
 }
 */
-/*-------------------------------------------------------------------------*/
 /*--GALERIA--*/
 /*--GALERIA--*/
 /*--GALERIA--*/
