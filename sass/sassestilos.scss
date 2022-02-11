@@ -6,13 +6,12 @@
     box-sizing: 0;
 }
 @import "map-extend-mixin";
+@import "nosotros";
 @import "galeria";
 @import "servicios";
 @import "contacto";
 @import "footer";
 
-
-//SOLO INDEX
 
 /* HEADER*/
 .encabezado{
@@ -31,7 +30,7 @@
     }
 }
 
-/* MAIN */
+/* MAIN o SECTION */
 .contenido{
     padding-top: 3rem;
     .contenido__feed{

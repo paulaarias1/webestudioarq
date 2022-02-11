@@ -1,4 +1,36 @@
 
+.encabezado--imagenbg{
+    background-image: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.7)
+        ), url("../assets/img-about-us/bg-nosotros.png");
+    background-color: rgb(0, 0, 0);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+    .titulo-header{
+        height: 100vh;     
+    }
+    
+
+}
+.row{
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+/*________________________ */
 .header__logo{
     grid-area: logo;
     align-self: start;
@@ -193,7 +225,7 @@
     grid-row-gap: 1rem;
     
 }
-
+/*
 .contenido{
     display: flex;
     flex-direction: column;
@@ -206,6 +238,7 @@
     font-size: 0.85rem;
     line-height: 1rem; 
 }
+*/
 .contenido h3{
     color: rgb(0, 0, 0);
     font-weight: lighter;
