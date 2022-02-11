@@ -240,6 +240,9 @@ h4 {
 /*--FOOTER--*/
 .footer {
   background-color: #2A2E31;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.8)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+  padding-top: 3rem;
 }
 
 .footer .img-logo {
@@ -278,8 +281,15 @@ h4 {
 
 .contenido .contenido__inv .box-dark {
   background-color: #2A2E31;
-  padding-top: 3rem;
-  padding-bottom: 5rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.2)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
+  padding: 3rem;
+  height: 30rem;
+}
+
+.contenido .contenido__inv .box-dark .video-size {
+  width: 100%;
+  height: 100%;
 }
 
 /*--CONTACTO--*/
