@@ -1,17 +1,7 @@
 /*GALERIA*/
 .bg-imagen01{
-    background-image: 
-        linear-gradient(
-          rgba(0, 0, 0, 0.8),
-          rgba(0, 0, 0, 0.6),
-          rgba(0, 0, 0, 0.9)
-        ), url(../assets/bg-gallery.jpg);
-    background-size: cover;
-    background-color: black;
-    background-position: initial;
-    background-repeat: no-repeat;
-    height: 100vh; 
-
+    background-color: #2A2E31;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.20));
     .w-100x100{
         width: 100%;
     }

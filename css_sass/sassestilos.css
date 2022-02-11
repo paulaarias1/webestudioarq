@@ -112,13 +112,9 @@
 
 /*GALERIA*/
 .bg-imagen01 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url(../assets/bg-gallery.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(../assets/bg-gallery.jpg);
-  background-size: cover;
-  background-color: black;
-  background-position: initial;
-  background-repeat: no-repeat;
-  height: 100vh;
+  background-color: #2A2E31;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.2)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
 }
 
 .bg-imagen01 .w-100x100 {
@@ -237,72 +233,7 @@ h4 {
   font-weight: 300;
 }
 
-/*--FOOTER--*/
-.footer {
-  background-color: #2A2E31;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.8)));
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
-  padding-top: 3rem;
-}
-
-@media (min-width: 375px) {
-  .footer .img-logo {
-    width: 30%;
-  }
-}
-
-@media (min-width: 768px) {
-  .footer .img-logo {
-    width: 60%;
-  }
-}
-
-/* HEADER (HOME)*/
-.encabezado {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url("../assets/fednoe-03.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../assets/fednoe-03.jpg");
-  background-color: black;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-}
-
-.encabezado .titulo-header {
-  height: 100vh;
-}
-
-/* MAIN CONTENIDO */
-.contenido {
-  padding-top: 3rem;
-}
-
-.contenido .contenido__feed .presentacion {
-  padding-right: 3rem;
-  padding-left: 3rem;
-  padding-top: 3rem;
-  text-align: center;
-}
-
-.contenido .contenido__inv {
-  padding-top: 3rem;
-}
-
-.contenido .contenido__inv .box-dark {
-  background-color: #2A2E31;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.2)));
-  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
-  padding: 3rem;
-  height: 30rem;
-}
-
-.contenido .contenido__inv .box-dark .video-size {
-  width: 100%;
-  height: 100%;
-}
-
-/*--CONTACTO--*/
-/*--CONTACTO--*/
-/*--CONTACTO--*/
+/*CONTACTO*/
 .contacto {
   background: url("../assets/bg-headerdark.jpg") no-repeat;
   background-size: cover;
@@ -310,7 +241,6 @@ h4 {
   background-position: center;
 }
 
-/*--CONTENIDO SECTION CONTACTO--*/
 .card {
   background-color: rgba(0, 0, 0, 0.459);
 }
@@ -345,5 +275,68 @@ h4 {
 .btn1 {
   background-color: tomato;
   color: white;
+}
+
+/*--FOOTER--*/
+.footer {
+  background-color: #2A2E31;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.8)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+  padding-top: 3rem;
+}
+
+@media (min-width: 375px) {
+  .footer .img-logo {
+    width: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer .img-logo {
+    width: 60%;
+  }
+}
+
+/* HEADER*/
+.encabezado {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url("../assets/fednoe-03.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../assets/fednoe-03.jpg");
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.encabezado .titulo-header {
+  height: 100vh;
+}
+
+/* MAIN */
+.contenido {
+  padding-top: 3rem;
+}
+
+.contenido .contenido__feed .presentacion {
+  padding-right: 3rem;
+  padding-left: 3rem;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.contenido .contenido__inv {
+  padding-top: 3rem;
+}
+
+.contenido .contenido__inv .box-dark {
+  background-color: #2A2E31;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.2)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
+  padding: 3rem;
+  height: 46rem;
+}
+
+.contenido .contenido__inv .box-dark .video-size {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=sassestilos.css.map */

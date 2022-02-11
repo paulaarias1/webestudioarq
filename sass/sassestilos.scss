@@ -8,12 +8,13 @@
 @import "map-extend-mixin";
 @import "galeria";
 @import "servicios";
+@import "contacto";
 @import "footer";
 
 
-//AJUSTES PERSONALIZADOS SOBRE BOOTSTRAP
+//SOLO INDEX
 
-/* HEADER (HOME)*/
+/* HEADER*/
 .encabezado{
     background-image: 
     linear-gradient(
@@ -30,7 +31,7 @@
     }
 }
 
-/* MAIN CONTENIDO */
+/* MAIN */
 .contenido{
     padding-top: 3rem;
     .contenido__feed{
@@ -41,19 +42,17 @@
             text-align: center;   
         } 
     } 
-
     .contenido__inv{
         padding-top: 3rem;
         .box-dark{
             background-color: #2A2E31;
             background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.20));
             padding: 3rem;
-            height: 30rem;
-           
+            height: 46rem;
+    
             .video-size{
                 width: 100%;
                 height: 100%;
-    
             }
         } 
     }
@@ -61,41 +60,4 @@
 }
     
 
-/*--CONTACTO--*//*--CONTACTO--*//*--CONTACTO--*/
-.contacto{
-    background: url("../assets/bg-headerdark.jpg")no-repeat;
-    background-size: cover;
-    height: 100vh;
-    background-position: center;
-}
-/*--CONTENIDO SECTION CONTACTO--*/
-.card{
-    background-color: rgba(0, 0, 0, 0.459);
-}
-.effect-1{
-    border: 0;
-    outline: none;
-    width:100%;
-    padding: 0.5rem 0;
-    border-bottom: 0.06rem solid rgb(255, 255, 255);
-    background: transparent;
-}
-.effect-1 ~ .focus-border{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 0.125rem;
-    background-color: tomato;
-    transition: 0.4s;
-}
-.effect-1:focus ~ .focus-border{
-    width: 100%;
-    transition: 0.4s;
-    left: 0;
-}
-.btn1{
-    background-color: tomato;
-    color: white;
-}
 
