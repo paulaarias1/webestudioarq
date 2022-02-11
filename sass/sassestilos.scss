@@ -6,13 +6,14 @@
     box-sizing: 0;
 }
 @import "map-extend-mixin";
+@import "galeria";
 @import "servicios";
 @import "footer";
 
 
-/*AJUSTES PERSONALIZADOS SOBRE BOOTSTRAP*/
-/*-- HOME HEADER--*/
+//AJUSTES PERSONALIZADOS SOBRE BOOTSTRAP
 
+/* HEADER (HOME)*/
 .encabezado{
     background-image: 
     linear-gradient(
@@ -24,18 +25,14 @@
     background-position: center;
     background-size: cover;
     height: 100vh;
+    .titulo-header{
+        height: 100vh;     
+    }
 }
 
-/*--CONTENIDO HEADER HOME--*/
-.titulo-header{
-    height: 100vh;
-      
-}
-
-
-
-/*--CONTENIDO HOME--*/
+/* MAIN CONTENIDO */
 .contenido{
+    padding-top: 3rem;
     .contenido__feed{
         .presentacion{
             padding-right: 3rem;
@@ -43,80 +40,19 @@
             padding-top: 3rem;
             text-align: center;   
         } 
-    }  
+    } 
+
+    .contenido__inv{
+        padding-top: 3rem;
+        .box-dark{
+            background-color: #2A2E31;
+            padding-top: 3rem;
+            padding-bottom: 5rem;
+        } 
+    }
+    
 }
     
-/* 
-.btn-img{
-    position: relative;
-    display: inline-block;
-        
-    a{
-        text-decoration: none;
-        h4{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            text-transform: uppercase;
-            font-family: 'Nunito Sans', sans-serif;
-            font-weight: 500; 
-            font-size: 1.5rem; 
-            text-align: center;  
-            }
-        }  
-    }
-}
-*/
-
-/*--CONTENIDO-INVERSION HOME--
-.contenido-inv{
-    background-color: rgb(255, 255, 255);
-    .titulo-seccion{
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        text-align: center;
-    }
-}
-*/
-
-
-
-/*--GALERIA--*//*--GALERIA--*//*--GALERIA--*/
-.bg-imagen01{
-    background-image: 
-        linear-gradient(
-          rgba(0, 0, 0, 0.8),
-          rgba(0, 0, 0, 0.6),
-          rgba(0, 0, 0, 0.9)
-        ), url(../assets/bg-gallery.jpg);
-    background-size: cover;
-    background-color: black;
-    background-position: initial;
-    background-repeat: no-repeat;
-    height: 100vh; 
-}
-
-
-/*-- HEADER GALERIA--*/
-.w-100x100{
-    width: 100%;
-}
-.w-30x100{
-    width: 30%;
-}
-.w-20x100{
-    width: 20%;
-}
-.w-10x100{
-    width: 10%;
-}
-
-/*-------------------------------------------------------------------------*/
-
-
-/*-------------------------------------------------------------------------*/
 
 /*--CONTACTO--*//*--CONTACTO--*//*--CONTACTO--*/
 .contacto{
