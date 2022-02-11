@@ -245,8 +245,16 @@ h4 {
   padding-top: 3rem;
 }
 
-.footer .img-logo {
-  width: 60%;
+@media (min-width: 375px) {
+  .footer .img-logo {
+    width: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer .img-logo {
+    width: 60%;
+  }
 }
 
 /* HEADER (HOME)*/
