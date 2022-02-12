@@ -15,6 +15,13 @@
 .mi-card{
     background-color: #000000bb;
 }
+.box-nav{
+    padding-top: 3rem;
+}
+.box-contenido{
+    padding-top: 3rem;
+
+}
 
 
 /* HEADER*/
@@ -29,38 +36,38 @@
     background-position: center;
     background-size: cover;
     height: 100vh;
-    .titulo-header{
-        height: 100vh;     
+    .titulo{
+        height: 50%;     
     }
 }
 
 /* MAIN o SECTION */
-.contenido{
-    padding-top: 3rem;
-    .contenido__feed{
-        .presentacion{
-            padding-right: 3rem;
-            padding-left: 3rem;
-            padding-top: 3rem;
-            text-align: center;   
-        } 
-    } 
-    .contenido__inv{
+.contenido__feed{
+    .presentacion{
+        padding-right: 3rem;
+        padding-left: 3rem;
         padding-top: 3rem;
-        .box-dark{
-            background-color: #2A2E31;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.20));
-            padding: 3rem;
-            height: 46rem;
-    
-            .video-size{
-                width: 100%;
-                height: 100%;
-            }
-        } 
-    }
-    
+        text-align: center;   
+    } 
+} 
+.contenido__inv{
+    padding-top: 3rem;
+    .box-dark{
+        background-color: #2A2E31;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.20));
+        padding: 3rem;
+        height: 46rem;
+
+        .video-size{
+            width: 100%;
+            height: 100%;
+        }
+    } 
 }
+
+
+    
+
     
 
 
