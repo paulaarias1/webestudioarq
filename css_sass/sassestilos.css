@@ -141,25 +141,19 @@
 
 /*________________________ */
 /*GALERIA*/
-.bg-imagen01 {
-  background-color: #2A2E31;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.2)));
-  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
-}
-
-.bg-imagen01 .w-100x100 {
+.w-100x100 {
   width: 100%;
 }
 
-.bg-imagen01 .w-30x100 {
+.w-30x100 {
   width: 30%;
 }
 
-.bg-imagen01 .w-20x100 {
+.w-20x100 {
   width: 20%;
 }
 
-.bg-imagen01 .w-10x100 {
+.w-10x100 {
   width: 10%;
 }
 
@@ -335,11 +329,7 @@ h4 {
   background-color: #000000bb;
 }
 
-.box-nav {
-  padding-top: 3rem;
-}
-
-.box-contenido {
+.box-pt3 {
   padding-top: 3rem;
 }
 

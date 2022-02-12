@@ -12,16 +12,14 @@
 @import "contacto";
 @import "footer";
 
+//estilos comunes para armar mixin o extend
 .mi-card{
     background-color: #000000bb;
 }
-.box-nav{
+.box-pt3{
     padding-top: 3rem;
 }
-.box-contenido{
-    padding-top: 3rem;
 
-}
 
 
 /* HEADER*/
