@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,900;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -19,43 +19,46 @@
   color: tomato;
 }
 
+.font--colorparra {
+  color: #525252;
+}
+
 /*MIXIN*/
 /*tipo de texto para header*/
 .text01 {
   font-size: 3rem;
   font-weight: 400;
   text-transform: lowercase;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .text02 {
   font-size: 3rem;
   font-weight: 200;
   text-transform: none;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
-/*tipo de texto para titulos de contenido*/
+/*tipo de texto para contenidos*/
 .text03 {
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 600;
   text-transform: uppercase;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
-/*tipo de texto para parrafos*/
 .text04 {
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 600;
   text-transform: none;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .text05 {
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 400;
   text-transform: none;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 /*tipo de texto para titulos de secciones*/
@@ -63,22 +66,21 @@
   font-size: 2rem;
   font-weight: 200;
   text-transform: uppercase;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
-/*tipo de texto para menu o botones*/
 .text07 {
   font-size: 0.7rem;
   font-weight: 400;
   text-transform: uppercase;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .text08 {
   font-size: 0.7rem;
   font-weight: 500;
   text-transform: none;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 /*EXTEND*/

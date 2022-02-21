@@ -2,7 +2,8 @@
 $colordesing:(
     colorprimary: white,
     colorsecondary: black,
-    colordetail: tomato
+    colordetail: tomato,
+    colorparra: rgb(82, 82, 82)
 );
 @each $tipo, $color in $colordesing{
     .font--#{$tipo} { 
@@ -16,7 +17,7 @@ $colordesing:(
     font-size: $size;
     font-weight: $weigth;
     text-transform: $transform;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
 
 }
 /*tipo de texto para header*/
@@ -26,22 +27,21 @@ $colordesing:(
 .text02{
     @include estiloletras(200, 3rem, none )
 }
-/*tipo de texto para titulos de contenido*/
+/*tipo de texto para contenidos*/
 .text03{
-    @include estiloletras(400, 1.2rem, uppercase )
+    @include estiloletras(600, 1rem, uppercase )
 }
-/*tipo de texto para parrafos*/
 .text04{
-    @include estiloletras(400, 1rem, none)
+    @include estiloletras(600, 1.5rem, none)
 }
 .text05{
-    @include estiloletras(200, 1rem, none)
+    @include estiloletras(400, 1rem, none)
 }
 /*tipo de texto para titulos de secciones*/
 .text06{
     @include estiloletras(200, 2rem, uppercase)
 }
-/*tipo de texto para menu o botones*/
+
 .text07{
     @include estiloletras(400, 0.7rem, uppercase)
 }
