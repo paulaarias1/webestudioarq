@@ -45,6 +45,9 @@ $colordesing:(
 .text07{
     @include estiloletras(400, 0.7rem, uppercase)
 }
+.text08{
+    @include estiloletras(500, 0.7rem, none)
+}
 
 /*EXTEND*/
 //estilos de botones
