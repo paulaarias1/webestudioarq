@@ -39,14 +39,14 @@ $colordesing:(
 }
 
 .text06{
-    @include estiloletras(200, 2rem, uppercase)
+    @include estiloletras(800, 1rem, none)
 }
 
 .text07{
-    @include estiloletras(500, 0.7rem, uppercase)
+    @include estiloletras(600, 0.7rem, uppercase)
 }
 .text08{
-    @include estiloletras(500, 0.7rem, none)
+    @include estiloletras(600, 0.7rem, none)
 }
 
 /*EXTEND*/
