@@ -20,14 +20,14 @@ $colordesing:(
     font-family: 'Nunito', sans-serif;
 
 }
-/*tipo de texto para header*/
+/*tipos de textos de grandes a pequeños*/
 .text01{
     @include estiloletras(400, 3rem, lowercase )
 }
 .text02{
     @include estiloletras(200, 3rem, none )
 }
-/*tipo de texto para contenidos*/
+
 .text03{
     @include estiloletras(600, 1rem, uppercase )
 }
@@ -37,13 +37,13 @@ $colordesing:(
 .text05{
     @include estiloletras(400, 1rem, none)
 }
-/*tipo de texto para titulos de secciones*/
+
 .text06{
     @include estiloletras(200, 2rem, uppercase)
 }
 
 .text07{
-    @include estiloletras(400, 0.7rem, uppercase)
+    @include estiloletras(500, 0.7rem, uppercase)
 }
 .text08{
     @include estiloletras(500, 0.7rem, none)
