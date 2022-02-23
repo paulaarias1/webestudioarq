@@ -101,6 +101,17 @@
           box-shadow: 0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.3);
 }
 
+.cardtipe-03 {
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 2rem;
+  -webkit-box-shadow: 0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 /*EXTEND*/
 .mi-btn, .mi-btn--02 {
   display: inline-block;
@@ -138,7 +149,8 @@
   border: 0;
 }
 
-.header, .header--50vh {
+/*index*/
+.header, .header50vh, .header50vh-galery, .header50vh-service, .header50vh-contact {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url("../assets/fednoe-03.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../assets/fednoe-03.jpg");
   background-color: black;
@@ -147,14 +159,33 @@
   height: 100vh;
 }
 
-.header .titulo, .header--50vh .titulo {
+.header .titulo, .header50vh .titulo, .header50vh-galery .titulo, .header50vh-service .titulo, .header50vh-contact .titulo {
   height: 50%;
 }
 
-.header--50vh {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url("../assets/fednoe-02.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../assets/fednoe-02.jpg");
+/*nosotros*/
+.header50vh, .header50vh-galery, .header50vh-service {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url("../assets/fednoe-01.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../assets/fednoe-01.jpg");
   height: 50vh;
+}
+
+/*galeria*/
+.header50vh-galery {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url("../assets/alpa-01.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../assets/alpa-01.jpg");
+}
+
+/*servicios*/
+.header50vh-service {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url("../assets/alpa-02.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../assets/alpa-02.jpg");
+}
+
+/*contacto*/
+.header50vh-contact {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url("../assets/alpa-03.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../assets/alpa-03.jpg");
 }
 
 .header--imagenbg {

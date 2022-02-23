@@ -58,10 +58,14 @@ $colordesing:(
 /*tipos de tarjetas */
 .cardtipe-01{
     @include cardtipe(15rem, 6rem, rgb(255, 255, 255), 1rem)
-}
+} 
 .cardtipe-02{
     @include cardtipe(auto, auto, rgba(0, 0, 0, 0.8), 2rem)
 }
+.cardtipe-03{
+    @include cardtipe(auto, auto, rgba(0, 0, 0, 0.2), 2rem);
+    box-shadow: none;
+} 
 
 /*EXTEND*/
 //estilos de botones
@@ -95,7 +99,8 @@ $colordesing:(
     background-color: #EAB464;
     border: 0
 } 
-//estilos de header
+//estilos de header para cada pagina
+/*index*/
 .header{
     background-image: 
     linear-gradient(
@@ -111,15 +116,48 @@ $colordesing:(
         height: 50%;     
     }
 }
-.header--50vh{
+/*nosotros*/
+.header50vh{
     @extend .header;
     background-image: 
     linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.7)
-    ), url("../assets/fednoe-02.jpg");
+    ), url("../assets/fednoe-01.jpg");
     height: 50vh;
+}
+/*galeria*/
+.header50vh-galery{
+    @extend .header50vh;
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.7)
+    ), url("../assets/alpa-01.jpg");
+
+}
+/*servicios*/
+.header50vh-service{
+    @extend .header50vh;
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.7)
+    ), url("../assets/alpa-02.jpg");
+}
+/*contacto*/
+.header50vh-contact{
+    @extend .header;
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.7)
+    ), url("../assets/alpa-03.jpg");
+
 }
     
 
