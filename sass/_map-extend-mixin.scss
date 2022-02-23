@@ -2,13 +2,12 @@
 $colordesing:(
     colorprimary: white,
     colorsecondary: black,
-    colordetail: tomato,
+    colordetail: #EAB464,
     colorparra: rgb(82, 82, 82)
 );
 @each $tipo, $color in $colordesing{
     .font--#{$tipo} { 
-        color: $color;
-       
+        color: $color;   
     }
 }
 
@@ -49,6 +48,21 @@ $colordesing:(
     @include estiloletras(600, 0.7rem, none)
 }
 
+@mixin cardtipe ($width, $height, $backgorund-color, $border-radius) {
+    width: $width;
+    height: $height;
+    background-color: $backgorund-color;
+    border-radius: $border-radius;
+    box-shadow: 0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.30);  
+}
+/*tipos de tarjetas */
+.cardtipe-01{
+    @include cardtipe(15rem, 6rem, rgb(255, 255, 255), 1rem)
+}
+.cardtipe-02{
+    @include cardtipe(auto, auto, rgba(0, 0, 0, 0.8), 2rem)
+}
+
 /*EXTEND*/
 //estilos de botones
 .mi-btn {
@@ -60,15 +74,15 @@ $colordesing:(
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-    background-color: tomato;
+    background-color: #354F52;
     border: 0.1rem solid transparent;
     padding: 0.5rem 1.25rem;
     border-radius: 2rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;     
 }
 .mi-btn:hover {
-    color: tomato;
-    background-color: white;
+    color: #354F52;
+    background-color: #EAB464;
 }  
 
 .mi-btn--02{
@@ -78,9 +92,35 @@ $colordesing:(
 }
 .mi-btn--02:hover {
     color: rgb(0, 0, 0);
-    background-color: white;
+    background-color: #EAB464;
+    border: 0
 } 
-
+//estilos de header
+.header{
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.7)
+    ), url("../assets/fednoe-03.jpg");
+    background-color: rgb(0, 0, 0);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    .titulo{
+        height: 50%;     
+    }
+}
+.header--50vh{
+    @extend .header;
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.7)
+    ), url("../assets/fednoe-02.jpg");
+    height: 50vh;
+}
     
 
 
