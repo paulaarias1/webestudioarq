@@ -394,21 +394,6 @@ h4 {
 }
 
 /*CONTACTO*/
-.contacto {
-  background: url("../assets/bg-headerdark.jpg") no-repeat;
-  background-size: cover;
-  height: 100vh;
-  background-position: center;
-}
-
-/*
-.card{
-
-   
-    background-color: rgba(0, 0, 0, 0.459);
-    
-}
-*/
 .effect-1 {
   border: 0;
   outline: none;
@@ -416,6 +401,7 @@ h4 {
   padding: 0.5rem 0;
   border-bottom: 0.06rem solid white;
   background: transparent;
+  position: relative;
 }
 
 .effect-1 ~ .focus-border {
@@ -434,11 +420,6 @@ h4 {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   left: 0;
-}
-
-.btn1 {
-  background-color: tomato;
-  color: white;
 }
 
 /*--FOOTER--*/

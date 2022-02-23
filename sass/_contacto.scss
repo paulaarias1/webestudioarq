@@ -1,26 +1,14 @@
 /*CONTACTO*/
-.contacto{
-    background: url("../assets/bg-headerdark.jpg")no-repeat;
-    background-size: cover;
-    height: 100vh;
-    background-position: center;
-}
- /*
-.card{
-
-   
-    background-color: rgba(0, 0, 0, 0.459);
-    
-}
-*/
 .effect-1{
     border: 0;
     outline: none;
     width:100%;
     padding: 0.5rem 0;
     border-bottom: 0.06rem solid rgb(255, 255, 255);
-    background: transparent;
+    background: transparent; 
 }
+
+/*NO FUNCIONA DONDE QUIERO
 .effect-1 ~ .focus-border{
     position: absolute;
     bottom: 0;
@@ -34,8 +22,4 @@
     width: 100%;
     transition: 0.4s;
     left: 0;
-}
-.btn1{
-    background-color: tomato;
-    color: white;
 }
