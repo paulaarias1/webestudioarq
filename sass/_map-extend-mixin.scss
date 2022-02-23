@@ -101,23 +101,22 @@ $colordesing:(
     border: 0
 } 
 //estilos de header para cada pagina
-/*index*/
+
 .header{
+    background-color: rgb(0, 0, 0);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+/*nosotros*/
+.header-index{
     background-image: 
     linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.7)
     ), url("../assets/bg-index.jpg");
-    background-color: rgb(0, 0, 0);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    .titulo{
-        height: 50%;     
-    }
 }
-/*nosotros*/
 .header50vh{
     @extend .header;
     background-image: 
@@ -129,7 +128,7 @@ $colordesing:(
     height: 50vh;
 }
 /*galeria*/
-.header50vh-galery{
+.header50vh-gallery{
     @extend .header50vh;
     background-image: 
     linear-gradient(
