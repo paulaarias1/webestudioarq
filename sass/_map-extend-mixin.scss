@@ -108,7 +108,7 @@ $colordesing:(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.7)
-    ), url("../assets/fednoe-03.jpg");
+    ), url("../assets/bg-index.jpg");
     background-color: rgb(0, 0, 0);
     background-position: center;
     background-size: cover;
@@ -125,7 +125,7 @@ $colordesing:(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.7)
-    ), url("../assets/fednoe-01.jpg");
+    ), url("../assets/bg-nosotros.jpg");
     height: 50vh;
 }
 /*galeria*/
@@ -136,7 +136,7 @@ $colordesing:(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.7)
-    ), url("../assets/alpa-01.jpg");
+    ), url("../assets/bg-galeria.jpg");
 
 }
 /*servicios*/
@@ -147,17 +147,17 @@ $colordesing:(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.7)
-    ), url("../assets/alpa-02.jpg");
+    ), url("../assets/bg-servicios.jpg");
 }
 /*contacto*/
-.header50vh-contact{
+.header-contact{
     @extend .header;
     background-image: 
     linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.7)
-    ), url("../assets/alpa-03.jpg");
+    ), url("../assets/bg-contacto.jpg");
 
 }
     
