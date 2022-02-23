@@ -7,19 +7,3 @@
     border-bottom: 0.06rem solid rgb(255, 255, 255);
     background: transparent; 
 }
-
-/*NO FUNCIONA DONDE QUIERO
-.effect-1 ~ .focus-border{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 0.125rem;
-    background-color: tomato;
-    transition: 0.4s;
-}
-.effect-1:focus ~ .focus-border{
-    width: 100%;
-    transition: 0.4s;
-    left: 0;
-}

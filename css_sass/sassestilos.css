@@ -8,6 +8,7 @@
 }
 
 /*MAP*/
+/*color de textos*/
 .font--colorprimary {
   color: white;
 }
@@ -90,6 +91,7 @@
   border-radius: 1rem;
   -webkit-box-shadow: 0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.3);
           box-shadow: 0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.3);
+  margin-top: -1rem;
 }
 
 .cardtipe-02 {
@@ -104,8 +106,8 @@
 .cardtipe-03 {
   width: auto;
   height: auto;
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.616);
+  border-radius: 1rem;
   -webkit-box-shadow: 0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.3);
           box-shadow: 0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: none;
@@ -149,56 +151,64 @@
   border: 0;
 }
 
-/*index*/
-.header, .header50vh, .header50vh-galery, .header50vh-service, .header50vh-contact {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url("../assets/fednoe-03.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../assets/fednoe-03.jpg");
+.header, .header-index, .header-nosotros, .header-galeria, .header-servicios, .header-contacto {
   background-color: black;
   background-position: center;
   background-size: cover;
   height: 100vh;
 }
 
-.header .titulo, .header50vh .titulo, .header50vh-galery .titulo, .header50vh-service .titulo, .header50vh-contact .titulo {
+/*index*/
+.header-index {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url("../assets/bg-index.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../assets/bg-index.jpg");
+}
+
+.header-index .titulo {
   height: 50%;
 }
 
 /*nosotros*/
-.header50vh, .header50vh-galery, .header50vh-service {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url("../assets/fednoe-01.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../assets/fednoe-01.jpg");
+.header-nosotros {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url("../assets/bg-nosotros.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../assets/bg-nosotros.jpg");
   height: 50vh;
 }
 
+.header-nosotros .titulo {
+  height: 65%;
+}
+
 /*galeria*/
-.header50vh-galery {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url("../assets/alpa-01.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../assets/alpa-01.jpg");
+.header-galeria {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url("../assets/bg-galeria.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../assets/bg-galeria.jpg");
+  height: 50vh;
+}
+
+.header-galeria .titulo {
+  height: 65%;
 }
 
 /*servicios*/
-.header50vh-service {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url("../assets/alpa-02.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../assets/alpa-02.jpg");
+.header-servicios {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url("../assets/bg-servicios.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../assets/bg-servicios.jpg");
+  height: 50vh;
+}
+
+.header-servicios .titulo {
+  height: 65%;
 }
 
 /*contacto*/
-.header50vh-contact {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url("../assets/alpa-03.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../assets/alpa-03.jpg");
+.header-contacto {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url("../assets/bg-contacto.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../assets/bg-contacto.jpg");
 }
 
-.header--imagenbg {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url("../assets/img-about-us/bg-nosotros.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../assets/img-about-us/bg-nosotros.png");
-  background-color: black;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-}
-
-.header--imagenbg .titulo-header {
-  height: 100vh;
+.header-contacto .titulo {
+  height: 65%;
 }
 
 .row {
@@ -232,9 +242,9 @@
   padding: 2rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr);
+  -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (16rem);
+  -ms-grid-rows: (16rem)[3];
       grid-template-rows: repeat(3, 16rem);
   gap: 0.5rem;
   /*diseño de cuadricula Flaag*/
@@ -291,17 +301,6 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-/*HEADER SERVICIOS*/
-.bg-imagen02 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url(../assets/bg-headerligth.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(../assets/bg-headerligth.jpg);
-  background-size: cover;
-  background-color: black;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
 }
 
 /*CONTENIDO-SERVICIOS*/
@@ -401,32 +400,10 @@ h4 {
   padding: 0.5rem 0;
   border-bottom: 0.06rem solid white;
   background: transparent;
-  position: relative;
-}
-
-.effect-1 ~ .focus-border {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0.125rem;
-  background-color: tomato;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.effect-1:focus ~ .focus-border {
-  width: 100%;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  left: 0;
 }
 
 /*--FOOTER--*/
 .footer {
-  background-color: #2A2E31;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.8)));
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
   padding-top: 3rem;
 }
 
@@ -442,6 +419,18 @@ h4 {
   }
 }
 
+.bg-olivo {
+  background-color: #CAD2C5;
+}
+
+.bg-selva {
+  background-color: #354F52;
+}
+
+.bg-arena {
+  background-color: #F0EAD2;
+}
+
 .box-pt3 {
   padding-top: 3rem;
 }
@@ -452,6 +441,14 @@ h4 {
 
 .box-pt1 {
   padding-top: 1rem;
+}
+
+/* MAIN o SECTION */
+.contenido__feed .presentacion {
+  padding-right: 3rem;
+  padding-left: 3rem;
+  padding-top: 3rem;
+  text-align: center;
 }
 
 .efe-01 figure {
@@ -483,33 +480,25 @@ h4 {
   visibility: visible;
 }
 
-/*FONDO BODY*/
-.fondo-custom {
-  background-color: black;
-}
-
-/* MAIN o SECTION */
-.contenido__feed .presentacion {
-  padding-right: 3rem;
-  padding-left: 3rem;
-  padding-top: 3rem;
-  text-align: center;
-}
-
 .contenido__inv {
   padding-top: 3rem;
-}
-
-.contenido__inv .box-dark {
-  background-color: #2A2E31;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.2)));
-  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
   padding: 3rem;
-  height: 46rem;
+  height: 40rem;
 }
 
-.contenido__inv .box-dark .video-size {
+.contenido__inv .video-size {
   width: 100%;
-  height: 100%;
+  height: 80%;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  top: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
 }
 /*# sourceMappingURL=sassestilos.css.map */

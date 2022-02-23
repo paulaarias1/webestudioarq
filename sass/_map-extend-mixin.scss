@@ -58,13 +58,15 @@ $colordesing:(
 }
 /*tipos de tarjetas */
 .cardtipe-01{
-    @include cardtipe(15rem, 6rem, rgb(255, 255, 255), 1rem)
+    @include cardtipe(15rem, 6rem, rgb(255, 255, 255), 1rem);
+    margin-top: -1rem;
+    
 } 
 .cardtipe-02{
     @include cardtipe(auto, auto, rgba(0, 0, 0, 0.8), 2rem)
 }
 .cardtipe-03{
-    @include cardtipe(auto, auto, rgba(0, 0, 0, 0.2), 2rem);
+    @include cardtipe(auto, auto, rgba(255, 255, 255, 0.616), 1rem);
     box-shadow: none;
 } 
 
@@ -100,24 +102,29 @@ $colordesing:(
     background-color: #EAB464;
     border: 0
 } 
-//estilos de header para cada pagina
 
+//estilos de header para cada pagina
 .header{
     background-color: rgb(0, 0, 0);
     background-position: center;
     background-size: cover;
     height: 100vh;
 }
-/*nosotros*/
+/*index*/
 .header-index{
+    @extend .header;
     background-image: 
     linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.7)
     ), url("../assets/bg-index.jpg");
+    .titulo{
+        height: 50%;
+    }
 }
-.header50vh{
+/*nosotros*/
+.header-nosotros{
     @extend .header;
     background-image: 
     linear-gradient(
@@ -126,30 +133,41 @@ $colordesing:(
       rgba(0, 0, 0, 0.7)
     ), url("../assets/bg-nosotros.jpg");
     height: 50vh;
+    .titulo{
+        height: 65%;
+    }
+    
 }
 /*galeria*/
-.header50vh-gallery{
-    @extend .header50vh;
+.header-galeria{
+    @extend .header;
     background-image: 
     linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.7)
     ), url("../assets/bg-galeria.jpg");
-
+    height: 50vh;
+    .titulo{
+        height: 65%;
+    }
 }
 /*servicios*/
-.header50vh-service{
-    @extend .header50vh;
+.header-servicios{
+    @extend .header;
     background-image: 
     linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.7)
     ), url("../assets/bg-servicios.jpg");
+    height: 50vh;
+    .titulo{
+        height: 65%;
+    }
 }
 /*contacto*/
-.header-contact{
+.header-contacto{
     @extend .header;
     background-image: 
     linear-gradient(
@@ -157,7 +175,9 @@ $colordesing:(
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.7)
     ), url("../assets/bg-contacto.jpg");
-
+    .titulo{
+        height: 65%;
+    }
 }
     
 
