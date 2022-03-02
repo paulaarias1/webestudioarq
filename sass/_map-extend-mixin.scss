@@ -4,7 +4,7 @@ $colordesing:(
     colorprimary: white,
     colorsecondary: black,
     colordetail: #EAB464,
-    colorparra: rgb(82, 82, 82)
+    colorparra: #525252
 );
 @each $tipo, $color in $colordesing{
     .font--#{$tipo} { 

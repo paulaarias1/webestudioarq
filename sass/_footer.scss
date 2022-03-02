@@ -1,18 +1,47 @@
 /*--FOOTER--*/
 .footer{
-    padding-top: 3rem;
-
+    
     @media (min-width: 375px) {
-        .img-logo{
-            width: 80%; 
+        padding-top: 3rem;
+        .alinear-centro{
+            text-align: center;
+            padding-top: 2rem;
+        }
+        .mi-link{
+            text-decoration: none;
+            .isologo{
+                width: 30%;
+                padding-right: 1rem;   
+            }
+        }
+        .icon-social{
+            width: 10%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 3rem;
             
         }
     }
     @media (min-width: 768px) {
-        .img-logo{
-            width: 80%;
-         
+        padding-top: 3rem;
+        .alinear-centro{
+            text-align: left;
         }
+        .mi-link{
+            text-decoration: none;
+            .isologo{
+                width: 40%;
+            
+            }
+        }
+    }
+    .icon-social{
+        width: 20%;
+        padding-left: 1rem;
+        padding-right: 0;
+        padding-top: 0;
+        
+       
     }
     
 

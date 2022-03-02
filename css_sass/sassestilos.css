@@ -403,20 +403,49 @@ h4 {
 }
 
 /*--FOOTER--*/
-.footer {
-  padding-top: 3rem;
-}
-
 @media (min-width: 375px) {
-  .footer .img-logo {
-    width: 80%;
+  .footer {
+    padding-top: 3rem;
+  }
+  .footer .alinear-centro {
+    text-align: center;
+    padding-top: 2rem;
+  }
+  .footer .mi-link {
+    text-decoration: none;
+  }
+  .footer .mi-link .isologo {
+    width: 30%;
+    padding-right: 1rem;
+  }
+  .footer .icon-social {
+    width: 10%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 3rem;
   }
 }
 
 @media (min-width: 768px) {
-  .footer .img-logo {
-    width: 80%;
+  .footer {
+    padding-top: 3rem;
   }
+  .footer .alinear-centro {
+    text-align: left;
+  }
+  .footer .mi-link {
+    text-decoration: none;
+  }
+  .footer .mi-link .isologo {
+    width: 40%;
+  }
+}
+
+.footer .icon-social {
+  width: 20%;
+  padding-left: 1rem;
+  padding-right: 0;
+  padding-top: 0;
 }
 
 .bg-olivo {
@@ -480,15 +509,25 @@ h4 {
   visibility: visible;
 }
 
-.contenido__inv {
+.contenido__inv--video {
   padding-top: 3rem;
   padding: 3rem;
   height: 40rem;
 }
 
-.contenido__inv .video-size {
+.contenido__inv--video .video-size {
   width: 100%;
   height: 80%;
+}
+
+.contenido__inv--axo {
+  padding-top: 4rem;
+  padding: 4rem;
+}
+
+.contenido__inv {
+  padding-top: 3rem;
+  padding: 3rem;
 }
 
 .carousel-caption {

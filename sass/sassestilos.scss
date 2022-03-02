@@ -33,6 +33,7 @@
     padding-top: 1rem;
 }
 
+
 /* MAIN o SECTION */
 .contenido__feed{
     .presentacion{
@@ -69,18 +70,26 @@
         visibility: visible;
     }  
 }
-.contenido__inv{
+.contenido__inv--video{
     padding-top: 3rem;
     padding: 3rem;
     height: 40rem;
-    
     .video-size{
         width: 100%;
         height: 80%;
-        
-    }
-    
+      
+    }   
 }
+.contenido__inv--axo{
+    padding-top: 4rem;
+    padding: 4rem;
+    
+  }
+.contenido__inv{
+    padding-top: 3rem;
+    padding: 3rem;
+}
+
 //carrusel: cambio de lugar de texto hacia arriba
 .carousel-caption {
     position: absolute;
