@@ -305,23 +305,8 @@
 
 /*CONTENIDO-SERVICIOS*/
 .contenido-serv .titulo {
-  font-family: 'Nunito Sans', sans-serif;
   text-align: center;
   padding-top: 4rem;
-}
-
-.contenido-serv .titulo h3 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: tomato;
-  text-transform: uppercase;
-}
-
-.contenido-serv .titulo h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: tomato;
-  text-transform: uppercase;
 }
 
 .contenido-serv .card-1 {
