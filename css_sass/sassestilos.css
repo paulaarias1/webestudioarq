@@ -84,36 +84,45 @@
 }
 
 /*tipos de tarjetas */
+/*card valores*/
 .cardtipe-01 {
   width: 17rem;
   height: 17rem;
   background-color: white;
-  border-radius: 0.5rem;
-  -webkit-box-shadow: 0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.3);
+  border-radius: 0.7rem;
   margin: 0.75rem;
   text-align: center;
   padding: 2rem;
-}
-
-.cardtipe-02 {
-  width: auto;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 2rem;
   -webkit-box-shadow: 0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.3);
           box-shadow: 0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.3);
 }
 
+/*card servicios*/
+.cardtipe-02 {
+  width: 20rem;
+  height: 20rem;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.7rem;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+/*card presupuesto*/
 .cardtipe-03 {
+  width: auto;
+  height: auto;
+  background-color: #CAD2C5;
+  border-radius: 0.7rem;
+  margin: 0.5rem;
+  padding: 0.1rem;
+}
+
+/*card contacto*/
+.cardtipe-04 {
   width: auto;
   height: auto;
   background-color: rgba(255, 255, 255, 0.616);
   border-radius: 1rem;
-  -webkit-box-shadow: 0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 /*EXTEND*/
@@ -219,17 +228,11 @@
           justify-content: center;
 }
 
-#comilla {
-  width: 6rem;
-  height: 5rem;
-}
-
 #icon {
   width: 4.5rem;
   height: 4rem;
 }
 
-/*________________________ */
 /*GALERIA*/
 .box-container {
   margin-left: 3rem;
@@ -306,77 +309,20 @@
 }
 
 /*CONTENIDO-SERVICIOS*/
-.contenido-serv .titulo {
-  text-align: center;
-  padding-top: 4rem;
-}
-
-.contenido-serv .card-1 {
-  text-align: center;
-}
-
-.contenido-serv .card-1 .icon {
+.icon {
   width: 20%;
   padding-top: 3rem;
 }
 
-.contenido-serv .card-1 .card__text {
-  color: white;
-  font-family: 'Nunito Sans', sans-serif;
-  padding-top: 2rem;
-  text-align: center;
-}
-
-.contenido-serv .card-1 h4 {
-  text-transform: uppercase;
-  font-size: 1rem;
-  text-align: center;
-}
-
-.contenido-serv .card-1 h5 {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1rem;
-  color: tomato;
-}
-
-.contenido-serv .card-1 h6 {
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 0.7rem;
-  color: tomato;
-}
-
-.contenido-serv .card-1 ul {
+ul {
   list-style-type: none;
 }
 
-.contenido-serv .card-1 ul li {
+ul li {
   line-height: 1.5rem;
   font-size: 0.8rem;
   font-weight: 300;
   text-transform: uppercase;
-}
-
-/*CONTENIDO-PRESUPUESTOS*/
-.titulo-pres h2 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1.7rem;
-  font-weight: 300;
-}
-
-.titulo-pres h3 {
-  text-align: center;
-  font-size: 1rem;
-  color: tomato;
-}
-
-h4 {
-  text-align: left;
-  text-transform: capitalize;
-  font-size: 1.2rem;
-  font-weight: 300;
 }
 
 /*CONTACTO*/
@@ -394,7 +340,7 @@ h4 {
   .footer {
     padding-top: 3rem;
   }
-  .footer .alinear-centro {
+  .footer .alinear {
     text-align: center;
     padding-top: 2rem;
   }
@@ -417,7 +363,7 @@ h4 {
   .footer {
     padding-top: 3rem;
   }
-  .footer .alinear-centro {
+  .footer .alinear {
     text-align: left;
   }
   .footer .mi-link {
@@ -466,6 +412,12 @@ h4 {
 .box02 {
   margin: 2rem;
   text-align: center;
+}
+
+.box03 {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 0;
 }
 
 /* MAIN o SECTION */

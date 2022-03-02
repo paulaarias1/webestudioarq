@@ -37,7 +37,6 @@ $colordesing:(
 .text05{
     @include estiloletras(400, 1rem, none)
 }
-
 .text06{
     @include estiloletras(800, 1rem, none)
 }
@@ -49,26 +48,37 @@ $colordesing:(
     @include estiloletras(600, 0.7rem, none)
 }
 
+/*tipos de tarjetas */
 @mixin cardtipe ($width, $height, $backgorund-color, $border-radius) {
     width: $width;
     height: $height;
     background-color: $backgorund-color;
-    border-radius: $border-radius;
-    box-shadow: 0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.30);  
+    border-radius: $border-radius;     
 }
-/*tipos de tarjetas */
+/*card valores*/
 .cardtipe-01{
-    @include cardtipe(17rem, 17rem, rgb(255, 255, 255), 0.5rem);
+    @include cardtipe(17rem, 17rem, rgb(255, 255, 255), 0.7rem);
     margin: 0.75rem;
     text-align: center; 
-    padding: 2rem  
+    padding: 2rem; 
+    box-shadow: 0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.30);
 } 
+/*card servicios*/
 .cardtipe-02{
-    @include cardtipe(auto, auto, rgba(0, 0, 0, 0.8), 2rem)
+    @include cardtipe(20rem, 20rem, rgba(0, 0, 0, 0), 0.7rem);
+    margin: 0.5rem;
+    text-align: center; 
 }
+/*card presupuesto*/
 .cardtipe-03{
+    @include cardtipe(auto, auto, #CAD2C5, 0.7rem);
+    margin: 0.5rem;
+    padding: 0.1rem 
+}
+/*card contacto*/
+.cardtipe-04{
     @include cardtipe(auto, auto, rgba(255, 255, 255, 0.616), 1rem);
-    box-shadow: none;
+    
 } 
 
 /*EXTEND*/

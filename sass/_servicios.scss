@@ -1,75 +1,16 @@
 
 /*CONTENIDO-SERVICIOS*/
-.contenido-serv{
-    .titulo{
-        text-align: center;
-        padding-top: 4rem;  
-    }
-    .card-1{
-        text-align: center;
-        .icon{
-            width: 20%;
-            padding-top: 3rem;
-        }
-    
-        .card__text{
-        color: rgb(255, 255, 255);
-        font-family: 'Nunito Sans', sans-serif;
-        padding-top: 2rem;
-        text-align: center;
-        }
-    
-        h4{
-            text-transform: uppercase;
-            font-size: 1rem;
-            text-align: center;
-            
-        }
-        h5{
-            text-transform: uppercase;
-            font-weight: 600;
-            font-size: 1rem;
-            color: tomato;
-    
-        }
-        h6{
-            text-transform: uppercase;
-            font-weight: 400;
-            font-size: 0.7rem;
-            color: tomato;
-            
-        }
-        ul{
-            list-style-type: none;
-            li{
-                line-height: 1.5rem;
-                font-size: 0.8rem;
-                font-weight: 300;  
-                text-transform: uppercase;   
-            }
-        }       
-    }
-    
-   
+.icon{
+    width: 20%;
+    padding-top: 3rem;
 }
-/*CONTENIDO-PRESUPUESTOS*/
-.titulo-pres{
-    h2{
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 1.7rem; 
-        font-weight: 300;  
-    }
-    h3{
-        text-align: center;
-        font-size: 1rem; 
-        color: tomato; 
 
-    }  
-}
-h4{ text-align: left;
-    text-transform: capitalize;
-    font-size: 1.2rem; 
-    font-weight: 300;
-        
-}
+ul{
+    list-style-type: none;
+    li{
+        line-height: 1.5rem;
+        font-size: 0.8rem;
+        font-weight: 300;  
+        text-transform: uppercase;   
+    }
+}       
