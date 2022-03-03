@@ -121,8 +121,20 @@
 .cardtipe-04 {
   width: auto;
   height: auto;
-  background-color: rgba(255, 255, 255, 0.616);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 1rem;
+  padding: 0.5rem 0;
+}
+
+/*card template 404*/
+.cardtipe-05 {
+  width: auto;
+  height: auto;
+  background-color: #CAD2C5;
+  border-radius: 0.7rem;
+  margin: 0.5rem;
+  padding: 0.1rem;
+  text-align: center;
 }
 
 /*EXTEND*/
@@ -234,16 +246,7 @@
 }
 
 /*GALERIA*/
-.box-container {
-  margin-left: 3rem;
-  margin-right: 3rem;
-  margin-bottom: 3rem;
-  margin-top: -3rem;
-  border-radius: 1rem;
-  background-color: white;
-}
-
-.box-container .galeria {
+.galeria {
   padding: 2rem;
   display: -ms-grid;
   display: grid;
@@ -254,18 +257,22 @@
   gap: 0.5rem;
   /*diseño de cuadricula Flaag*/
   /*diseño de cuadricula Gamag*/
+  /*diseño de cuadricula Sersol*/
 }
 
-.box-container .galeria .galeria__box--01 {
+.galeria .galeria__box--01 {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1 / span 3;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / span 1;
+  border-left: solid 4px #EAB464;
+  padding: 2rem;
+  text-align: justify;
 }
 
-.box-container .galeria .galeria__box--02 {
+.galeria .galeria__box--02 {
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
   grid-column: 4 / span 1;
@@ -274,7 +281,7 @@
   grid-row: 1 / span 2;
 }
 
-.box-container .galeria .galeria__box--03 {
+.galeria .galeria__box--03 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1 / span 2;
@@ -283,7 +290,7 @@
   grid-row: 2 / span 2;
 }
 
-.box-container .galeria .galeria__box--04 {
+.galeria .galeria__box--04 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3 / span 1;
@@ -292,7 +299,7 @@
   grid-row: 2 / span 1;
 }
 
-.box-container .galeria .galeria__box--05 {
+.galeria .galeria__box--05 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-column: 3 / span 2;
@@ -301,11 +308,107 @@
   grid-row: 3 / span 1;
 }
 
-.box-container .galeria .galeria__img {
+.galeria .galeria__img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.galeria .galeria__box--06 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / span 1;
+  border-left: solid 4px #EAB464;
+  padding: 2rem;
+  text-align: justify;
+}
+
+.galeria .galeria__box--07 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / span 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / span 1;
+}
+
+.galeria .galeria__box--08 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / span 1;
+}
+
+.galeria .galeria__box--09 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / span 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / span 2;
+}
+
+.galeria .galeria__box--10 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / span 1;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / span 1;
+}
+
+.galeria .galeria__box--11 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / span 1;
+  border-left: solid 4px #EAB464;
+  padding: 2rem;
+  text-align: justify;
+}
+
+.galeria .galeria__box--12 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / span 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / span 2;
+}
+
+.galeria .galeria__box--13 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / span 1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / span 2;
+}
+
+.galeria .galeria__box--14 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / span 1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / span 1;
+}
+
+.galeria .galeria__box--15 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / span 2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / span 1;
 }
 
 /*CONTENIDO-SERVICIOS*/
@@ -418,6 +521,19 @@ ul li {
   margin-top: 2rem;
   text-align: center;
   padding: 0;
+}
+
+.box04 {
+  margin: 3rem;
+}
+
+.box05 {
+  margin: 2rem;
+}
+
+.box06 {
+  height: 100vh;
+  padding-top: 20%;
 }
 
 /* MAIN o SECTION */
