@@ -22,10 +22,23 @@ $colordesing:(
 }
 /*tipos de textos de grandes a pequeños*/
 .text01{
-    @include estiloletras(400, 3rem, lowercase )
+    @media (min-width: 375px) {
+        @include estiloletras(400, 1.5rem, lowercase)
+
+    }
+    @media (min-width: 768px) {
+        @include estiloletras(400, 3rem, lowercase)
+    }
+    
+    
 }
 .text02{
-    @include estiloletras(200, 3rem, none )
+    @media (min-width: 375px) {
+        @include estiloletras(200, 1.5rem, none )  
+    }
+    @media (min-width: 768px) {
+        @include estiloletras(200, 3rem, none ) 
+    }   
 }
 
 .text03{
@@ -58,9 +71,9 @@ $colordesing:(
 /*card valores*/
 .cardtipe-01{
     @include cardtipe(17rem, 17rem, rgb(255, 255, 255), 0.7rem);
-    margin: 0.75rem;
+    margin: 0.5rem;
     text-align: center; 
-    padding: 2rem; 
+    padding: 0.5rem; 
     box-shadow: 0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.30);
 } 
 /*card servicios*/

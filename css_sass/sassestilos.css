@@ -27,18 +27,40 @@
 
 /*MIXIN*/
 /*tipos de textos de grandes a pequeños*/
-.text01 {
-  font-size: 3rem;
-  font-weight: 400;
-  text-transform: lowercase;
-  font-family: 'Nunito', sans-serif;
+@media (min-width: 375px) {
+  .text01 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-family: 'Nunito', sans-serif;
+  }
 }
 
-.text02 {
-  font-size: 3rem;
-  font-weight: 200;
-  text-transform: none;
-  font-family: 'Nunito', sans-serif;
+@media (min-width: 768px) {
+  .text01 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-family: 'Nunito', sans-serif;
+  }
+}
+
+@media (min-width: 375px) {
+  .text02 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-transform: none;
+    font-family: 'Nunito', sans-serif;
+  }
+}
+
+@media (min-width: 768px) {
+  .text02 {
+    font-size: 3rem;
+    font-weight: 200;
+    text-transform: none;
+    font-family: 'Nunito', sans-serif;
+  }
 }
 
 .text03 {
@@ -90,9 +112,9 @@
   height: 17rem;
   background-color: white;
   border-radius: 0.7rem;
-  margin: 0.75rem;
+  margin: 0.5rem;
   text-align: center;
-  padding: 2rem;
+  padding: 0.5rem;
   -webkit-box-shadow: 0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.3);
           box-shadow: 0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.3);
 }
@@ -240,9 +262,12 @@
           justify-content: center;
 }
 
-#icon {
-  width: 4.5rem;
-  height: 4rem;
+.icon-comilla {
+  width: 10%;
+}
+
+.icon {
+  width: 100%;
 }
 
 /*GALERIA*/
@@ -534,6 +559,11 @@ ul li {
 .box06 {
   height: 100vh;
   padding-top: 20%;
+}
+
+.box07 {
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 /* MAIN o SECTION */
