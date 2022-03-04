@@ -202,8 +202,9 @@ $colordesing:(
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.7)
     ), url("../assets/bg-contacto.jpg");
+    height: 150vh;
     .titulo{
-        height: 65%;
+        height: 80%;
     }
 }
 
@@ -238,14 +239,6 @@ $colordesing:(
 
 
 
-.form-estilo{
-    border: 0;
-    outline: none;
-    width:100%;
-    padding: 0.5rem 0;
-    border-bottom: 0.06rem solid rgb(255, 255, 255);
-    background: transparent;
-}
 
 
 

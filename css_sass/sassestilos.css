@@ -7,6 +7,7 @@
           box-sizing: 0;
 }
 
+/*estilos especificos importados*/
 /*MAP*/
 /*color de textos*/
 .font--colorprimary {
@@ -249,10 +250,11 @@
 .header-contacto {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url("../assets/bg-contacto.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../assets/bg-contacto.jpg");
+  height: 150vh;
 }
 
 .header-contacto .titulo {
-  height: 65%;
+  height: 80%;
 }
 
 .box00, .box01, .box02, .box03, .box05 {
@@ -281,15 +283,6 @@
 .box05 {
   height: 100vh;
   padding-top: 30%;
-}
-
-.form-estilo {
-  border: 0;
-  outline: none;
-  width: 100%;
-  padding: 0.5rem 0;
-  border-bottom: 0.06rem solid white;
-  background: transparent;
 }
 
 .row {
@@ -677,49 +670,16 @@ ul li {
   background-color: #F0EAD2;
 }
 
-/*
-.box-pt3{
-    padding-top: 3rem;
-}
-.box-pt2{
-    padding-top: 2rem;
-}
-.box-pt1{
-    padding-top: 1rem;
+.form-estilo {
+  border: 0;
+  outline: none;
+  width: 100%;
+  padding: 0.5rem 0;
+  border-bottom: 0.06rem solid white;
+  background: transparent;
 }
 
-.box01{
-    padding:3rem;
-} 
-
-.box02{
-    margin: 2rem;
-    text-align: center;
-
-}
-.box03{
-    margin-top: 2rem;
-    text-align: center;
-    padding: 0;
-}
-.box04{
-    margin: 3rem
-}
-.box05{
-    margin: 2rem;
-}
-/*
-.box06{
-    height: 100vh;
-    padding-top: 20%;
-
-} 
-.box07{
-    margin-left: 5rem;
-    margin-right: 5rem;
-}
-*/
-/* MAIN o SECTION */
+/* HOME */
 .efe-01 figure {
   position: relative;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);

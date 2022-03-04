@@ -5,14 +5,14 @@
     padding: 0;
     box-sizing: 0;
 }
+/*estilos especificos importados*/
 @import "map-extend-mixin";
 @import "nosotros";
 @import "galeria";
 @import "servicios";
-@import "contacto";
 @import "footer";
 
-//estilos comunes para armar mixin o extend
+//estilos comunes del proyecto
 .bg-olivo{
     background-color: #CAD2C5;
 }
@@ -22,52 +22,17 @@
 .bg-arena{
     background-color: #F0EAD2;
 }
-/*
-.box-pt3{
-    padding-top: 3rem;
-}
-.box-pt2{
-    padding-top: 2rem;
-}
-.box-pt1{
-    padding-top: 1rem;
+//estilo para todos los formularios
+.form-estilo{
+    border: 0;
+    outline: none;
+    width:100%;
+    padding: 0.5rem 0;
+    border-bottom: 0.06rem solid rgb(255, 255, 255);
+    background: transparent;
 }
 
-.box01{
-    padding:3rem;
-} 
-
-.box02{
-    margin: 2rem;
-    text-align: center;
-
-}
-.box03{
-    margin-top: 2rem;
-    text-align: center;
-    padding: 0;
-}
-.box04{
-    margin: 3rem
-}
-.box05{
-    margin: 2rem;
-}
-/*
-.box06{
-    height: 100vh;
-    padding-top: 20%;
-
-} 
-.box07{
-    margin-left: 5rem;
-    margin-right: 5rem;
-}
-*/
-
-
-/* MAIN o SECTION */
-
+/* HOME */
 //efecto Hover 
 .efe-01{
     figure{
