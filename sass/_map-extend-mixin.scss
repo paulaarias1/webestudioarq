@@ -235,6 +235,11 @@ $colordesing:(
     height: 100vh;
     padding-top: 30%;
 }
+.box06{
+    @extend .box00;
+    padding: 3rem 0 3rem 0;
+    text-align: left;
+}
 
 
 

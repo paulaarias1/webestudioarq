@@ -7,7 +7,6 @@
           box-sizing: 0;
 }
 
-/*estilos especificos importados*/
 /*MAP*/
 /*color de textos*/
 .font--colorprimary {
@@ -257,7 +256,7 @@
   height: 80%;
 }
 
-.box00, .box01, .box02, .box03, .box05 {
+.box00, .box01, .box02, .box03, .box05, .box06 {
   padding: 3rem 3rem 3rem 3rem;
   height: auto;
   text-align: center;
@@ -283,6 +282,11 @@
 .box05 {
   height: 100vh;
   padding-top: 30%;
+}
+
+.box06 {
+  padding: 3rem 0 3rem 0;
+  text-align: left;
 }
 
 .row {
