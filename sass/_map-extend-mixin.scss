@@ -1,4 +1,5 @@
 /*MAP*/
+
 /*color de textos*/
 $colordesing:(
     colorprimary: white,
@@ -24,13 +25,10 @@ $colordesing:(
 .text01{
     @media (min-width: 375px) {
         @include estiloletras(400, 1.5rem, lowercase)
-
     }
     @media (min-width: 768px) {
         @include estiloletras(400, 3rem, lowercase)
-    }
-    
-    
+    }   
 }
 .text02{
     @media (min-width: 375px) {
@@ -53,7 +51,6 @@ $colordesing:(
 .text06{
     @include estiloletras(800, 1rem, none)
 }
-
 .text07{
     @include estiloletras(600, 0.7rem, uppercase)
 }
@@ -78,15 +75,14 @@ $colordesing:(
 } 
 /*card servicios*/
 .cardtipe-02{
-    @include cardtipe(20rem, 20rem, rgba(0, 0, 0, 0), 0.7rem);
+    @include cardtipe(15rem, 25rem, rgba(0, 0, 0, 0), 0.7rem);
     margin: 0.5rem;
     text-align: center; 
 }
 /*card presupuesto*/
 .cardtipe-03{
     @include cardtipe(auto, auto, #CAD2C5, 0.7rem);
-    margin: 0.5rem;
-    padding: 0.1rem 
+    padding: 0.1rem; 
 }
 /*card contacto*/
 .cardtipe-04{
@@ -98,8 +94,7 @@ $colordesing:(
     @include cardtipe(auto, auto, #CAD2C5, 0.7rem);
     margin: 0.5rem;
     padding: 2rem;
-    text-align: center;
-
+    text-align: center
 }
 
 /*EXTEND*/
@@ -135,7 +130,7 @@ $colordesing:(
     border: 0
 } 
 
-//estilos de header para cada pagina
+//header cambio de imagen para cada pagina
 .header{
     background-color: rgb(0, 0, 0);
     background-position: center;
@@ -166,7 +161,7 @@ $colordesing:(
     ), url("../assets/bg-nosotros.jpg");
     height: 50vh;
     .titulo{
-        height: 65%;
+        height: 60%;
     }
     
 }
@@ -181,7 +176,7 @@ $colordesing:(
     ), url("../assets/bg-galeria.jpg");
     height: 50vh;
     .titulo{
-        height: 65%;
+        height: 60%;
     }
 }
 /*servicios*/
@@ -195,7 +190,7 @@ $colordesing:(
     ), url("../assets/bg-servicios.jpg");
     height: 50vh;
     .titulo{
-        height: 65%;
+        height: 60%;
     }
 }
 /*contacto*/
@@ -211,6 +206,49 @@ $colordesing:(
         height: 65%;
     }
 }
+
+//estilos de contenedores
+.box00{
+    padding: 3rem 3rem 3rem 3rem;
+    height: auto;
+    text-align: center;
+}   
+.box01{
+    @extend .box00;
+    text-align: left;
+}
+.box02{
+    @extend .box00;
+    height: 40rem;
+}
+.box03{
+    @extend .box00;
+    padding: 2rem 0 0 0;
+}
+.box04{
+    margin: 0.75rem 0rem 0.75rem 0rem;
+    text-align: left;
+}
+.box05{
+    @extend .box00;
+    height: 100vh;
+    padding-top: 30%;
+}
+
+
+
+
+.form-estilo{
+    border: 0;
+    outline: none;
+    width:100%;
+    padding: 0.5rem 0;
+    border-bottom: 0.06rem solid rgb(255, 255, 255);
+    background: transparent;
+}
+
+
+
     
 
 

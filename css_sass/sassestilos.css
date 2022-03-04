@@ -121,8 +121,8 @@
 
 /*card servicios*/
 .cardtipe-02 {
-  width: 20rem;
-  height: 20rem;
+  width: 15rem;
+  height: 25rem;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 0.7rem;
   margin: 0.5rem;
@@ -135,7 +135,6 @@
   height: auto;
   background-color: #CAD2C5;
   border-radius: 0.7rem;
-  margin: 0.5rem;
   padding: 0.1rem;
 }
 
@@ -221,7 +220,7 @@
 }
 
 .header-nosotros .titulo {
-  height: 65%;
+  height: 60%;
 }
 
 /*galeria*/
@@ -232,7 +231,7 @@
 }
 
 .header-galeria .titulo {
-  height: 65%;
+  height: 60%;
 }
 
 /*servicios*/
@@ -243,7 +242,7 @@
 }
 
 .header-servicios .titulo {
-  height: 65%;
+  height: 60%;
 }
 
 /*contacto*/
@@ -254,6 +253,43 @@
 
 .header-contacto .titulo {
   height: 65%;
+}
+
+.box00, .box01, .box02, .box03, .box05 {
+  padding: 3rem 3rem 3rem 3rem;
+  height: auto;
+  text-align: center;
+}
+
+.box01 {
+  text-align: left;
+}
+
+.box02 {
+  height: 40rem;
+}
+
+.box03 {
+  padding: 2rem 0 0 0;
+}
+
+.box04 {
+  margin: 0.75rem 0rem 0.75rem 0rem;
+  text-align: left;
+}
+
+.box05 {
+  height: 100vh;
+  padding-top: 30%;
+}
+
+.form-estilo {
+  border: 0;
+  outline: none;
+  width: 100%;
+  padding: 0.5rem 0;
+  border-bottom: 0.06rem solid white;
+  background: transparent;
 }
 
 .row {
@@ -593,60 +629,40 @@ ul li {
   text-transform: uppercase;
 }
 
-/*CONTACTO*/
-.effect-1 {
-  border: 0;
-  outline: none;
-  width: 100%;
-  padding: 0.5rem 0;
-  border-bottom: 0.06rem solid white;
-  background: transparent;
-}
-
 /*--FOOTER--*/
 @media (min-width: 375px) {
-  .footer {
-    padding-top: 3rem;
-  }
-  .footer .alinear {
+  .alinear {
     text-align: center;
-    padding-top: 2rem;
+    margin-top: 2rem;
   }
-  .footer .mi-link {
+  .mi-link {
     text-decoration: none;
   }
-  .footer .mi-link .isologo {
+  .mi-link .isologo {
     width: 30%;
     padding-right: 1rem;
   }
-  .footer .icon-social {
+  .icon-social {
     width: 10%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 3rem;
+    margin: 0.5rem;
   }
 }
 
 @media (min-width: 768px) {
-  .footer {
-    padding-top: 3rem;
-  }
-  .footer .alinear {
+  .alinear {
     text-align: left;
   }
-  .footer .mi-link {
+  .mi-link {
     text-decoration: none;
   }
-  .footer .mi-link .isologo {
+  .mi-link .isologo {
     width: 40%;
   }
-}
-
-.footer .icon-social {
-  width: 20%;
-  padding-left: 1rem;
-  padding-right: 0;
-  padding-top: 0;
+  .icon-social {
+    width: 10%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 .bg-olivo {
@@ -661,59 +677,49 @@ ul li {
   background-color: #F0EAD2;
 }
 
-.box-pt3 {
-  padding-top: 3rem;
+/*
+.box-pt3{
+    padding-top: 3rem;
+}
+.box-pt2{
+    padding-top: 2rem;
+}
+.box-pt1{
+    padding-top: 1rem;
 }
 
-.box-pt2 {
-  padding-top: 2rem;
-}
+.box01{
+    padding:3rem;
+} 
 
-.box-pt1 {
-  padding-top: 1rem;
-}
+.box02{
+    margin: 2rem;
+    text-align: center;
 
-.box01 {
-  padding: 3rem;
 }
-
-.box02 {
-  margin: 2rem;
-  text-align: center;
+.box03{
+    margin-top: 2rem;
+    text-align: center;
+    padding: 0;
 }
-
-.box03 {
-  margin-top: 2rem;
-  text-align: center;
-  padding: 0;
+.box04{
+    margin: 3rem
 }
-
-.box04 {
-  margin: 3rem;
+.box05{
+    margin: 2rem;
 }
+/*
+.box06{
+    height: 100vh;
+    padding-top: 20%;
 
-.box05 {
-  margin: 2rem;
+} 
+.box07{
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
-
-.box06 {
-  height: 100vh;
-  padding-top: 20%;
-}
-
-.box07 {
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
+*/
 /* MAIN o SECTION */
-.contenido__feed .presentacion {
-  padding-right: 3rem;
-  padding-left: 3rem;
-  padding-top: 3rem;
-  text-align: center;
-}
-
 .efe-01 figure {
   position: relative;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
@@ -743,25 +749,9 @@ ul li {
   visibility: visible;
 }
 
-.contenido__inv--video {
-  padding-top: 3rem;
-  padding: 3rem;
-  height: 40rem;
-}
-
-.contenido__inv--video .video-size {
+.video-size {
   width: 100%;
   height: 80%;
-}
-
-.contenido__inv--axo {
-  padding-top: 4rem;
-  padding: 4rem;
-}
-
-.contenido__inv {
-  padding-top: 3rem;
-  padding: 3rem;
 }
 
 .carousel-caption {

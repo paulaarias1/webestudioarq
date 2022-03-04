@@ -23,9 +23,9 @@
 </head>
 
 <body>
-    <header class="container-fluid header-index font--colorprimary">
+    <header class="header-index font--colorprimary">
         <!--navbar-->
-        <div class="row box-pt3">
+        <div class="row box01">
             <nav class="navbar navbar-expand-sm navbar-dark bg-transparent text07"aria-label="Third navbar example">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="./index.html">
@@ -59,7 +59,7 @@
         </div>
         <!--titulo principal--> 
         <div class="row titulo align-items-end">    
-            <span class="col-12 ">
+            <span class="col-10 ">
                 <h1 class="text-center text02 ">Conducir aquello que imaginaste,<p class="text01">hasta su habitar</p></h1>   
             </span>
         </div>
@@ -71,17 +71,18 @@
         </div>           
     </header>
   
-    <main class="box-pt3" id="01">
-        <div class="container-fluid">
-            <div class="row contenido__feed">
-                <!-- titulo portfolio-->
-                <span class="col-10 text-center presentacion ">
+    <main>
+        <div class="box00">
+            <!-- titulo portfolio-->
+            <div class="row box00">
+                <span class="col-10" id="01">
                     <h2 class="text03 font--colordetail">PORTFOLIO</h2>
                     <p class="text04 font--colorsecondary">Bienvenido a nuestra coleccion de arquitectura</p>  
                     <p class="text05 font--colorparra"> En este espacio vas a encontrar todos nuestros diseños entregados, nuestra forma de trabajo, obras y proyectos de inversion en los que podes ser parte.</p>
                 </span>
-
-                <!-- imagenes con link a galeria-->               
+            </div>  
+            <!-- imagenes con link a galeria-->
+            <div class="row">
                 <div class="col-6 col-lg-3 efe-01">
                     <figure>
                         <a href="./galeria.html#flaag" class="text-reset">
@@ -92,7 +93,7 @@
                                     <li >180m2</li>
                                     <li class="text08">Proyecto y Contruccion</li> 
                                     <li>Año: 2022</li>
-                                     
+                                    
                                 </ul>     
                             </div>
                         </a>   
@@ -146,8 +147,10 @@
                         </a>
                     </figure>  
                 </div>
+            </div>
 
-                <div class="col-6 col-lg-3 box-pt1 efe-01">
+            <div class="row">
+                <div class="col-6 col-lg-3 efe-01">
                     <figure>
                         <a href="./galeria.html#template" class="text-reset">
                             <img class="w-100" src="./assets/feed/05-gussol.jpg" alt="render residencial">
@@ -162,8 +165,7 @@
                         </a> 
                     </figure>      
                 </div>
-
-                <div class="col-6 col-lg-3 box-pt1 efe-01">
+                <div class="col-6 col-lg-3 efe-01">
                     <figure>
                         <a href="./galeria.html#template" class="text-reset">
                             <img class="w-100" src="./assets/feed/06-natgil.jpg" alt="render residencial">
@@ -179,7 +181,7 @@
                     </figure>      
                 </div>
 
-                <div class="col-6 col-lg-3 box-pt1 efe-01">
+                <div class="col-6 col-lg-3 efe-01">
                     <figure>
                         <a href="./galeria.html#template" class="text-reset">
                             <img class="w-100" src="./assets/feed/07-carflo.jpg" alt="render residencial">
@@ -195,7 +197,7 @@
                     </figure>       
                 </div>
 
-                <div class="col-6 col-lg-3 box-pt1 efe-01">
+                <div class="col-6 col-lg-3 efe-01">
                     <figure>
                         <a href="./galeria.html#sersol" class="text-reset">
                             <img class="w-100" src="./assets/feed/08-sersole.jpg" alt="render residencial">
@@ -211,91 +213,90 @@
                     </figure>      
                 </div>
             </div>
-        
-            <!-- carrusel seccion inversion -->
-            <div id="carouselExampleIndicators" class="carousel slide overlay-carrusel" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner ">
-                  <div class="carousel-item active">
-                    <img src="./assets/proy-inversion.jpg" class="d-block w-100 h-50vh" alt="render frontal">
-                    <span class=" carousel-caption d-none d-md-block" >
-                        <h2 class="text03 font--colordetail">PROYECTO EN MARCHA:</h2>
-                        <p class="text04 font--colorprimary"> Desarrollo inmobiliario "Simiente Oeste"</p>        
-                    </span>
-                  </div>
-                  <div class="carousel-item ">
-                    <img src="./assets/proy-inversion2.jpg" class="d-block w-100 h-50vh" alt="render esquina">
-                    <span class=" carousel-caption d-none d-md-block" >
-                        <h2 class="text03 font--colordetail">CASAS SEPARADAS</h2>
-                        <p class="text04 font--colorprimary"> con 100m2 cada una y posibilidad de ampliacion</p>        
-                    </span>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/proy-inversion3.jpg" class="d-block w-100 h-50vh" alt="render comedor">
-                    <span class=" carousel-caption d-none d-md-block" >
-                        <h2 class="text03 font--colordetail">DISEÑADAS</h2>
-                        <p class="text04 font--colorprimary"> Para el confort y la autenticidad</p>
-                                
-                    </span>
-                  </div>
-                  <div class="carousel-item ">
-                    <img src="./assets/proy-inversion4.jpg" class="d-block w-100 " alt="render ante-baño">
-                    <span class=" carousel-caption d-none d-md-block" >
-                        <h2 class="text03 font--colordetail">UBICACIÓN</h2>
-                        <p class="text04 font--colorprimary">Barrio Nuevo Bimaco, Ciudad de Rio Cuarto, Córdoba.</p>        
-                    </span>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+        </div>      
+        <!-- carrusel seccion inversion -->
+        <div id="carouselExampleIndicators" class="carousel slide overlay-carrusel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
-            <!-- axonometrica del proyecto -->
-            <div class="row bg-olivo contenido__inv--axo">
-                 <!-- imagenes PNG -->
-                <div class="col-10 offset-lg-1 col-lg-5" data-aos="zoom-in-right" >
-                    <img class="w-100" src="./assets/img-plantabaja.png" alt="planta baja">
-                </div>
+            <div class="carousel-inner ">
+              <div class="carousel-item active">
+                <img src="./assets/proy-inversion.jpg" class="d-block w-100 h-50vh" alt="render frontal">
+                <span class=" carousel-caption d-none d-md-block" >
+                    <h2 class="text03 font--colordetail">PROYECTO EN MARCHA:</h2>
+                    <p class="text04 font--colorprimary"> Desarrollo inmobiliario "Simiente Oeste"</p>        
+                </span>
+              </div>
+              <div class="carousel-item ">
+                <img src="./assets/proy-inversion2.jpg" class="d-block w-100 h-50vh" alt="render esquina">
+                <span class=" carousel-caption d-none d-md-block" >
+                    <h2 class="text03 font--colordetail">CASAS SEPARADAS</h2>
+                    <p class="text04 font--colorprimary"> con 100m2 cada una y posibilidad de ampliacion</p>        
+                </span>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/proy-inversion3.jpg" class="d-block w-100 h-50vh" alt="render comedor">
+                <span class=" carousel-caption d-none d-md-block" >
+                    <h2 class="text03 font--colordetail">DISEÑADAS</h2>
+                    <p class="text04 font--colorprimary"> Para el confort y la autenticidad</p>
+                            
+                </span>
+              </div>
+              <div class="carousel-item ">
+                <img src="./assets/proy-inversion4.jpg" class="d-block w-100 " alt="render ante-baño">
+                <span class=" carousel-caption d-none d-md-block" >
+                    <h2 class="text03 font--colordetail">UBICACIÓN</h2>
+                    <p class="text04 font--colorprimary">Barrio Nuevo Bimaco, Ciudad de Rio Cuarto, Córdoba.</p>        
+                </span>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- axonometrica del proyecto -->
+        <div class="row bg-olivo box00">
+             <!-- imagenes PNG -->
+            <div class="col-10 offset-lg-1 col-lg-5" data-aos="zoom-in-right" >
+                <img class="w-100" src="./assets/img-plantabaja.png" alt="planta baja">
+            </div>
 
-                <div class="col-10 offset-lg-1 col-lg-5" data-aos="zoom-in-left">
-                    <img class="w-100" src="./assets/img-plantaalta.png" alt="planta alta">
-                </div>      
+            <div class="col-10 offset-lg-1 col-lg-5" data-aos="zoom-in-left">
+                <img class="w-100" src="./assets/img-plantaalta.png" alt="planta alta">
+            </div>      
+        </div>
+        <!-- descripcion del proyecto-->
+        <div class="row font--colorparra box01">
+            <div class="col-12 col-lg-3 align-self-start ">
+                <h2 class="text04"> SIMIENTE OESTE- DESARROLLO INMOBILIARIO</h2> 
             </div>
-            <!-- descripcion del proyecto-->
-            <div class="row contenido__inv font--colorparra box-pt3">
-                <div class="col-12 col-lg-3 align-self-start ">
-                    <h2 class="text04"> SIMIENTE OESTE- DESARROLLO INMOBILIARIO</h2> 
-                </div>
-                <div class="col-12 col-lg-3">
-                    <p class="text05"> <span class="font--colordetail text06">Planta baja </span>con hall de ingreso, estar-comedor y cocina integrado. Lavadero separado, baño de servicio y cochera semicubierta con espacio de asador</p> 
-                </div>
-                <div class="col-12 col-lg-3">
-                    <p class="text05"><span class="font--colordetail text06">Planta alta </span>con dos dormitorios amplios, uno de ellos con balcon. Ante-baño y baño completo. Posibilidad de ampliacion para un tercer dormitorio y baño.
-                    </p>
-                </div>   
+            <div class="col-12 col-lg-3">
+                <p class="text05"> <span class="font--colordetail text06">Planta baja </span>con hall de ingreso, estar-comedor y cocina integrado. Lavadero separado, baño de servicio y cochera semicubierta con espacio de asador</p> 
             </div>
-            <!-- video del proyecto-->
-            <div class="row contenido__inv--video">
-                 <!-- video -->
-                 <div class="col-12 col-lg-8">
-                    <iframe class="video-size" src="https://www.youtube.com/embed/zFcT8z_hu84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>        
-        </div>  
+            <div class="col-12 col-lg-3">
+                <p class="text05"><span class="font--colordetail text06">Planta alta </span>con dos dormitorios amplios, uno de ellos con balcon. Ante-baño y baño completo. Posibilidad de ampliacion para un tercer dormitorio y baño.
+                </p>
+            </div>   
+        </div>
+        <!-- video del proyecto-->
+        <div class="row box02">
+             <!-- video -->
+             <div class="col-12 col-lg-8">
+                <iframe class="video-size" src="https://www.youtube.com/embed/zFcT8z_hu84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>            
     </main>
 
-    <footer class="footer bg-arena">
-        <div class="container-fluid">
+    <footer class=" bg-arena">
+        <div class="box00">
             <nav class="row align-items-center">
                 <!-- logo -->
                 <a href="./index.html" class="col-8 col-md-3 mi-link alinear">
@@ -320,7 +321,7 @@
                 <ul class="col-8 col-md-3 list-unstyled text-07 alinear">
                     <li class="text04 font--colorparra">contacto</li>
                     <li class="text08 font--colorparra"> +54 (358) 5149815 | +54 (358) 4197363</li>
-                    <li class="text08 font--colorparra pt-2"> Ciudad de Rio Cuarto, Pcia. de Córdoba</li>
+                    <li class="text08 font--colorparra"> Ciudad de Rio Cuarto, Pcia. de Córdoba</li>
                     <li class="text08 font--colorparra"> Argentina</li>  
                 </ul>    
             </nav>

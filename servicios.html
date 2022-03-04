@@ -20,11 +20,11 @@
     <link rel="stylesheet" href="./css_sass/sassestilos.css">
     <!-- Animaciones -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
 </head>
 <body>
-    <header class="container-fluid header-servicios">
-        <div class="row box-pt3">
+    <header class="header-servicios font--colorprimary">
+        <div class="row box01">
              <!--navbar-->
              <nav class="navbar navbar-expand-sm navbar-dark bg-transparent text07"aria-label="Third navbar example">
                 <div class="container-fluid">
@@ -55,24 +55,26 @@
                         </ul>
                     </div>
                 </div>
-            </nav>  
-        </div>         
-    </header>
-    <section class="box01" data-aos="fade-up"data-aos-duration="3000">
-        <div class="row">
-            <div class="col-10 box02">
-                <h2 class="text03 font--colordetail">nuestros servicios</h2>
-                <p class="text05 font--colorparra">En esta seccion podrás pedir presupuesto sin cargo del servicio que necesites</p>
-            </div>
+            </nav>
         </div>
-
+        <!--titulo principal--> 
+        <div class="row titulo align-items-end "> 
+            <div class="col-10 text-center">
+                <span class="text01">servicios </span><span class="text02">| presupuestos</span>
+            </div>   
+        </div> 
+    </header>
+    </div>
+    <!-- Servicios -->
+    <section class="box00" data-aos="fade-up"data-aos-duration="3000">
         <div class="row">
-            <div class="col-6 col-lg-3 cardtipe-02">
+            <!-- Anteproyecto -->
+            <div class="col-10 col-md-3 cardtipe-02">
                 <img class="icon" src="./assets/serv-idea.png" alt="icono anteproyecto">
                 <div class="box03">
                     <h3 class="text05">ANTEPROYECTO </h3>
                     <P class="text06">Diseño global de arquitectura</P>
-                    <ul class="font--colorparra p-0">
+                    <ul class="font--colorsecondary p-0">
                         <li class="text08">Renders fachadas</li>
                         <li class="text08">Plantas de arquitectura espacial</li>
                         <li class="text08">Diseño para ubicacion de instalaciones</li>
@@ -80,13 +82,13 @@
                     </ul>
                 </div>
             </div>
-
-            <div class="col-6 col-lg-3 cardtipe-02">
+            <!-- Planos Proyecto -->
+            <div class="col-10 col-md-3 cardtipe-02">
                 <img class="icon" src="./assets/serv-planos.png" alt="icono proyecto">
                 <div class="box03">
                     <h3 class="text05">PLANOS TÉCNICOS</h3>
                     <p class="text06">Obra nueva, remodelacion y/o relevamiento</p>
-                    <ul class="font--colorparra p-0">
+                    <ul class="font--colorsecondary p-0">
                         <li class="text08">Render exteriores</li>
                         <li class="text08">Plano técnico de arquitectura</li>
                         <li class="text08">Calculo de estructuras sismoresistentes</li>
@@ -96,183 +98,201 @@
                     </ul>
                 </div>
             </div>
-            
-            <div class="col-6  col-lg-3 cardtipe-02">
+            <!-- Conduccion -->
+            <div class="col-10 col-md-3 cardtipe-02">
                 <img class="icon" src="./assets/serv-obra.png" alt="icono conduccion de obra">
                 <div class="box03">
                     <h3 class="text05">CONDUCCIÓN</h3>
                     <p class="text06"> Técnica de obra</p>
-                    <ul class="font--colorparra p-0">
+                    <ul class="font--colorsecondary p-0">
                         <li class="text08">Planos por etapa de obra</li>
                         <li class="text08">Seguimiento de cada tarea</li>
                         <li class="text08">Certificacion de avance de obra</li>
                     </ul>
                 </div>
             </div>
-
-            <div class="col-6 col-lg-3 cardtipe-02" >
+            <!-- Interiorismo -->
+            <div class="col-6 col-md-3 cardtipe-02" >
                 <img class="icon" src="./assets/serv-deco.png" alt="icono decoracion">
                 <div class="box03">
                     <h3 class="text05">DISEÑO</h3>
                     <p class="text06">de interiores</p>
-                    <ul class="font--colorparra p-0">
+                    <ul class="font--colorsecondary p-0">
                         <li class="text08">Render interior de ambientes a elegir</li>
                         <li class="text08">Planos técnicos zonales</li>
                         <li class="text08">Planos tecnicos de mobiliario</li>
                     </ul>
                 </div>
             </div>
-        </div>         
+        </div>
     </section>
 
-    <section class="box01">
+    <!-- Presupuesto -->
+    <section class="box00 bg-arena">
         <div class="cardtipe-03">
-            <div class="box02">
-                <div class="row"> 
-                    <!-- Formulario lado izquierdo -->
-                    <div class="form col-10 col-lg-5 ">
-                        <h4 class="pb-3">Datos necesarios para presupuestar</h4>
-                        <!-- Nombre y apellido encolumnados -->
-                        <div class="form-row my-2">
-                            <div class="col-12 d-flex">
-                                <input type="text" class="effect-1 text-white" placeholder="Nombre"><span class="focus-border"></span> 
-                            </div>
-                            <div class="col-12">
-                                <input type="text" class="effect-1 text-white" placeholder="Apellido">
-                                <span class="focus-border"></span>
-                            </div>
+            <div class="row box01">
+                <!-- Formulario lado izquierdo -->
+                <div class="col-12 col-md-6 box04">
+                    <!-- Nombre y apellido encolumnados -->
+                    <div class="row box04">
+                        <span class="col-12 text04 font--colorprimary">Datos para envío</span>
+                        <div class="col-12">
+                            <input type="text" class="form-estilo font--colorsecondary" placeholder="Nombre"><span class="focus-border"></span>
                         </div>
-                        <!-- Email -->
-                        <div class="form-row py-4">
-                            <div class="col-12">
-                                <input type="text" class="effect-1 text-white" placeholder="Email">
-                                <span class="focus-border"></span>
-                            </div>
-                        </div>
-                        <!-- Seleccion localidad -->
-                        <div class="mt-3 pt-5">
-                            <select class="form-select" aria-label="multiple select example">
-                                <option selected>Localidad donde se ubica el lote</option>
-                                <option value="1">Alta Gracia</option>
-                                <option value="2">Alma Fuerte</option>
-                                <option value="3">Arroyito</option>
-                                <option value="4">Bell Ville</option>
-                                <option value="5">Córdoba</option>
-                                <option value="6">Cosquin</option>
-                                <option value="7">Colonia Caroya</option>
-                                <option value="8">Capilla del Monte</option>
-                                <option value="9">Cruz del eje</option>
-                                <option value="10">Dean Funes</option>
-                                <option value="11">Estacion Juarez Celman</option>
-                                <option value="12">General Cabrera</option>
-                                <option value="13">General Deheza</option>
-                                <option value="14">Jesus Maria</option>
-                                <option value="15">La Calera</option>
-                                <option value="16">La falda</option>
-                                <option value="17">Laboulaye</option>
-                                <option value="18">Las Varillas</option>
-                                <option value="19">La Carlota</option>
-                                <option value="20">Malvinas Argentinas</option>
-                                <option value="21">Marcos Juarez</option>
-                                <option value="22">Malagueño</option>
-                                <option value="23">Morteros</option>
-                                <option value="24">Oliva</option>
-                                <option value="25">Oncativo</option>
-                                <option value="26">Pilar</option>
-                                <option value="27">Rio Cuarto</option>
-                                <option value="28">Rio Tercero</option>
-                                <option value="29">Rio Segundo</option>
-                                <option value="30">Rio Ceballos</option>
-                                <option value="31">San Francisco</option>
-                                <option value="32">Saldan</option>
-                                <option value="33">Santa Rosa de Calamuchita</option>
-                                <option value="44">Unquillo</option>
-                                <option value="35">Villa Allende</option>
-                                <option value="36">Villa Nueva</option>
-                                <option value="37">Villa Maria</option>
-                                <option value="38">Villa Carlos Paz</option>
-                                <option value="39">Villa Dolores</option>
-                                <option value="40">Villa del Rosario</option>
-                            </select>
-                        </div>
-                        <!-- Comentarios para agregar -->
-                        <div class="form-row mt-3 pt-5">
-                            <div class="col-12">
-                                <input type="text" class="effect-1 text-white" placeholder="Si tu localidad no estaba en la lista, nombrala aqui">
-                                <span class="focus-border"></span>
-                            </div>
+                        <div class="col-12">
+                            <input type="text" class="form-estilo font--colorsecondary" placeholder="Apellido">
+                            <span class="focus-border"></span>
                         </div>
                     </div>
-                    <!-- Formulario lado derecho -->
-                    <div class="form col-10 col-lg-5">
-                        <h4 class="pb-3">Tilde las tareas que necesita presupuestar</h4>
-                        <div class="form-row d-flex">
-                            <div class="col-6 ps-5" >
-                                <p class="text-white py-2 mb-0"><input type="checkbox"> Anteproyecto</p>  
-                            </div>
-                            <div class="col-6 d-flex">
-                                <input type="text" class="effect-1 text-white" placeholder="0,00 m2"><span class="focus-border"></span> 
-                            </div>
+                    <!-- Email -->
+                    <div class="row box04">
+                        <div class="col-12">
+                            <input type="text" class="form-estilo font--colorsecondary" placeholder="Email">
+                            <span class="focus-border"></span>
                         </div>
-                        <div class="form-row d-flex">
-                            <div class="col-6 ps-5" >
-                                <p class="text-white py-2 mb-0"><input type="checkbox"> Proyecto</p>  
-                            </div>
-                            <div class="col-6 d-flex">
-                                <input type="text" class="effect-1 text-white" placeholder="0,00 m2"><span class="focus-border"></span> 
-                            </div>
-                        </div>
-                        <div class="form-row d-flex">
-                            <div class="col-6 ps-5" >
-                                <p class="text-white py-2 mb-0"><input type="checkbox"> Relevamiento</p>  
-                            </div>
-                            <div class="col-6 d-flex">
-                                <input type="text" class="effect-1 text-white" placeholder="0,00 m2"><span class="focus-border"></span> 
-                            </div>
-                        </div>
-                        <div class="form-row d-flex">
-                            <div class="col-10 ps-5" >
-                                <p class="text-white py-2 mb-0"><input type="checkbox"> Remodelacion (*)</p>  
-                            </div>
-                        </div>
-                        
-                        <h4 class="pb-2 pt-5">Tilde el tipo de uso</h4>
-                        <div class="form-row d-flex">
-                            <div class="col-10 ps-5" >
-                                <p class="text-white py-2 mb-0"><input type="checkbox"> Residencial-Casa propia</p>  
-                            </div>
-                        </div>
-                        <div class="form-row d-flex">
-                            <div class="col-10 ps-5" >
-                                <p class="text-white py-2 mb-0"><input type="checkbox"> Residencial-Departamentos/duplex</p>  
-                            </div>
-                        </div>
-                        <div class="form-row d-flex">
-                            <div class="col-10 ps-5" >
-                                <p class="text-white py-2 mb-0"><input type="checkbox"> Comercial/oficinas</p>  
-                            </div>
-                        </div>
-                        <div class="form-row d-flex">
-                            <div class="col-10 ps-5" >
-                                <p class="text-white py-2 mb-0"><input type="checkbox"> Depósito/galpon/cocheras</p>  
-                            </div>
-                        </div>
-                        <div class="col-4 offset-md-8 col-md-4 pt-5">
-                            <button class="mi-btn font--colorprimary text07"> pedir presupuesto</button>  
-                        </div> 
                     </div>
-                </div>  
+                    <!-- Seleccion localidad -->
+                    <div class="row box04">
+                        <select class="col-12 form-select" aria-label="multiple select example">
+                            <option selected>Localidad donde se ubica el lote</option>
+                            <option value="1">Alta Gracia</option>
+                            <option value="2">Alma Fuerte</option>
+                            <option value="3">Arroyito</option>
+                            <option value="4">Bell Ville</option>
+                            <option value="5">Córdoba</option>
+                            <option value="6">Cosquin</option>
+                            <option value="7">Colonia Caroya</option>
+                            <option value="8">Capilla del Monte</option>
+                            <option value="9">Cruz del eje</option>
+                            <option value="10">Dean Funes</option>
+                            <option value="11">Estacion Juarez Celman</option>
+                            <option value="12">General Cabrera</option>
+                            <option value="13">General Deheza</option>
+                            <option value="14">Jesus Maria</option>
+                            <option value="15">La Calera</option>
+                            <option value="16">La falda</option>
+                            <option value="17">Laboulaye</option>
+                            <option value="18">Las Varillas</option>
+                            <option value="19">La Carlota</option>
+                            <option value="20">Malvinas Argentinas</option>
+                            <option value="21">Marcos Juarez</option>
+                            <option value="22">Malagueño</option>
+                            <option value="23">Morteros</option>
+                            <option value="24">Oliva</option>
+                            <option value="25">Oncativo</option>
+                            <option value="26">Pilar</option>
+                            <option value="27">Rio Cuarto</option>
+                            <option value="28">Rio Tercero</option>
+                            <option value="29">Rio Segundo</option>
+                            <option value="30">Rio Ceballos</option>
+                            <option value="31">San Francisco</option>
+                            <option value="32">Saldan</option>
+                            <option value="33">Santa Rosa de Calamuchita</option>
+                            <option value="44">Unquillo</option>
+                            <option value="35">Villa Allende</option>
+                            <option value="36">Villa Nueva</option>
+                            <option value="37">Villa Maria</option>
+                            <option value="38">Villa Carlos Paz</option>
+                            <option value="39">Villa Dolores</option>
+                            <option value="40">Villa del Rosario</option>
+                        </select>
+                    </div>
+                    <!-- Comentarios para agregar -->
+                    <div class="row box04">
+                        <div class="col-12">
+                            <input type="text" class="form-estilo text-white" placeholder="Nombra tu localidad si no está en la lista">
+                            <span class="focus-border"></span>
+                        </div>
+                    </div>
+                    <!-- Tipo de uso -->
+                    <div class="row box04 font--colorprimary">
+                            <span class="text04 col-12">Tipo de uso</span>
+                            
+                            <div class="col-6 box04 text03" >
+                                <p><input type="checkbox"> Casa propia</p>
+                                <p><input type="checkbox"> Departamentos/duplex</p>
+                            </div>
+                            <div class="col-6 box04 text03" >
+                                <p><input type="checkbox"> Comercial/oficinas</p>
+                                <p><input type="checkbox"> Depósito/galpon/cocheras</p>
+                            </div>
+                    </div>
+                </div>
+                <!-- Formulario lado derecho -->
+                <div class="col-12 col-md-6 box04">
+                    <div class="box04">
+                        <span class="text04 font--colorprimary">Tilda las tareas que necesitas presupuestar</span>
+                    </div>
+                    <!-- anteproyecto -->
+                    <div class="row  box04 text03 ">
+                        <div class="col-6 font--colorprimary" >
+                            <p><input type="checkbox"> Anteproyecto</p>
+                        </div>
+                        <div class="col-6 font--colorsecondary">
+                            <input type="text" class="form-estilo" placeholder="0,00 m2"><span class="focus-border"></span>
+                        </div>
+                    </div>
+                    <!-- Plano Proyecto -->
+                    <div class="row box04 text03">
+                        <div class="col-6 font--colorprimary" >
+                            <p class="text-white py-2 mb-0"><input type="checkbox"> Plano Obra nueva</p>
+                        </div>
+                        <div class="col-6 font--colorsecondary">
+                            <input type="text" class="form-estilo" placeholder="0,00 m2"><span class="focus-border"></span>
+                        </div>
+                    </div>
+                    <!-- Plano Relevamiento -->
+                    <div class="row box04 text03">
+                        <div class="col-6 font--colorprimary" >
+                            <p class="text-white py-2 mb-0"><input type="checkbox"> Plano Relevamiento</p>
+                        </div>
+                        <div class="col-6 font--colorsecondary">
+                            <input type="text" class="form-estilo" placeholder="0,00 m2"><span class="focus-border"></span>
+                        </div>
+                    </div>
+                    <!-- Remodelacion -->
+                    <div class="row box04 text03">
+                        <div class="col-6 font--colorprimary" >
+                            <p class="text-white py-2 mb-0"><input type="checkbox"> Remodelacion</p>
+                        </div>
+                        <div class="col-6 font--colorparra">
+                            <span class="text05">*Para esta tarea es necesario ver el lugar</span>
+                        </div>
+                    </div>
+                    <!-- Conduccion -->
+                    <div class="row box04 text03">
+                        <div class="col-6 font--colorprimary" >
+                            <p class="text-white py-2 mb-0"><input type="checkbox"> Conduccion de obra</p>
+                        </div>
+                        <div class="col-6 font--colorsecondary">
+                            <input type="text" class="form-estilo" placeholder="0,00 m2"><span class="focus-border"></span>
+                        </div>
+                    </div>
+                    <!-- Interiorismo -->
+                    <div class="row box04 text03">
+                        <div class="col-6 font--colorprimary" >
+                            <p class="text-white py-2 mb-0"><input type="checkbox"> Ambientes para diseñar interior</p>
+                        </div>
+                        <div class="col-6 font--colorsecondary">
+                            <input type="text" class="form-estilo" placeholder="00 cant."><span class="focus-border"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- boton -->
+                <div class="text-center col-5 col-md-4">
+                    <button class="mi-btn font--colorprimary text07"> pedir presupuesto</button>
+                </div>
             </div>
-        </div>  
+        </div>
     </section>
-  
-    <footer class="footer bg-arena">
+
+    <footer class="bg-arena">
         <div class="container-fluid">
             <nav class="row align-items-center">
                 <!-- logo -->
                 <a href="./index.html" class="col-8 col-md-3 mi-link alinear">
                     <img class="isologo" src="./assets/isobicromo.png" alt="logo estudio bicromo">
-                    <span class="font--colorparra "> Estudio Bicromo </span> 
+                    <span class="font--colorparra "> Estudio Bicromo </span>
                 </a>
                 <!-- redes -->
                 <ul class="col-6 col-md-2 list-unstyled alinear">
@@ -285,24 +305,24 @@
                         </a>
                         <a href="https://api.whatsapp.com/send?phone=3585149815&text=Hola!%20Gracias%20por%20visitar%20nuestra%20web...%20Env%C3%ADanos%20tu%20consulta!" class="mi-link">
                             <img class="icon-social" src="./assets/whatsapp.png" alt="icono whatsapp">
-                        </a>  
-                    </li>   
+                        </a>
+                    </li>
                 </ul>
                 <!-- contacto -->
                 <ul class="col-8 col-md-3 list-unstyled text-07 alinear">
                     <li class="text04 font--colorparra">contacto</li>
                     <li class="text08 font--colorparra"> +54 (358) 5149815 | +54 (358) 4197363</li>
                     <li class="text08 font--colorparra pt-2"> Ciudad de Rio Cuarto, Pcia. de Córdoba</li>
-                    <li class="text08 font--colorparra"> Argentina</li>  
-                </ul>    
+                    <li class="text08 font--colorparra"> Argentina</li>
+                </ul>
             </nav>
-        </div>   
-    </footer>    
-   
+        </div>
+    </footer>
+
     <!-- Js animaciones -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
-    
+
     <!-- Bootstrap JS local-->
     <script src="./js-bt/bootstrap.bundle.min.js"></script>
 
