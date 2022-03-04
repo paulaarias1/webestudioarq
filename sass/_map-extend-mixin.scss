@@ -210,10 +210,18 @@ $colordesing:(
 
 //estilos de contenedores
 .box00{
-    padding: 3rem 3rem 3rem 3rem;
+    @media (min-width: 375px){
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
     height: auto;
     text-align: center;
-}   
+    }
+    @media (min-width: 768px){
+        padding: 3rem 3rem 3rem 3rem;
+        height: auto;
+        text-align: center;
+    }
+}      
+  
 .box01{
     @extend .box00;
     text-align: left;

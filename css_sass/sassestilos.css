@@ -256,10 +256,20 @@
   height: 80%;
 }
 
-.box00, .box01, .box02, .box03, .box05, .box06 {
-  padding: 3rem 3rem 3rem 3rem;
-  height: auto;
-  text-align: center;
+@media (min-width: 375px) {
+  .box00, .box01, .box02, .box03, .box05, .box06 {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    height: auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .box00, .box01, .box02, .box03, .box05, .box06 {
+    padding: 3rem 3rem 3rem 3rem;
+    height: auto;
+    text-align: center;
+  }
 }
 
 .box01 {
